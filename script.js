@@ -369,8 +369,8 @@ function updateUserStats() {
     if (!currentUser) return;
     
     document.getElementById('current-score').textContent = userData.scores[currentUser] || 0;
-    document.getElementById('total-quizzes').textContent = userData.totalQuizzes[currentUser] || 0;
     document.getElementById('user-rank').textContent = calculateUserRank();
+    document.getElementById('total-quizzes').textContent = userData.totalQuizzes[currentUser] || 0;
 }
 
 // Calculate user's rank
@@ -390,24 +390,26 @@ function updateLeaderboard() {
     const leaderboardTable = document.getElementById('leaderboard-table');
     leaderboardTable.innerHTML = '';
 
+    // Get all users and sort by score
     const allUsers = Object.entries(userData.scores)
         .map(([email, score]) => ({
-            username: userData.users[email].username,
+            username: userData.users[email]?.username || email,
             score,
-            totalQuizzes: userData.totalQuizzes[email],
-            lastPlayed: userData.lastPlayed[email]
+            totalQuizzes: userData.totalQuizzes[email] || 0,
+            lastPlayed: userData.lastPlayed[email] || 'Never'
         }))
         .sort((a, b) => b.score - a.score);
 
+    // Add rows to the leaderboard table
     allUsers.forEach((user, index) => {
         const row = document.createElement('tr');
-        row.className = 'hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors';
+        row.className = 'leaderboard-item hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors';
         row.innerHTML = `
             <td class="py-4">${index + 1}</td>
             <td class="py-4">${user.username}</td>
             <td class="py-4">${user.score}</td>
             <td class="py-4">${user.totalQuizzes}</td>
-            <td class="py-4">${user.lastPlayed || 'Never'}</td>
+            <td class="py-4">${user.lastPlayed}</td>
         `;
         leaderboardTable.appendChild(row);
     });
@@ -415,6 +417,13 @@ function updateLeaderboard() {
 
 // Leaderboard button click handler
 leaderboardButton.addEventListener('click', function() {
+    if (!currentUser) {
+        // If no user is logged in, show the login page
+        showContainer(loginContainer);
+        loginError.textContent = 'Please log in to view the leaderboard';
+        loginError.classList.remove('hidden');
+        return;
+    }
     showContainer(leaderboardPage);
     updateLeaderboard();
 });
@@ -435,21 +444,22 @@ document.addEventListener('DOMContentLoaded', function() {
 const app = document.getElementById('app');
 const leaderboardContainer = document.getElementById('leaderboard-container');
 
-// Example: Toggle dark mode
-document.body.classList.add('bg-gray-100', 'text-gray-800');
-const toggleTheme = () => {
-    document.body.classList.toggle('bg-gray-800');
-    document.body.classList.toggle('text-gray-100');
-    document.body.classList.toggle('bg-gray-100');
-    document.body.classList.toggle('text-gray-800');
-};
+// Theme toggle functionality
+const themeToggle = document.getElementById('theme-toggle');
+let isDarkTheme = false;
 
-// Add a button for theme toggle
-const themeToggleButton = document.createElement('button');
-themeToggleButton.textContent = 'Toggle Theme';
-themeToggleButton.className = 'p-2 bg-blue-500 text-white rounded mt-4';
-themeToggleButton.addEventListener('click', toggleTheme);
-app.appendChild(themeToggleButton);
+themeToggle.addEventListener('click', function() {
+    isDarkTheme = !isDarkTheme;
+    document.body.classList.toggle('dark-theme');
+    
+    // Update theme toggle icon
+    const icon = themeToggle.querySelector('svg');
+    if (isDarkTheme) {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />';
+    } else {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />';
+    }
+});
 
 // Add animations for questions and options
 const style = document.createElement('style');
