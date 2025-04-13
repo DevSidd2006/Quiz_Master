@@ -157,12 +157,37 @@ function hideAllContainers() {
     leaderboardPage.classList.remove('visible');
 }
 
-// Show specific container
+// Show specific container with animations
 function showContainer(container) {
     hideAllContainers();
-    container.classList.remove('hidden');
-    if (container === leaderboardPage) {
+    
+    if (container === landingPage) {
+        container.classList.remove('hidden');
         container.classList.add('visible');
+        
+        // Add animation classes to elements
+        const elements = container.querySelectorAll('*');
+        elements.forEach((element, index) => {
+            element.classList.add('animate-fade-in');
+            element.style.animationDelay = `${index * 0.1}s`;
+        });
+        
+        // Add specific animations to key elements
+        const title = container.querySelector('h1');
+        if (title) {
+            title.classList.add('animate-slide-in');
+        }
+        
+        const buttons = container.querySelectorAll('button');
+        buttons.forEach((button, index) => {
+            button.classList.add('animate-scale-in');
+            button.style.animationDelay = `${0.3 + index * 0.1}s`;
+        });
+    } else {
+        container.classList.remove('hidden');
+        if (container === leaderboardPage) {
+            container.classList.add('visible');
+        }
     }
 }
 
@@ -265,10 +290,16 @@ function showQuestion() {
     startTimer();
 }
 
+// Add userAnswers array to track answers
+let userAnswers = [];
+
 function selectAnswer(index) {
     stopTimer();
     const question = currentQuiz[currentQuestionIndex];
     const buttons = optionsElement.querySelectorAll('button');
+    
+    // Store user's answer
+    userAnswers[currentQuestionIndex] = index;
     
     buttons.forEach(button => {
         button.disabled = true;
@@ -299,25 +330,75 @@ function showNextQuestion() {
 }
 
 function endQuiz() {
-    quizContainer.classList.add('hidden');
-    landingPage.classList.remove('hidden');
-    
-    // Update user's score
+    // Create results container
+    const resultsContainer = document.createElement('div');
+    resultsContainer.className = 'results-container p-8 max-w-2xl mx-auto bg-white rounded-lg shadow-lg dark:bg-gray-800 animate-fade-in';
+    resultsContainer.innerHTML = `
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-green-500 mb-4">Congratulations! 🎉</h2>
+            <p class="text-xl text-gray-600 dark:text-gray-300">You've completed the quiz!</p>
+        </div>
+        
+        <div class="score-summary bg-gray-100 dark:bg-gray-700 p-6 rounded-lg mb-8">
+            <h3 class="text-2xl font-semibold mb-4 text-center">Your Score Summary</h3>
+            <div class="grid grid-cols-2 gap-4 text-center">
+                <div class="bg-white dark:bg-gray-600 p-4 rounded-lg">
+                    <p class="text-gray-600 dark:text-gray-300">Total Questions</p>
+                    <p class="text-2xl font-bold">${currentQuiz.length}</p>
+                </div>
+                <div class="bg-white dark:bg-gray-600 p-4 rounded-lg">
+                    <p class="text-gray-600 dark:text-gray-300">Your Score</p>
+                    <p class="text-2xl font-bold text-green-500">${score}</p>
+                </div>
+                <div class="bg-white dark:bg-gray-600 p-4 rounded-lg">
+                    <p class="text-gray-600 dark:text-gray-300">Correct Answers</p>
+                    <p class="text-2xl font-bold text-green-500">${score}</p>
+                </div>
+                <div class="bg-white dark:bg-gray-600 p-4 rounded-lg">
+                    <p class="text-gray-600 dark:text-gray-300">Wrong Answers</p>
+                    <p class="text-2xl font-bold text-red-500">${currentQuiz.length - score}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-results">
+            <h3 class="text-2xl font-semibold mb-4 text-center">Question-wise Results</h3>
+            <div class="space-y-4">
+                ${currentQuiz.map((question, index) => `
+                    <div class="question-result p-4 rounded-lg ${userAnswers[index] === question.correct ? 'bg-green-50 dark:bg-green-900' : 'bg-red-50 dark:bg-red-900'}">
+                        <p class="font-semibold mb-2">Question ${index + 1}: ${question.question}</p>
+                        <p class="mb-1">Your Answer: ${question.options[userAnswers[index]]}</p>
+                        <p class="mb-1">Correct Answer: ${question.options[question.correct]}</p>
+                        <p class="text-sm ${userAnswers[index] === question.correct ? 'text-green-600 dark:text-green-300' : 'text-red-600 dark:text-red-300'}">
+                            ${userAnswers[index] === question.correct ? '✓ Correct' : '✗ Wrong'}
+                        </p>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+
+        <div class="mt-8 text-center">
+            <button id="back-to-home" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+                Back to Home
+            </button>
+        </div>
+    `;
+
+    // Add results container to the page
+    quizContainer.innerHTML = '';
+    quizContainer.appendChild(resultsContainer);
+
+    // Add event listener for back button
+    document.getElementById('back-to-home').addEventListener('click', function() {
+        showContainer(landingPage);
+        updateUserStats();
+    });
+
+    // Update user data
     userData.scores[currentUser] = (userData.scores[currentUser] || 0) + score;
-    userData.totalQuizzes[currentUser]++;
+    userData.totalQuizzes[currentUser] = (userData.totalQuizzes[currentUser] || 0) + 1;
     userData.lastPlayed[currentUser] = new Date().toLocaleDateString();
-
-    // Save and update UI
     saveUserData();
-    updateUserStats();
-    updateLeaderboard();
-
-    // Show results alert
-    const rank = calculateUserRank();
-    alert(`Quiz completed!\n\nYour score: ${score}\nYour rank: ${rank}\nTotal quizzes taken: ${userData.totalQuizzes[currentUser]}`);
-
-    // Return to landing page
-    showContainer(landingPage);
 }
 
 function updateProgressBar() {
@@ -469,8 +550,44 @@ style.textContent = `
     to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes slideIn {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 .animate-fade-in {
     animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-in {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.5s ease-in-out;
+}
+
+.animate-delay-100 {
+    animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+    animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+    animation-delay: 0.3s;
 }
 
 body {
@@ -479,9 +596,12 @@ body {
     animation: gradientBackground 15s ease infinite;
 }
 
-@keyframes gradientBackground {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+.landing-page {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.landing-page.visible {
+    opacity: 1;
 }`;
 document.head.appendChild(style);
