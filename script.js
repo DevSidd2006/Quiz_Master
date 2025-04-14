@@ -447,13 +447,35 @@ function endQuiz() {
 
     // Add event listener for back button
     document.getElementById('back-to-home').addEventListener('click', function() {
+        resetQuizState(); // Reset the quiz state when going back to the home page
         showContainer(landingPage);
         updateUserStats();
     });
 
     // Add event listener for start new quiz button
     document.getElementById('start-new-quiz').addEventListener('click', function() {
+        // Reset quiz state
         resetQuizState();
+        
+        // Reset the quiz container to its original state
+        quizContainer.innerHTML = `
+            <div class="flex justify-between items-center mb-8">
+                <div id="timer" class="timer">Time: 10s</div>
+                <div id="score" class="score">Score: 0</div>
+            </div>
+            <div class="progress-bar mb-6" id="progress-bar"></div>
+            <div id="question" class="text-2xl font-semibold mb-8 text-center"></div>
+            <div id="options" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+            <button id="next-button" class="mt-8 w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
+                Next Question
+            </button>
+        `;
+        
+        // Reset the theme and level selections
+        themeSelect.value = 'general';
+        levelSelect.value = 'easy';
+        
+        // Show the landing page
         showContainer(landingPage);
         updateUserStats();
     });
@@ -689,3 +711,32 @@ logoutButton.addEventListener('click', function() {
     // Show signup page
     showContainer(signupContainer);
 });
+
+// Add forgot password functionality
+const forgotPasswordLink = document.querySelector('a[href="#"]');
+if (forgotPasswordLink) {
+    forgotPasswordLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        const email = prompt('Please enter your registered email address:');
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert('Invalid email address. Please try again.');
+            return;
+        }
+
+        if (!userData.users[email]) {
+            alert('Email not found. Please check your email or sign up.');
+            return;
+        }
+
+        const newPassword = prompt('Enter your new password (minimum 6 characters):');
+        if (!newPassword || newPassword.length < 6) {
+            alert('Password must be at least 6 characters long. Please try again.');
+            return;
+        }
+
+        // Update the user's password
+        userData.users[email].password = newPassword;
+        saveUserData();
+        alert('Password reset successful! You can now log in with your new password.');
+    });
+}

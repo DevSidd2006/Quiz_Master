@@ -120,6 +120,256 @@ const quizQuestions = {
                 question: "What is the currency of Japan?",
                 options: ["Yuan", "Won", "Yen", "Ringgit"],
                 correct: 2
+            },
+            {
+                question: "What is the largest organ in the human body?",
+                options: ["Heart", "Liver", "Skin", "Brain"],
+                correct: 2
+            },
+            {
+                question: "Which planet is known as the 'Morning Star'?",
+                options: ["Mars", "Venus", "Jupiter", "Mercury"],
+                correct: 1
+            },
+            {
+                question: "What is the main component of the Sun?",
+                options: ["Oxygen", "Hydrogen", "Helium", "Carbon"],
+                correct: 1
+            },
+            {
+                question: "Which organ pumps blood throughout the body?",
+                options: ["Liver", "Heart", "Lungs", "Brain"],
+                correct: 1
+            },
+            {
+                question: "What is the largest bone in the human body?",
+                options: ["Skull", "Femur", "Spine", "Pelvis"],
+                correct: 1
+            },
+            {
+                question: "Which gas makes up most of Earth's atmosphere?",
+                options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+                correct: 2
+            },
+            {
+                question: "What is the chemical symbol for gold?",
+                options: ["Ag", "Au", "Fe", "Cu"],
+                correct: 1
+            },
+            {
+                question: "Which planet has the most rings?",
+                options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
+                correct: 1
+            },
+            {
+                question: "What is the study of fossils called?",
+                options: ["Geology", "Paleontology", "Archaeology", "Anthropology"],
+                correct: 1
+            },
+            {
+                question: "Which scientist proposed the theory of relativity?",
+                options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
+                correct: 1
+            },
+            {
+                question: "What is the chemical symbol for potassium?",
+                options: ["P", "K", "Po", "Pt"],
+                correct: 1
+            },
+            {
+                question: "Which planet has the Great Red Spot?",
+                options: ["Mars", "Jupiter", "Saturn", "Neptune"],
+                correct: 1
+            },
+            {
+                question: "What is the study of earthquakes called?",
+                options: ["Volcanology", "Seismology", "Meteorology", "Geology"],
+                correct: 1
+            },
+            {
+                question: "Which element has the highest melting point?",
+                options: ["Tungsten", "Carbon", "Osmium", "Rhenium"],
+                correct: 0
+            },
+            {
+                question: "What is the chemical symbol for lead?",
+                options: ["Ld", "Le", "Pb", "Pl"],
+                correct: 2
+            },
+            {
+                question: "What is the chemical symbol for mercury?",
+                options: ["Me", "Hg", "Mr", "My"],
+                correct: 1
+            },
+            {
+                question: "Which planet has the most complex ring system?",
+                options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
+                correct: 1
+            },
+            {
+                question: "What is the chemical symbol for silver?",
+                options: ["Si", "S", "Ag", "Au"],
+                correct: 2
+            },
+            {
+                question: "Which planet has the most eccentric orbit?",
+                options: ["Mercury", "Venus", "Mars", "Pluto"],
+                correct: 3
+            },
+            {
+                question: "What is the chemical symbol for tin?",
+                options: ["Ti", "Tn", "Sn", "Si"],
+                correct: 2
+            },
+            {
+                question: "Which planet has the most tilted axis?",
+                options: ["Uranus", "Neptune", "Saturn", "Jupiter"],
+                correct: 0
+            },
+            {
+                question: "What is the chemical symbol for antimony?",
+                options: ["An", "At", "Sb", "Am"],
+                correct: 2
+            },
+            {
+                question: "Which country has the most UNESCO World Heritage Sites?",
+                options: ["China", "Italy", "Spain", "France"],
+                correct: 1
+            },
+            {
+                question: "What is the deepest point in the ocean?",
+                options: ["Puerto Rico Trench", "Mariana Trench", "Java Trench", "Tonga Trench"],
+                correct: 1
+            },
+            {
+                question: "Which language has the most native speakers?",
+                options: ["English", "Spanish", "Hindi", "Mandarin Chinese"],
+                correct: 3
+            },
+            {
+                question: "What is the largest volcano in the solar system?",
+                options: ["Mount Everest", "Olympus Mons", "Mauna Kea", "Mount Kilimanjaro"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most islands?",
+                options: ["Indonesia", "Philippines", "Sweden", "Norway"],
+                correct: 2
+            },
+            {
+                question: "What is the oldest continuously inhabited city in the world?",
+                options: ["Jerusalem", "Athens", "Damascus", "Rome"],
+                correct: 2
+            },
+            {
+                question: "Which country has the most natural lakes?",
+                options: ["Canada", "Finland", "Russia", "USA"],
+                correct: 0
+            },
+            {
+                question: "What is the deepest lake in the world?",
+                options: ["Caspian Sea", "Baikal", "Tanganyika", "Superior"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most islands?",
+                options: ["Indonesia", "Philippines", "Sweden", "Norway"],
+                correct: 2
+            },
+            {
+                question: "What is the largest coral reef system in the world?",
+                options: ["Maldives", "Great Barrier Reef", "Belize Barrier Reef", "Red Sea Coral Reef"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most active volcanoes?",
+                options: ["Indonesia", "Japan", "USA", "Chile"],
+                correct: 0
+            },
+            {
+                question: "What is the largest waterfall in the world?",
+                options: ["Niagara Falls", "Victoria Falls", "Angel Falls", "Iguazu Falls"],
+                correct: 2
+            },
+            {
+                question: "Which country has the most UNESCO Biosphere Reserves?",
+                options: ["USA", "Spain", "Mexico", "Russia"],
+                correct: 1
+            },
+            {
+                question: "What is the largest salt flat in the world?",
+                options: ["Salar de Uyuni", "Bonneville Salt Flats", "Etosha Pan", "Makgadikgadi Pan"],
+                correct: 0
+            },
+            {
+                question: "Which country has the most national parks?",
+                options: ["USA", "Australia", "Canada", "Brazil"],
+                correct: 0
+            },
+            {
+                question: "What is the largest desert in Asia?",
+                options: ["Gobi", "Thar", "Karakum", "Taklamakan"],
+                correct: 0
+            },
+            {
+                question: "Which country has the most time zones?",
+                options: ["Russia", "USA", "France", "China"],
+                correct: 2
+            },
+            {
+                question: "What is the national animal of Scotland?",
+                options: ["Lion", "Unicorn", "Eagle", "Stag"],
+                correct: 1
+            },
+            {
+                question: "Which city is known as the 'City of a Thousand Minarets'?",
+                options: ["Istanbul", "Cairo", "Mecca", "Dubai"],
+                correct: 1
+            },
+            {
+                question: "What is the largest island in the world?",
+                options: ["Madagascar", "Greenland", "Borneo", "New Guinea"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most lakes in the world?",
+                options: ["Russia", "Canada", "Finland", "Sweden"],
+                correct: 1
+            },
+            {
+                question: "What is the longest mountain range in the world?",
+                options: ["Himalayas", "Andes", "Rockies", "Alps"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most official languages?",
+                options: ["India", "South Africa", "Switzerland", "Belgium"],
+                correct: 1
+            },
+            {
+                question: "What is the oldest university in the world?",
+                options: ["Oxford", "Bologna", "Cambridge", "Sorbonne"],
+                correct: 1
+            },
+            {
+                question: "What is the largest desert in Asia?",
+                options: ["Gobi", "Thar", "Karakum", "Taklamakan"],
+                correct: 0
+            },
+            {
+                question: "Which country has the most time zones?",
+                options: ["Russia", "USA", "France", "China"],
+                correct: 2
+            },
+            {
+                question: "What is the national animal of Scotland?",
+                options: ["Lion", "Unicorn", "Eagle", "Stag"],
+                correct: 1
+            },
+            {
+                question: "Which city is known as the 'City of a Thousand Minarets'?",
+                options: ["Istanbul", "Cairo", "Mecca", "Dubai"],
+                correct: 1
             }
         ],
         medium: [
@@ -408,6 +658,221 @@ const quizQuestions = {
                 question: "What is the chemical symbol for gold?",
                 options: ["Ag", "Au", "Fe", "Cu"],
                 correct: 1
+            },
+            {
+                question: "What is the study of fossils called?",
+                options: ["Geology", "Paleontology", "Archaeology", "Anthropology"],
+                correct: 1
+            },
+            {
+                question: "Which scientist proposed the theory of relativity?",
+                options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
+                correct: 1
+            },
+            {
+                question: "What is the chemical symbol for potassium?",
+                options: ["P", "K", "Po", "Pt"],
+                correct: 1
+            },
+            {
+                question: "Which planet has the Great Red Spot?",
+                options: ["Mars", "Jupiter", "Saturn", "Neptune"],
+                correct: 1
+            },
+            {
+                question: "What is the study of earthquakes called?",
+                options: ["Volcanology", "Seismology", "Meteorology", "Geology"],
+                correct: 1
+            },
+            {
+                question: "Which element has the highest melting point?",
+                options: ["Tungsten", "Carbon", "Osmium", "Rhenium"],
+                correct: 0
+            },
+            {
+                question: "What is the chemical symbol for lead?",
+                options: ["Ld", "Le", "Pb", "Pl"],
+                correct: 2
+            },
+            {
+                question: "What is the chemical symbol for mercury?",
+                options: ["Me", "Hg", "Mr", "My"],
+                correct: 1
+            },
+            {
+                question: "Which planet has the most complex ring system?",
+                options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
+                correct: 1
+            },
+            {
+                question: "What is the chemical symbol for silver?",
+                options: ["Si", "S", "Ag", "Au"],
+                correct: 2
+            },
+            {
+                question: "Which planet has the most eccentric orbit?",
+                options: ["Mercury", "Venus", "Mars", "Pluto"],
+                correct: 3
+            },
+            {
+                question: "What is the chemical symbol for tin?",
+                options: ["Ti", "Tn", "Sn", "Si"],
+                correct: 2
+            },
+            {
+                question: "Which planet has the most tilted axis?",
+                options: ["Uranus", "Neptune", "Saturn", "Jupiter"],
+                correct: 0
+            },
+            {
+                question: "What is the chemical symbol for antimony?",
+                options: ["An", "At", "Sb", "Am"],
+                correct: 2
+            },
+            {
+                question: "What is the study of earthquakes called?",
+                options: ["Volcanology", "Seismology", "Meteorology", "Geology"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most UNESCO World Heritage Sites?",
+                options: ["China", "Italy", "Spain", "France"],
+                correct: 1
+            },
+            {
+                question: "What is the deepest point in the ocean?",
+                options: ["Puerto Rico Trench", "Mariana Trench", "Java Trench", "Tonga Trench"],
+                correct: 1
+            },
+            {
+                question: "Which language has the most native speakers?",
+                options: ["English", "Spanish", "Hindi", "Mandarin Chinese"],
+                correct: 3
+            },
+            {
+                question: "What is the largest volcano in the solar system?",
+                options: ["Mount Everest", "Olympus Mons", "Mauna Kea", "Mount Kilimanjaro"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most islands?",
+                options: ["Indonesia", "Philippines", "Sweden", "Norway"],
+                correct: 2
+            },
+            {
+                question: "What is the oldest continuously inhabited city in the world?",
+                options: ["Jerusalem", "Athens", "Damascus", "Rome"],
+                correct: 2
+            },
+            {
+                question: "Which country has the most natural lakes?",
+                options: ["Canada", "Finland", "Russia", "USA"],
+                correct: 0
+            },
+            {
+                question: "What is the deepest lake in the world?",
+                options: ["Caspian Sea", "Baikal", "Tanganyika", "Superior"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most islands?",
+                options: ["Indonesia", "Philippines", "Sweden", "Norway"],
+                correct: 2
+            },
+            {
+                question: "What is the largest coral reef system in the world?",
+                options: ["Maldives", "Great Barrier Reef", "Belize Barrier Reef", "Red Sea Coral Reef"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most active volcanoes?",
+                options: ["Indonesia", "Japan", "USA", "Chile"],
+                correct: 0
+            },
+            {
+                question: "What is the largest waterfall in the world?",
+                options: ["Niagara Falls", "Victoria Falls", "Angel Falls", "Iguazu Falls"],
+                correct: 2
+            },
+            {
+                question: "Which country has the most UNESCO Biosphere Reserves?",
+                options: ["USA", "Spain", "Mexico", "Russia"],
+                correct: 1
+            },
+            {
+                question: "What is the largest salt flat in the world?",
+                options: ["Salar de Uyuni", "Bonneville Salt Flats", "Etosha Pan", "Makgadikgadi Pan"],
+                correct: 0
+            },
+            {
+                question: "Which country has the most national parks?",
+                options: ["USA", "Australia", "Canada", "Brazil"],
+                correct: 0
+            },
+            {
+                question: "What is the largest desert in Asia?",
+                options: ["Gobi", "Thar", "Karakum", "Taklamakan"],
+                correct: 0
+            },
+            {
+                question: "Which country has the most time zones?",
+                options: ["Russia", "USA", "France", "China"],
+                correct: 2
+            },
+            {
+                question: "What is the national animal of Scotland?",
+                options: ["Lion", "Unicorn", "Eagle", "Stag"],
+                correct: 1
+            },
+            {
+                question: "Which city is known as the 'City of a Thousand Minarets'?",
+                options: ["Istanbul", "Cairo", "Mecca", "Dubai"],
+                correct: 1
+            },
+            {
+                question: "What is the largest island in the world?",
+                options: ["Madagascar", "Greenland", "Borneo", "New Guinea"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most lakes in the world?",
+                options: ["Russia", "Canada", "Finland", "Sweden"],
+                correct: 1
+            },
+            {
+                question: "What is the longest mountain range in the world?",
+                options: ["Himalayas", "Andes", "Rockies", "Alps"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most official languages?",
+                options: ["India", "South Africa", "Switzerland", "Belgium"],
+                correct: 1
+            },
+            {
+                question: "What is the oldest university in the world?",
+                options: ["Oxford", "Bologna", "Cambridge", "Sorbonne"],
+                correct: 1
+            },
+            {
+                question: "What is the largest desert in Asia?",
+                options: ["Gobi", "Thar", "Karakum", "Taklamakan"],
+                correct: 0
+            },
+            {
+                question: "Which country has the most time zones?",
+                options: ["Russia", "USA", "France", "China"],
+                correct: 2
+            },
+            {
+                question: "What is the national animal of Scotland?",
+                options: ["Lion", "Unicorn", "Eagle", "Stag"],
+                correct: 1
+            },
+            {
+                question: "Which city is known as the 'City of a Thousand Minarets'?",
+                options: ["Istanbul", "Cairo", "Mecca", "Dubai"],
+                correct: 1
             }
         ],
         medium: [
@@ -656,14 +1121,109 @@ const quizQuestions = {
                 question: "In which year did the Berlin Wall fall?",
                 options: ["1987", "1989", "1991", "1993"],
                 correct: 1
-            }
-        ],
-        medium: [
+            },
             {
                 question: "In which year did the French Revolution begin?",
                 options: ["1789", "1776", "1804", "1812"],
                 correct: 0
             },
+            {
+                question: "Who was the first female pharaoh of Egypt?",
+                options: ["Nefertiti", "Cleopatra", "Hatshepsut", "Nefertari"],
+                correct: 2
+            },
+            {
+                question: "Which civilization built Machu Picchu?",
+                options: ["Aztecs", "Mayans", "Incas", "Olmecs"],
+                correct: 2
+            },
+            {
+                question: "Who was the first European to reach India by sea?",
+                options: ["Christopher Columbus", "Vasco da Gama", "Ferdinand Magellan", "Marco Polo"],
+                correct: 1
+            },
+            {
+                question: "In which year did the American Civil War end?",
+                options: ["1863", "1865", "1867", "1869"],
+                correct: 1
+            },
+            {
+                question: "Who was the first emperor of China?",
+                options: ["Confucius", "Qin Shi Huang", "Sun Tzu", "Lao Tzu"],
+                correct: 1
+            },
+            {
+                question: "Which ancient city was destroyed by the eruption of Mount Vesuvius?",
+                options: ["Athens", "Rome", "Pompeii", "Sparta"],
+                correct: 2
+            },
+            {
+                question: "Who was the first European to reach North America?",
+                options: ["Christopher Columbus", "Leif Erikson", "John Cabot", "Amerigo Vespucci"],
+                correct: 1
+            },
+            {
+                question: "In which year did the Russian Revolution begin?",
+                options: ["1915", "1917", "1919", "1921"],
+                correct: 1
+            },
+            {
+                question: "Who was the first female ruler of England?",
+                options: ["Elizabeth I", "Mary I", "Victoria", "Anne"],
+                correct: 1
+            },
+            {
+                question: "Who was the last emperor of the Byzantine Empire?",
+                options: ["Constantine XI", "Justinian I", "Heraclius", "Basil II"],
+                correct: 0
+            },
+            {
+                question: "Which ancient civilization invented the concept of zero?",
+                options: ["Greeks", "Romans", "Egyptians", "Indians"],
+                correct: 3
+            },
+            {
+                question: "Who was the first European to reach Japan?",
+                options: ["Marco Polo", "Christopher Columbus", "Ferdinand Magellan", "Francis Xavier"],
+                correct: 3
+            },
+            {
+                question: "In which year did the Black Death reach Europe?",
+                options: ["1346", "1350", "1360", "1370"],
+                correct: 0
+            },
+            {
+                question: "Who was the first female ruler of Russia?",
+                options: ["Catherine the Great", "Elizabeth I", "Anna Ivanovna", "Catherine I"],
+                correct: 3
+            },
+            {
+                question: "Which ancient civilization built the city of Petra?",
+                options: ["Egyptians", "Nabataeans", "Phoenicians", "Assyrians"],
+                correct: 1
+            },
+            {
+                question: "Who was the first European to reach Australia?",
+                options: ["James Cook", "Willem Janszoon", "Abel Tasman", "William Dampier"],
+                correct: 1
+            },
+            {
+                question: "In which year did the Hundred Years' War begin?",
+                options: ["1337", "1345", "1350", "1360"],
+                correct: 0
+            },
+            {
+                question: "Who was the first European to reach the Pacific Ocean?",
+                options: ["Christopher Columbus", "Vasco Núñez de Balboa", "Ferdinand Magellan", "Hernán Cortés"],
+                correct: 1
+            },
+            {
+                question: "Which ancient civilization built the city of Tikal?",
+                options: ["Aztecs", "Mayans", "Incas", "Olmecs"],
+                correct: 1
+            }
+        ],
+        medium: [
             {
                 question: "Who was the first female pharaoh of Egypt?",
                 options: ["Nefertiti", "Cleopatra", "Hatshepsut", "Nefertari"],
@@ -813,6 +1373,96 @@ const quizQuestions = {
             {
                 question: "Which country has the most islands?",
                 options: ["Indonesia", "Philippines", "Sweden", "Norway"],
+                correct: 2
+            },
+            {
+                question: "Which river is the longest in the world?",
+                options: ["Amazon", "Nile", "Yangtze", "Mississippi"],
+                correct: 1
+            },
+            {
+                question: "What is the capital of Canada?",
+                options: ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+                correct: 2
+            },
+            {
+                question: "Which country has the most time zones?",
+                options: ["Russia", "China", "USA", "France"],
+                correct: 3
+            },
+            {
+                question: "What is the largest island in the world?",
+                options: ["Madagascar", "Greenland", "Borneo", "New Guinea"],
+                correct: 1
+            },
+            {
+                question: "Which country is the smallest by land area?",
+                options: ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+                correct: 1
+            },
+            {
+                question: "What is the capital of New Zealand?",
+                options: ["Auckland", "Wellington", "Christchurch", "Dunedin"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most lakes?",
+                options: ["Russia", "Canada", "USA", "Finland"],
+                correct: 1
+            },
+            {
+                question: "What is the highest mountain in Africa?",
+                options: ["Mount Kenya", "Mount Kilimanjaro", "Mount Stanley", "Mount Meru"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most UNESCO World Heritage Sites?",
+                options: ["China", "Italy", "Spain", "France"],
+                correct: 1
+            },
+            {
+                question: "What is the deepest point in the ocean?",
+                options: ["Puerto Rico Trench", "Mariana Trench", "Java Trench", "Tonga Trench"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most islands?",
+                options: ["Indonesia", "Philippines", "Sweden", "Norway"],
+                correct: 2
+            },
+            {
+                question: "What is the largest coral reef system in the world?",
+                options: ["Maldives", "Great Barrier Reef", "Belize Barrier Reef", "Red Sea Coral Reef"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most active volcanoes?",
+                options: ["Indonesia", "Japan", "USA", "Chile"],
+                correct: 0
+            },
+            {
+                question: "What is the largest waterfall in the world?",
+                options: ["Niagara Falls", "Victoria Falls", "Angel Falls", "Iguazu Falls"],
+                correct: 2
+            },
+            {
+                question: "Which country has the most UNESCO Biosphere Reserves?",
+                options: ["USA", "Spain", "Mexico", "Russia"],
+                correct: 1
+            },
+            {
+                question: "What is the largest salt flat in the world?",
+                options: ["Salar de Uyuni", "Bonneville Salt Flats", "Etosha Pan", "Makgadikgadi Pan"],
+                correct: 0
+            },
+            {
+                question: "Which country has the most official languages?",
+                options: ["India", "South Africa", "Switzerland", "Bolivia"],
+                correct: 1
+            },
+            {
+                question: "What is the capital of Myanmar?",
+                options: ["Yangon", "Mandalay", "Naypyidaw", "Bagan"],
                 correct: 2
             }
         ],
@@ -972,6 +1622,76 @@ const quizQuestions = {
                 question: "In which sport would you use a racket and a ball?",
                 options: ["Football", "Basketball", "Tennis", "Hockey"],
                 correct: 2
+            },
+            {
+                question: "How many players are there in a standard cricket team?",
+                options: ["9", "10", "11", "12"],
+                correct: 2
+            },
+            {
+                question: "Which sport has the most players on the field at once?",
+                options: ["Football", "Rugby", "Cricket", "Baseball"],
+                correct: 2
+            },
+            {
+                question: "In which sport would you use a javelin?",
+                options: ["Athletics", "Gymnastics", "Swimming", "Cycling"],
+                correct: 0
+            },
+            {
+                question: "How many players are there in a standard rugby team?",
+                options: ["13", "14", "15", "16"],
+                correct: 2
+            },
+            {
+                question: "Which sport uses a discus?",
+                options: ["Athletics", "Gymnastics", "Swimming", "Cycling"],
+                correct: 0
+            },
+            {
+                question: "In which sport would you use a pole vault?",
+                options: ["Athletics", "Gymnastics", "Swimming", "Cycling"],
+                correct: 0
+            },
+            {
+                question: "How many players are there in a standard volleyball team?",
+                options: ["5", "6", "7", "8"],
+                correct: 1
+            },
+            {
+                question: "Which sport uses a hammer?",
+                options: ["Athletics", "Gymnastics", "Swimming", "Cycling"],
+                correct: 0
+            },
+            {
+                question: "In which sport would you use a high jump?",
+                options: ["Athletics", "Gymnastics", "Swimming", "Cycling"],
+                correct: 0
+            },
+            {
+                question: "Which sport uses a foil?",
+                options: ["Fencing", "Boxing", "Wrestling", "Judo"],
+                correct: 0
+            },
+            {
+                question: "In which sport would you use a sabre?",
+                options: ["Fencing", "Boxing", "Wrestling", "Judo"],
+                correct: 0
+            },
+            {
+                question: "Which sport uses an épée?",
+                options: ["Fencing", "Boxing", "Wrestling", "Judo"],
+                correct: 0
+            },
+            {
+                question: "In which sport would you use a rapier?",
+                options: ["Fencing", "Boxing", "Wrestling", "Judo"],
+                correct: 0
+            },
+            {
+                question: "Which sport has the most expensive tickets?",
+                options: ["Formula 1", "Golf", "Tennis", "Football"],
+                correct: 0
             }
         ],
         medium: [
@@ -1021,9 +1741,29 @@ const quizQuestions = {
                 correct: 0
             },
             {
-                question: "How many players are there in a standard water polo team?",
-                options: ["5", "6", "7", "8"],
-                correct: 2
+                question: "Which sport uses a foil?",
+                options: ["Fencing", "Boxing", "Wrestling", "Judo"],
+                correct: 0
+            },
+            {
+                question: "In which sport would you use a sabre?",
+                options: ["Fencing", "Boxing", "Wrestling", "Judo"],
+                correct: 0
+            },
+            {
+                question: "Which sport uses an épée?",
+                options: ["Fencing", "Boxing", "Wrestling", "Judo"],
+                correct: 0
+            },
+            {
+                question: "In which sport would you use a rapier?",
+                options: ["Fencing", "Boxing", "Wrestling", "Judo"],
+                correct: 0
+            },
+            {
+                question: "Which sport has the most expensive tickets?",
+                options: ["Formula 1", "Golf", "Tennis", "Football"],
+                correct: 0
             }
         ],
         hard: [
