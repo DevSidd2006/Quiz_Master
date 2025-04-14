@@ -116,7 +116,7 @@ loginForm.addEventListener('submit', function(e) {
 
     // Simulate login process (replace with actual authentication)
     setTimeout(() => {
-        if (userData.users[email]) {
+        if (userData.users[email] && userData.users[email].password === password) {
             // Successful login
             currentUser = email;
             userNameDisplay.textContent = userData.users[email].username;
@@ -212,17 +212,56 @@ signupLink.addEventListener('click', function(e) {
     signupContainer.classList.remove('hidden');
 });
 
+// Add password toggle functionality for signup form
+const toggleSignupPassword = document.getElementById('toggle-signup-password');
+const signupPassword = document.getElementById('password');
+const passwordError = document.getElementById('password-error');
+
+toggleSignupPassword.addEventListener('click', function() {
+    const type = signupPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    signupPassword.setAttribute('type', type);
+    this.querySelector('svg').classList.toggle('hidden');
+});
+
+// Signup form validation
+function validateSignupForm() {
+    let isValid = true;
+    const username = document.getElementById('username').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = signupPassword.value.trim();
+
+    // Username validation
+    if (!username) {
+        isValid = false;
+    }
+
+    // Email validation
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        isValid = false;
+    }
+
+    // Password validation
+    if (!password || password.length < 6) {
+        passwordError.classList.remove('hidden');
+        isValid = false;
+    } else {
+        passwordError.classList.add('hidden');
+    }
+
+    return isValid;
+}
+
 // Signup form submission
 signupForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    const username = document.getElementById('username').value.trim();
-    const email = document.getElementById('email').value.trim();
-
-    // Validate inputs
-    if (!username || !email) {
-        alert('Please fill in all fields');
+    
+    if (!validateSignupForm()) {
         return;
     }
+
+    const username = document.getElementById('username').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = signupPassword.value.trim();
 
     // Check if user already exists
     if (userData.users[email]) {
@@ -230,10 +269,10 @@ signupForm.addEventListener('submit', function(e) {
         return;
     }
 
-    // Create new user
+    // Create new user with password
     userData.users[email] = {
         username,
-        email,
+        password, // Store password (in a real app, this should be hashed)
         scores: {},
         totalQuizzes: 0,
         lastPlayed: null
