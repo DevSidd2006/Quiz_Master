@@ -50,6 +50,76 @@ const quizQuestions = {
                 question: "What is the currency of Japan?",
                 options: ["Yuan", "Won", "Yen", "Ringgit"],
                 correct: 2
+            },
+            {
+                question: "Which country is known as the 'Land of the Midnight Sun'?",
+                options: ["Sweden", "Finland", "Norway", "Iceland"],
+                correct: 2
+            },
+            {
+                question: "What is the largest continent by area?",
+                options: ["Africa", "North America", "Asia", "Europe"],
+                correct: 2
+            },
+            {
+                question: "Which city is known as the 'Big Apple'?",
+                options: ["Los Angeles", "Chicago", "New York", "Boston"],
+                correct: 2
+            },
+            {
+                question: "What is the national flower of Japan?",
+                options: ["Cherry Blossom", "Lotus", "Rose", "Tulip"],
+                correct: 0
+            },
+            {
+                question: "Which country invented the game of chess?",
+                options: ["China", "India", "Persia", "Egypt"],
+                correct: 1
+            },
+            {
+                question: "What is the largest bird in the world?",
+                options: ["Eagle", "Albatross", "Ostrich", "Emu"],
+                correct: 2
+            },
+            {
+                question: "Which country has the most pyramids?",
+                options: ["Egypt", "Mexico", "Sudan", "Peru"],
+                correct: 2
+            },
+            {
+                question: "What is the national animal of Australia?",
+                options: ["Kangaroo", "Koala", "Emu", "Platypus"],
+                correct: 0
+            },
+            {
+                question: "Which city is known as the 'Eternal City'?",
+                options: ["Athens", "Rome", "Jerusalem", "Cairo"],
+                correct: 1
+            },
+            {
+                question: "What is the largest planet in our solar system?",
+                options: ["Saturn", "Jupiter", "Neptune", "Uranus"],
+                correct: 1
+            },
+            {
+                question: "Which country is known as the 'Land of the Rising Sun'?",
+                options: ["China", "South Korea", "Japan", "Vietnam"],
+                correct: 2
+            },
+            {
+                question: "What is the main language spoken in Brazil?",
+                options: ["Spanish", "Portuguese", "English", "French"],
+                correct: 1
+            },
+            {
+                question: "Which animal is known as the 'King of the Jungle'?",
+                options: ["Tiger", "Lion", "Elephant", "Gorilla"],
+                correct: 1
+            },
+            {
+                question: "What is the currency of Japan?",
+                options: ["Yuan", "Won", "Yen", "Ringgit"],
+                correct: 2
             }
         ],
         medium: [
@@ -101,6 +171,46 @@ const quizQuestions = {
             {
                 question: "What is the largest island in the world?",
                 options: ["Madagascar", "Greenland", "Borneo", "New Guinea"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most lakes in the world?",
+                options: ["Russia", "Canada", "Finland", "Sweden"],
+                correct: 1
+            },
+            {
+                question: "What is the longest mountain range in the world?",
+                options: ["Himalayas", "Andes", "Rockies", "Alps"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most official languages?",
+                options: ["India", "South Africa", "Switzerland", "Belgium"],
+                correct: 1
+            },
+            {
+                question: "What is the oldest university in the world?",
+                options: ["Oxford", "Bologna", "Cambridge", "Sorbonne"],
+                correct: 1
+            },
+            {
+                question: "What is the largest desert in Asia?",
+                options: ["Gobi", "Thar", "Karakum", "Taklamakan"],
+                correct: 0
+            },
+            {
+                question: "Which country has the most time zones?",
+                options: ["Russia", "USA", "France", "China"],
+                correct: 2
+            },
+            {
+                question: "What is the national animal of Scotland?",
+                options: ["Lion", "Unicorn", "Eagle", "Stag"],
+                correct: 1
+            },
+            {
+                question: "Which city is known as the 'City of a Thousand Minarets'?",
+                options: ["Istanbul", "Cairo", "Mecca", "Dubai"],
                 correct: 1
             }
         ],
@@ -154,15 +264,60 @@ const quizQuestions = {
                 question: "What is the oldest continuously inhabited city in the world?",
                 options: ["Jerusalem", "Athens", "Damascus", "Rome"],
                 correct: 2
+            },
+            {
+                question: "Which country has the most natural lakes?",
+                options: ["Canada", "Finland", "Russia", "USA"],
+                correct: 0
+            },
+            {
+                question: "What is the deepest lake in the world?",
+                options: ["Caspian Sea", "Baikal", "Tanganyika", "Superior"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most islands?",
+                options: ["Indonesia", "Philippines", "Sweden", "Norway"],
+                correct: 2
+            },
+            {
+                question: "What is the largest coral reef system in the world?",
+                options: ["Maldives", "Great Barrier Reef", "Belize Barrier Reef", "Red Sea Coral Reef"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most active volcanoes?",
+                options: ["Indonesia", "Japan", "USA", "Chile"],
+                correct: 0
+            },
+            {
+                question: "What is the largest waterfall in the world?",
+                options: ["Niagara Falls", "Victoria Falls", "Angel Falls", "Iguazu Falls"],
+                correct: 2
+            },
+            {
+                question: "Which country has the most UNESCO Biosphere Reserves?",
+                options: ["USA", "Spain", "Mexico", "Russia"],
+                correct: 1
+            },
+            {
+                question: "What is the largest salt flat in the world?",
+                options: ["Salar de Uyuni", "Bonneville Salt Flats", "Etosha Pan", "Makgadikgadi Pan"],
+                correct: 0
+            },
+            {
+                question: "Which country has the most national parks?",
+                options: ["USA", "Australia", "Canada", "Brazil"],
+                correct: 0
             }
         ]
     },
     science: {
         easy: [
             {
-                question: "What is the chemical formula for water?",
-                options: ["CO2", "H2O", "O2", "N2"],
-                correct: 1
+                question: "What is the chemical symbol for water?",
+                options: ["H2O", "CO2", "O2", "N2"],
+                correct: 0
             },
             {
                 question: "Which gas do plants absorb from the atmosphere?",
@@ -201,13 +356,58 @@ const quizQuestions = {
             },
             {
                 question: "What is the process by which plants make their food?",
-                options: ["Respiration", "Photosynthesis", "Digestion", "Transpiration"],
+                options: ["Respiration", "Photosynthesis", "Transpiration", "Fermentation"],
                 correct: 1
             },
             {
                 question: "Which planet has the most moons?",
-                options: ["Earth", "Mars", "Jupiter", "Saturn"],
-                correct: 3
+                options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
+                correct: 1
+            },
+            {
+                question: "What is the smallest bone in the human body?",
+                options: ["Femur", "Stapes", "Tibia", "Radius"],
+                correct: 1
+            },
+            {
+                question: "Which gas is most abundant in Earth's atmosphere?",
+                options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+                correct: 2
+            },
+            {
+                question: "What is the process of a liquid turning into a gas called?",
+                options: ["Condensation", "Evaporation", "Freezing", "Melting"],
+                correct: 1
+            },
+            {
+                question: "Which planet is known as the 'Red Planet'?",
+                options: ["Venus", "Mars", "Jupiter", "Saturn"],
+                correct: 1
+            },
+            {
+                question: "What is the main component of the Sun?",
+                options: ["Oxygen", "Hydrogen", "Helium", "Carbon"],
+                correct: 1
+            },
+            {
+                question: "Which organ produces insulin?",
+                options: ["Liver", "Pancreas", "Kidney", "Stomach"],
+                correct: 1
+            },
+            {
+                question: "What is the unit of electrical current?",
+                options: ["Volt", "Watt", "Ampere", "Ohm"],
+                correct: 2
+            },
+            {
+                question: "Which planet has the most rings?",
+                options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
+                correct: 1
+            },
+            {
+                question: "What is the chemical symbol for gold?",
+                options: ["Ag", "Au", "Fe", "Cu"],
+                correct: 1
             }
         ],
         medium: [
@@ -233,7 +433,7 @@ const quizQuestions = {
             },
             {
                 question: "Which scientist proposed the theory of relativity?",
-                options: ["Newton", "Einstein", "Galileo", "Hawking"],
+                options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
                 correct: 1
             },
             {
@@ -259,6 +459,51 @@ const quizQuestions = {
             {
                 question: "What is the chemical symbol for iron?",
                 options: ["Ir", "Fe", "In", "I"],
+                correct: 1
+            },
+            {
+                question: "What is the chemical symbol for tungsten?",
+                options: ["W", "T", "Tu", "Tw"],
+                correct: 0
+            },
+            {
+                question: "Which planet has the strongest magnetic field?",
+                options: ["Earth", "Jupiter", "Saturn", "Neptune"],
+                correct: 1
+            },
+            {
+                question: "What is the pH value of pure water?",
+                options: ["5", "6", "7", "8"],
+                correct: 2
+            },
+            {
+                question: "Which element has the highest melting point?",
+                options: ["Tungsten", "Iron", "Platinum", "Gold"],
+                correct: 0
+            },
+            {
+                question: "What is the unit of frequency?",
+                options: ["Watt", "Hertz", "Volt", "Ampere"],
+                correct: 1
+            },
+            {
+                question: "Which planet has the most volcanic activity?",
+                options: ["Mars", "Venus", "Earth", "Jupiter"],
+                correct: 1
+            },
+            {
+                question: "What is the chemical symbol for potassium?",
+                options: ["P", "K", "Po", "Pt"],
+                correct: 1
+            },
+            {
+                question: "Which planet has the fastest rotation?",
+                options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
+                correct: 0
+            },
+            {
+                question: "What is the study of earthquakes called?",
+                options: ["Volcanology", "Seismology", "Meteorology", "Geology"],
                 correct: 1
             }
         ],
@@ -295,8 +540,8 @@ const quizQuestions = {
             },
             {
                 question: "What is the chemical symbol for tungsten?",
-                options: ["T", "W", "Tu", "Tn"],
-                correct: 1
+                options: ["W", "T", "Tu", "Tw"],
+                correct: 0
             },
             {
                 question: "Which scientist first proposed the concept of atoms?",
@@ -317,6 +562,46 @@ const quizQuestions = {
                 question: "What is the chemical symbol for lead?",
                 options: ["Ld", "Le", "Pb", "Pl"],
                 correct: 2
+            },
+            {
+                question: "What is the chemical symbol for mercury?",
+                options: ["Me", "Hg", "Mr", "My"],
+                correct: 1
+            },
+            {
+                question: "Which planet has the most complex ring system?",
+                options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
+                correct: 1
+            },
+            {
+                question: "What is the chemical symbol for silver?",
+                options: ["Si", "S", "Ag", "Au"],
+                correct: 2
+            },
+            {
+                question: "Which planet has the most eccentric orbit?",
+                options: ["Mercury", "Venus", "Mars", "Pluto"],
+                correct: 3
+            },
+            {
+                question: "What is the chemical symbol for tin?",
+                options: ["Ti", "Tn", "Sn", "Si"],
+                correct: 2
+            },
+            {
+                question: "Which planet has the most tilted axis?",
+                options: ["Uranus", "Neptune", "Saturn", "Jupiter"],
+                correct: 0
+            },
+            {
+                question: "What is the chemical symbol for antimony?",
+                options: ["An", "At", "Sb", "Am"],
+                correct: 2
+            },
+            {
+                question: "What is the study of earthquakes called?",
+                options: ["Volcanology", "Seismology", "Meteorology", "Geology"],
+                correct: 1
             }
         ]
     },
@@ -324,8 +609,8 @@ const quizQuestions = {
         easy: [
             {
                 question: "Who was the first President of the United States?",
-                options: ["Thomas Jefferson", "John Adams", "George Washington", "Benjamin Franklin"],
-                correct: 2
+                options: ["Thomas Jefferson", "George Washington", "Abraham Lincoln", "John Adams"],
+                correct: 1
             },
             {
                 question: "In which year did World War I begin?",
@@ -797,9 +1082,9 @@ const quizQuestions = {
     entertainment: {
         easy: [
             {
-                question: "Who played Harry Potter in the Harry Potter films?",
-                options: ["Daniel Radcliffe", "Rupert Grint", "Tom Felton", "Matthew Lewis"],
-                correct: 0
+                question: "Who played Jack in Titanic?",
+                options: ["Brad Pitt", "Leonardo DiCaprio", "Tom Cruise", "Johnny Depp"],
+                correct: 1
             },
             {
                 question: "Which movie won the first Academy Award for Best Picture?",
@@ -813,299 +1098,149 @@ const quizQuestions = {
             },
             {
                 question: "Which TV show features the character Sheldon Cooper?",
-                options: ["Friends", "The Big Bang Theory", "How I Met Your Mother", "Modern Family"],
-                correct: 1
-            },
-            {
-                question: "Who directed the movie 'Titanic'?",
-                options: ["Steven Spielberg", "James Cameron", "George Lucas", "Peter Jackson"],
-                correct: 1
-            },
-            {
-                question: "Which band sang 'Bohemian Rhapsody'?",
-                options: ["The Beatles", "Queen", "Led Zeppelin", "Pink Floyd"],
-                correct: 1
-            },
-            {
-                question: "Who played Iron Man in the Marvel Cinematic Universe?",
-                options: ["Chris Evans", "Chris Hemsworth", "Robert Downey Jr.", "Mark Ruffalo"],
+                options: ["Friends", "The Office", "The Big Bang Theory", "How I Met Your Mother"],
                 correct: 2
             },
             {
-                question: "Which movie features the song 'Let It Go'?",
-                options: ["Tangled", "Frozen", "Moana", "Brave"],
+                question: "Who directed the movie 'Inception'?",
+                options: ["Steven Spielberg", "Christopher Nolan", "James Cameron", "Quentin Tarantino"],
                 correct: 1
-            },
-            {
-                question: "Who is the creator of the TV show 'Game of Thrones'?",
-                options: ["J.K. Rowling", "George R.R. Martin", "Stephen King", "Neil Gaiman"],
-                correct: 1
-            },
-            {
-                question: "Which movie won the most Academy Awards?",
-                options: ["Titanic", "Ben-Hur", "The Lord of the Rings: The Return of the King", "La La Land"],
-                correct: 2
             }
         ],
         medium: [
             {
-                question: "Which film won the Academy Award for Best Picture in 2020?",
-                options: ["1917", "Parasite", "Joker", "Once Upon a Time in Hollywood"],
+                question: "Which actor has won the most Academy Awards?",
+                options: ["Jack Nicholson", "Daniel Day-Lewis", "Tom Hanks", "Meryl Streep"],
                 correct: 1
             },
             {
-                question: "Who was the first actor to win an Oscar?",
-                options: ["Charlie Chaplin", "Emil Jannings", "Clark Gable", "Humphrey Bogart"],
+                question: "What is the highest-grossing movie of all time?",
+                options: ["Avatar", "Avengers: Endgame", "Titanic", "Star Wars: The Force Awakens"],
+                correct: 1
+            },
+            {
+                question: "Who composed the music for 'Star Wars'?",
+                options: ["Hans Zimmer", "John Williams", "Ennio Morricone", "James Horner"],
                 correct: 1
             },
             {
                 question: "Which TV show has won the most Emmy Awards?",
-                options: ["Game of Thrones", "Saturday Night Live", "The Simpsons", "Friends"],
+                options: ["Game of Thrones", "Saturday Night Live", "The West Wing", "Breaking Bad"],
                 correct: 1
             },
             {
-                question: "Who directed the movie 'Inception'?",
-                options: ["Christopher Nolan", "Steven Spielberg", "Martin Scorsese", "Quentin Tarantino"],
-                correct: 0
-            },
-            {
-                question: "Which movie was the first to win Best Picture at the Oscars?",
-                options: ["Wings", "Sunrise", "The Jazz Singer", "All Quiet on the Western Front"],
-                correct: 0
-            },
-            {
-                question: "Who is the most nominated actor in Oscar history?",
-                options: ["Jack Nicholson", "Meryl Streep", "Katharine Hepburn", "Laurence Olivier"],
-                correct: 1
-            },
-            {
-                question: "Which TV show has the most episodes?",
-                options: ["The Simpsons", "Gunsmoke", "Law & Order", "NCIS"],
-                correct: 0
-            },
-            {
-                question: "Who directed the movie 'The Godfather'?",
-                options: ["Martin Scorsese", "Francis Ford Coppola", "Steven Spielberg", "Alfred Hitchcock"],
-                correct: 1
-            },
-            {
-                question: "Which movie was the first to be rated PG-13?",
-                options: ["Indiana Jones and the Temple of Doom", "Gremlins", "The Dark Knight", "Jaws"],
-                correct: 1
-            },
-            {
-                question: "Who is the most awarded actor in Oscar history?",
-                options: ["Jack Nicholson", "Daniel Day-Lewis", "Katharine Hepburn", "Meryl Streep"],
+                question: "Who played the Joker in 'The Dark Knight'?",
+                options: ["Jack Nicholson", "Joaquin Phoenix", "Heath Ledger", "Jared Leto"],
                 correct: 2
             }
         ],
         hard: [
             {
-                question: "Who was the first actor to win an Oscar posthumously?",
-                options: ["Heath Ledger", "Peter Finch", "James Dean", "Philip Seymour Hoffman"],
+                question: "Which movie was the first to win all five major Academy Awards?",
+                options: ["Gone with the Wind", "It Happened One Night", "One Flew Over the Cuckoo's Nest", "The Silence of the Lambs"],
                 correct: 1
             },
             {
-                question: "Which movie was the first to be shown in 3D?",
-                options: ["Avatar", "House of Wax", "The Power of Love", "Dial M for Murder"],
-                correct: 2
+                question: "Who is the only person to win an Oscar for acting in a foreign language film?",
+                options: ["Sophia Loren", "Roberto Benigni", "Marion Cotillard", "Javier Bardem"],
+                correct: 0
             },
             {
-                question: "Who is the only person to win Oscars for both acting and directing the same film?",
-                options: ["Clint Eastwood", "Warren Beatty", "Robert Redford", "Woody Allen"],
+                question: "Which TV show has the most episodes?",
+                options: ["The Simpsons", "Gunsmoke", "Law & Order", "Grey's Anatomy"],
+                correct: 0
+            },
+            {
+                question: "Who directed the most Best Picture Oscar winners?",
+                options: ["Steven Spielberg", "William Wyler", "John Ford", "Frank Capra"],
                 correct: 1
             },
             {
-                question: "Which movie was the first to win Best Picture at the Golden Globes?",
-                options: ["Gone with the Wind", "Casablanca", "The Best Years of Our Lives", "The Song of Bernadette"],
-                correct: 3
-            },
-            {
-                question: "Who is the only person to win Oscars for both acting and songwriting?",
-                options: ["Barbra Streisand", "Lady Gaga", "Jennifer Hudson", "Beyoncé"],
-                correct: 0
-            },
-            {
-                question: "Which movie was the first to be shown in IMAX?",
-                options: ["Tiger Child", "The Dream Is Alive", "To Fly!", "North of Superior"],
-                correct: 0
-            },
-            {
-                question: "Who is the only person to win Oscars for both acting and screenwriting?",
-                options: ["Emma Thompson", "Woody Allen", "Billy Bob Thornton", "John Huston"],
-                correct: 0
-            },
-            {
-                question: "Which movie was the first to win Best Picture at the BAFTAs?",
-                options: ["The Best Years of Our Lives", "Hamlet", "Bicycle Thieves", "All About Eve"],
+                question: "Which movie has the most Oscar nominations without winning any?",
+                options: ["The Color Purple", "The Turning Point", "Gangs of New York", "True Grit"],
                 correct: 1
-            },
-            {
-                question: "Who is the only person to win Oscars for both acting and producing?",
-                options: ["Brad Pitt", "George Clooney", "Matt Damon", "Ben Affleck"],
-                correct: 3
-            },
-            {
-                question: "Which movie was the first to be shown in 70mm?",
-                options: ["Oklahoma!", "Around the World in 80 Days", "Ben-Hur", "Lawrence of Arabia"],
-                correct: 0
             }
         ]
     },
     math: {
         easy: [
             {
-                question: "What is the square root of 144?",
-                options: ["10", "12", "14", "16"],
-                correct: 1
-            },
-            {
                 question: "What is 2 + 2?",
                 options: ["3", "4", "5", "6"],
                 correct: 1
             },
             {
-                question: "What is 10 × 10?",
-                options: ["100", "1000", "10", "1"],
-                correct: 0
-            },
-            {
-                question: "What is 100 ÷ 10?",
-                options: ["1", "10", "100", "1000"],
-                correct: 1
-            },
-            {
-                question: "What is 5 × 5?",
-                options: ["20", "25", "30", "35"],
-                correct: 1
-            },
-            {
-                question: "What is 3 + 3?",
-                options: ["5", "6", "7", "8"],
-                correct: 1
-            },
-            {
-                question: "What is 4 × 4?",
-                options: ["12", "16", "20", "24"],
-                correct: 1
-            },
-            {
-                question: "What is 20 ÷ 5?",
-                options: ["2", "3", "4", "5"],
+                question: "What is 10 × 5?",
+                options: ["40", "45", "50", "55"],
                 correct: 2
             },
             {
-                question: "What is 6 × 6?",
-                options: ["30", "36", "42", "48"],
+                question: "What is 100 ÷ 10?",
+                options: ["5", "10", "15", "20"],
                 correct: 1
             },
             {
-                question: "What is 7 + 7?",
-                options: ["12", "14", "16", "18"],
+                question: "What is 7 × 8?",
+                options: ["48", "54", "56", "64"],
+                correct: 2
+            },
+            {
+                question: "What is 15 + 15?",
+                options: ["25", "30", "35", "40"],
                 correct: 1
             }
         ],
         medium: [
             {
-                question: "What is the value of π (pi) to two decimal places?",
-                options: ["3.14", "3.16", "3.12", "3.18"],
-                correct: 0
-            },
-            {
-                question: "What is the square root of 225?",
-                options: ["13", "14", "15", "16"],
-                correct: 2
-            },
-            {
-                question: "What is 12 × 12?",
-                options: ["144", "124", "134", "154"],
-                correct: 0
-            },
-            {
-                question: "What is 144 ÷ 12?",
+                question: "What is the square root of 144?",
                 options: ["10", "11", "12", "13"],
                 correct: 2
             },
             {
-                question: "What is 15 × 15?",
-                options: ["200", "225", "250", "275"],
+                question: "What is 3 to the power of 3?",
+                options: ["9", "18", "27", "36"],
+                correct: 2
+            },
+            {
+                question: "What is the value of π (pi) to two decimal places?",
+                options: ["3.12", "3.14", "3.16", "3.18"],
                 correct: 1
             },
             {
-                question: "What is 20 × 20?",
-                options: ["300", "400", "500", "600"],
-                correct: 1
+                question: "What is 25% of 200?",
+                options: ["40", "45", "50", "55"],
+                correct: 2
             },
             {
-                question: "What is 25 × 25?",
-                options: ["500", "625", "750", "875"],
-                correct: 1
-            },
-            {
-                question: "What is 30 × 30?",
-                options: ["800", "900", "1000", "1100"],
-                correct: 1
-            },
-            {
-                question: "What is 35 × 35?",
-                options: ["1125", "1225", "1325", "1425"],
-                correct: 1
-            },
-            {
-                question: "What is 40 × 40?",
-                options: ["1400", "1500", "1600", "1700"],
+                question: "What is the next number in the sequence: 2, 4, 8, 16, ...?",
+                options: ["24", "28", "32", "36"],
                 correct: 2
             }
         ],
         hard: [
-            {
-                question: "What is the sum of the interior angles of a hexagon?",
-                options: ["720°", "540°", "360°", "900°"],
-                correct: 0
-            },
             {
                 question: "What is the value of e (Euler's number) to two decimal places?",
                 options: ["2.71", "2.72", "2.73", "2.74"],
                 correct: 0
             },
             {
-                question: "What is the square root of 2 to two decimal places?",
-                options: ["1.41", "1.42", "1.43", "1.44"],
-                correct: 0
-            },
-            {
-                question: "What is the value of the golden ratio to two decimal places?",
-                options: ["1.61", "1.62", "1.63", "1.64"],
+                question: "What is the derivative of x²?",
+                options: ["x", "2x", "x²", "2x²"],
                 correct: 1
             },
             {
-                question: "What is the sum of the interior angles of a pentagon?",
-                options: ["450°", "540°", "630°", "720°"],
+                question: "What is the integral of 2x?",
+                options: ["x", "x²", "2x", "2x²"],
                 correct: 1
             },
             {
-                question: "What is the value of √3 to two decimal places?",
-                options: ["1.73", "1.74", "1.75", "1.76"],
-                correct: 0
+                question: "What is the value of sin(90°)?",
+                options: ["0", "0.5", "1", "2"],
+                correct: 2
             },
             {
-                question: "What is the sum of the interior angles of a heptagon?",
-                options: ["720°", "900°", "1080°", "1260°"],
-                correct: 1
-            },
-            {
-                question: "What is the value of √5 to two decimal places?",
-                options: ["2.23", "2.24", "2.25", "2.26"],
-                correct: 1
-            },
-            {
-                question: "What is the sum of the interior angles of an octagon?",
-                options: ["900°", "1080°", "1260°", "1440°"],
-                correct: 1
-            },
-            {
-                question: "What is the value of √7 to two decimal places?",
-                options: ["2.64", "2.65", "2.66", "2.67"],
+                question: "What is the value of log₁₀(100)?",
+                options: ["1", "2", "3", "4"],
                 correct: 1
             }
         ]
@@ -1114,10 +1249,29 @@ const quizQuestions = {
 
 // Function to get random questions
 function getRandomQuestions(category, difficulty, count = 10) {
-    const questions = quizQuestions[category][difficulty];
-    if (!questions) return [];
-    const shuffled = [...questions].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, count);
+    // Check if the category and difficulty exist
+    if (!quizQuestions[category] || !quizQuestions[category][difficulty]) {
+        console.error(`Invalid category (${category}) or difficulty (${difficulty})`);
+        return [];
+    }
+
+    // Get all questions for the selected category and difficulty
+    const availableQuestions = [...quizQuestions[category][difficulty]];
+    
+    // Check if we have enough questions
+    if (availableQuestions.length < count) {
+        console.warn(`Not enough questions available. Requested ${count}, but only ${availableQuestions.length} available.`);
+        count = availableQuestions.length;
+    }
+
+    // Shuffle the questions array using Fisher-Yates algorithm
+    for (let i = availableQuestions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [availableQuestions[i], availableQuestions[j]] = [availableQuestions[j], availableQuestions[i]];
+    }
+
+    // Return the requested number of questions
+    return availableQuestions.slice(0, count);
 }
 
 export { quizQuestions, getRandomQuestions }; 

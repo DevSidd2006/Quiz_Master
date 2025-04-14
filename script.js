@@ -54,6 +54,7 @@ const leaderboardButton = document.getElementById('leaderboard-button');
 const backButton = document.getElementById('back-button');
 const scoreElement = document.getElementById('score');
 const timerElement = document.getElementById('timer');
+const logoutButton = document.getElementById('logout-button');
 
 // Login form validation and handling
 const loginForm = document.getElementById('login-form');
@@ -248,10 +249,28 @@ signupForm.addEventListener('submit', function(e) {
     updateUserStats();
 });
 
+// Add resetQuizState function
+function resetQuizState() {
+    currentQuiz = [];
+    currentQuestionIndex = 0;
+    score = 0;
+    userAnswers = [];
+    timeLeft = 15;
+    if (timer) {
+        clearInterval(timer);
+    }
+    scoreElement.textContent = `Score: ${score}`;
+    timerElement.textContent = `Time: ${timeLeft}s`;
+    document.getElementById('progress-bar').style.width = '0%';
+}
+
 // Start quiz button click handler
 startQuizButton.addEventListener('click', function() {
     const theme = themeSelect.value;
     const level = levelSelect.value;
+    
+    // Reset quiz state before starting new quiz
+    resetQuizState();
     
     // Get random questions for selected category and difficulty
     currentQuiz = getRandomQuestions(theme, level, 10);
@@ -260,10 +279,6 @@ startQuizButton.addEventListener('click', function() {
         alert('No questions available for this combination. Please try another.');
         return;
     }
-    
-    currentQuestionIndex = 0;
-    score = 0;
-    scoreElement.textContent = `Score: ${score}`;
     
     showContainer(quizContainer);
     showQuestion();
@@ -377,9 +392,12 @@ function endQuiz() {
             </div>
         </div>
 
-        <div class="mt-8 text-center">
+        <div class="mt-8 flex justify-center space-x-4">
             <button id="back-to-home" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">
                 Back to Home
+            </button>
+            <button id="start-new-quiz" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+                Start New Quiz
             </button>
         </div>
     `;
@@ -390,6 +408,13 @@ function endQuiz() {
 
     // Add event listener for back button
     document.getElementById('back-to-home').addEventListener('click', function() {
+        showContainer(landingPage);
+        updateUserStats();
+    });
+
+    // Add event listener for start new quiz button
+    document.getElementById('start-new-quiz').addEventListener('click', function() {
+        resetQuizState();
         showContainer(landingPage);
         updateUserStats();
     });
@@ -519,6 +544,14 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeUserData();
     hideAllContainers();
     showContainer(signupContainer);
+    
+    // Set dark theme as default
+    isDarkTheme = true;
+    document.body.classList.add('dark-theme');
+    
+    // Update theme toggle icon for dark theme
+    const icon = themeToggle.querySelector('svg');
+    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />';
 });
 
 // Add interactivity for theme switching and quiz functionality
@@ -605,3 +638,15 @@ body {
     opacity: 1;
 }`;
 document.head.appendChild(style);
+
+// Logout functionality
+logoutButton.addEventListener('click', function() {
+    // Clear current user
+    currentUser = null;
+    
+    // Clear remembered user
+    localStorage.removeItem('rememberedUser');
+    
+    // Show signup page
+    showContainer(signupContainer);
+});
