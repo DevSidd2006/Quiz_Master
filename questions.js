@@ -970,6 +970,106 @@ const quizQuestions = {
                 question: "What is the study of earthquakes called?",
                 options: ["Volcanology", "Seismology", "Meteorology", "Geology"],
                 correct: 1
+            },
+            {
+                question: "What is the value of e (Euler's number) to two decimal places?",
+                options: ["2.71", "2.72", "2.73", "2.74"],
+                correct: 0
+            },
+            {
+                question: "What is the derivative of x²?",
+                options: ["x", "2x", "x²", "2x²"],
+                correct: 1
+            },
+            {
+                question: "What is the integral of 2x?",
+                options: ["x", "x²", "2x", "2x²"],
+                correct: 1
+            },
+            {
+                question: "What is the value of sin(90°)?",
+                options: ["0", "0.5", "1", "2"],
+                correct: 2
+            },
+            {
+                question: "What is the value of log₁₀(100)?",
+                options: ["1", "2", "3", "4"],
+                correct: 1
+            },
+            {
+                question: "What is the value of cos(60°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 0
+            },
+            {
+                question: "What is the value of tan(45°)?",
+                options: ["0", "0.5", "1", "2"],
+                correct: 2
+            },
+            {
+                question: "What is the value of π (pi) to four decimal places?",
+                options: ["3.1415", "3.1416", "3.1417", "3.1418"],
+                correct: 1
+            },
+            {
+                question: "What is the value of √2 to two decimal places?",
+                options: ["1.41", "1.42", "1.43", "1.44"],
+                correct: 0
+            },
+            {
+                question: "What is the value of √3 to two decimal places?",
+                options: ["1.73", "1.74", "1.75", "1.76"],
+                correct: 0
+            },
+            {
+                question: "What is the value of ln(e)?",
+                options: ["0", "1", "e", "2"],
+                correct: 1
+            },
+            {
+                question: "What is the value of log₂(8)?",
+                options: ["2", "3", "4", "5"],
+                correct: 1
+            },
+            {
+                question: "What is the value of sin(30°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 0
+            },
+            {
+                question: "What is the value of cos(45°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 1
+            },
+            {
+                question: "What is the value of tan(30°)?",
+                options: ["0.577", "0.707", "0.866", "1"],
+                correct: 0
+            },
+            {
+                question: "What is the value of sin(45°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 1
+            },
+            {
+                question: "What is the value of cos(30°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 2
+            },
+            {
+                question: "What is the value of tan(60°)?",
+                options: ["0.577", "0.707", "1.732", "2"],
+                correct: 2
+            },
+            {
+                question: "What is the value of sin(60°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 2
+            },
+            {
+                question: "What is the value of cos(90°)?",
+                options: ["0", "0.5", "0.707", "1"],
+                correct: 0
             }
         ],
         hard: [
@@ -1268,6 +1368,61 @@ const quizQuestions = {
                 question: "Who was the first female ruler of England?",
                 options: ["Elizabeth I", "Mary I", "Victoria", "Anne"],
                 correct: 1
+            },
+            {
+                question: "Who was the last emperor of the Byzantine Empire?",
+                options: ["Constantine XI", "Justinian I", "Heraclius", "Basil II"],
+                correct: 0
+            },
+            {
+                question: "Which ancient civilization invented the concept of zero?",
+                options: ["Greeks", "Romans", "Egyptians", "Indians"],
+                correct: 3
+            },
+            {
+                question: "Who was the first European to reach Japan?",
+                options: ["Marco Polo", "Christopher Columbus", "Ferdinand Magellan", "Francis Xavier"],
+                correct: 3
+            },
+            {
+                question: "In which year did the Black Death reach Europe?",
+                options: ["1346", "1350", "1360", "1370"],
+                correct: 0
+            },
+            {
+                question: "Who was the first female ruler of Russia?",
+                options: ["Catherine the Great", "Elizabeth I", "Anna Ivanovna", "Catherine I"],
+                correct: 3
+            },
+            {
+                question: "Which ancient civilization built the city of Petra?",
+                options: ["Egyptians", "Nabataeans", "Phoenicians", "Assyrians"],
+                correct: 1
+            },
+            {
+                question: "Who was the first European to reach Australia?",
+                options: ["James Cook", "Willem Janszoon", "Abel Tasman", "William Dampier"],
+                correct: 1
+            },
+            {
+                question: "In which year did the Hundred Years' War begin?",
+                options: ["1337", "1345", "1350", "1360"],
+                correct: 0
+            },
+            {
+                question: "Who was the first European to reach the Pacific Ocean?",
+                options: ["Christopher Columbus", "Vasco Núñez de Balboa", "Ferdinand Magellan", "Hernán Cortés"],
+                correct: 1
+            },
+            {
+                question: "Which ancient civilization built the city of Tikal?",
+                options: ["Aztecs", "Mayans", "Incas", "Olmecs"],
+                correct: 1
+            },
+            {
+                question: "Who was the first European to circumnavigate the globe?",
+                options: ["Christopher Columbus", "Ferdinand Magellan", "Vasco da Gama", "James Cook"],
+                correct: 1
             }
         ],
         hard: [
@@ -1456,14 +1611,74 @@ const quizQuestions = {
                 correct: 0
             },
             {
-                question: "Which country has the most official languages?",
-                options: ["India", "South Africa", "Switzerland", "Bolivia"],
+                question: "Which country has the most national parks?",
+                options: ["USA", "Australia", "Canada", "Brazil"],
+                correct: 0
+            },
+            {
+                question: "What is the largest desert in Asia?",
+                options: ["Gobi", "Thar", "Karakum", "Taklamakan"],
+                correct: 0
+            },
+            {
+                question: "Which country has the most time zones?",
+                options: ["Russia", "USA", "France", "China"],
+                correct: 2
+            },
+            {
+                question: "What is the national animal of Scotland?",
+                options: ["Lion", "Unicorn", "Eagle", "Stag"],
                 correct: 1
             },
             {
-                question: "What is the capital of Myanmar?",
-                options: ["Yangon", "Mandalay", "Naypyidaw", "Bagan"],
+                question: "Which city is known as the 'City of a Thousand Minarets'?",
+                options: ["Istanbul", "Cairo", "Mecca", "Dubai"],
+                correct: 1
+            },
+            {
+                question: "What is the largest island in the world?",
+                options: ["Madagascar", "Greenland", "Borneo", "New Guinea"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most lakes in the world?",
+                options: ["Russia", "Canada", "Finland", "Sweden"],
+                correct: 1
+            },
+            {
+                question: "What is the longest mountain range in the world?",
+                options: ["Himalayas", "Andes", "Rockies", "Alps"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most official languages?",
+                options: ["India", "South Africa", "Switzerland", "Belgium"],
+                correct: 1
+            },
+            {
+                question: "What is the oldest university in the world?",
+                options: ["Oxford", "Bologna", "Cambridge", "Sorbonne"],
+                correct: 1
+            },
+            {
+                question: "What is the largest desert in Asia?",
+                options: ["Gobi", "Thar", "Karakum", "Taklamakan"],
+                correct: 0
+            },
+            {
+                question: "Which country has the most time zones?",
+                options: ["Russia", "USA", "France", "China"],
                 correct: 2
+            },
+            {
+                question: "What is the national animal of Scotland?",
+                options: ["Lion", "Unicorn", "Eagle", "Stag"],
+                correct: 1
+            },
+            {
+                question: "Which city is known as the 'City of a Thousand Minarets'?",
+                options: ["Istanbul", "Cairo", "Mecca", "Dubai"],
+                correct: 1
             }
         ],
         medium: [
@@ -1516,6 +1731,56 @@ const quizQuestions = {
                 question: "What is the capital of Argentina?",
                 options: ["Buenos Aires", "Córdoba", "Rosario", "Mendoza"],
                 correct: 0
+            },
+            {
+                question: "Which country has the most UNESCO World Heritage Sites?",
+                options: ["China", "Italy", "Spain", "France"],
+                correct: 1
+            },
+            {
+                question: "What is the deepest point in the ocean?",
+                options: ["Puerto Rico Trench", "Mariana Trench", "Java Trench", "Tonga Trench"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most active volcanoes?",
+                options: ["Japan", "Indonesia", "USA", "Chile"],
+                correct: 1
+            },
+            {
+                question: "What is the largest lake by volume?",
+                options: ["Caspian Sea", "Lake Superior", "Lake Baikal", "Lake Victoria"],
+                correct: 2
+            },
+            {
+                question: "Which country has the most rivers?",
+                options: ["Russia", "Brazil", "China", "USA"],
+                correct: 1
+            },
+            {
+                question: "What is the capital of Bhutan?",
+                options: ["Paro", "Thimphu", "Punakha", "Wangdue Phodrang"],
+                correct: 1
+            },
+            {
+                question: "Which country has the most borders with other countries?",
+                options: ["Russia", "China", "Brazil", "Germany"],
+                correct: 1
+            },
+            {
+                question: "What is the largest salt flat in the world?",
+                options: ["Salar de Uyuni", "Bonneville Salt Flats", "Etosha Pan", "Makgadikgadi Pan"],
+                correct: 0
+            },
+            {
+                question: "Which country has the most official languages?",
+                options: ["India", "South Africa", "Switzerland", "Bolivia"],
+                correct: 1
+            },
+            {
+                question: "What is the capital of Myanmar?",
+                options: ["Yangon", "Mandalay", "Naypyidaw", "Bagan"],
+                correct: 2
             }
         ],
         hard: [
@@ -1764,6 +2029,106 @@ const quizQuestions = {
                 question: "Which sport has the most expensive tickets?",
                 options: ["Formula 1", "Golf", "Tennis", "Football"],
                 correct: 0
+            },
+            {
+                question: "Which country has won the most FIFA World Cups?",
+                options: ["Germany", "Brazil", "Italy", "Argentina"],
+                correct: 1
+            },
+            {
+                question: "Who holds the record for most Olympic gold medals?",
+                options: ["Michael Phelps", "Usain Bolt", "Carl Lewis", "Mark Spitz"],
+                correct: 0
+            },
+            {
+                question: "Which tennis player has won the most Grand Slam titles?",
+                options: ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Pete Sampras"],
+                correct: 2
+            },
+            {
+                question: "In which year did the first modern Olympic Games take place?",
+                options: ["1886", "1896", "1906", "1916"],
+                correct: 1
+            },
+            {
+                question: "Which country has won the most Olympic gold medals?",
+                options: ["United States", "China", "Russia", "Great Britain"],
+                correct: 0
+            },
+            {
+                question: "Who is the only boxer to win world titles in eight different weight divisions?",
+                options: ["Manny Pacquiao", "Floyd Mayweather", "Mike Tyson", "Muhammad Ali"],
+                correct: 0
+            },
+            {
+                question: "Which country has won the most Rugby World Cups?",
+                options: ["New Zealand", "South Africa", "Australia", "England"],
+                correct: 1
+            },
+            {
+                question: "Who holds the record for most goals in a single Premier League season?",
+                options: ["Alan Shearer", "Thierry Henry", "Mohamed Salah", "Erling Haaland"],
+                correct: 3
+            },
+            {
+                question: "Which country has won the most Cricket World Cups?",
+                options: ["India", "Australia", "England", "West Indies"],
+                correct: 1
+            },
+            {
+                question: "Who is the only player to score 100 international goals?",
+                options: ["Pele", "Cristiano Ronaldo", "Lionel Messi", "Ali Daei"],
+                correct: 1
+            },
+            {
+                question: "Which country has won the most Davis Cup titles?",
+                options: ["United States", "Australia", "France", "Spain"],
+                correct: 0
+            },
+            {
+                question: "Who holds the record for most consecutive weeks as world number one in tennis?",
+                options: ["Roger Federer", "Novak Djokovic", "Pete Sampras", "Ivan Lendl"],
+                correct: 1
+            },
+            {
+                question: "Which country has won the most Formula 1 World Championships?",
+                options: ["Germany", "United Kingdom", "Brazil", "Italy"],
+                correct: 1
+            },
+            {
+                question: "Who is the only player to win the Ballon d'Or six times?",
+                options: ["Cristiano Ronaldo", "Lionel Messi", "Michel Platini", "Johan Cruyff"],
+                correct: 1
+            },
+            {
+                question: "Which country has won the most Eurovision Song Contests?",
+                options: ["Ireland", "Sweden", "United Kingdom", "France"],
+                correct: 0
+            },
+            {
+                question: "Who holds the record for most goals in a single Champions League season?",
+                options: ["Cristiano Ronaldo", "Lionel Messi", "Robert Lewandowski", "Karim Benzema"],
+                correct: 0
+            },
+            {
+                question: "Which country has won the most Tour de France titles?",
+                options: ["France", "Spain", "Belgium", "United States"],
+                correct: 0
+            },
+            {
+                question: "Who is the only player to win the World Cup as both player and manager?",
+                options: ["Franz Beckenbauer", "Mario Zagallo", "Didier Deschamps", "Zinedine Zidane"],
+                correct: 1
+            },
+            {
+                question: "Which country has won the most Wimbledon titles?",
+                options: ["United States", "United Kingdom", "Australia", "Switzerland"],
+                correct: 0
+            },
+            {
+                question: "Who holds the record for most goals in a single World Cup tournament?",
+                options: ["Just Fontaine", "Gerd Muller", "Ronaldo", "Miroslav Klose"],
+                correct: 0
             }
         ],
         hard: [
@@ -1872,6 +2237,106 @@ const quizQuestions = {
                 question: "Who played the Joker in 'The Dark Knight'?",
                 options: ["Jack Nicholson", "Joaquin Phoenix", "Heath Ledger", "Jared Leto"],
                 correct: 2
+            },
+            {
+                question: "Which movie won the first Academy Award for Best Picture?",
+                options: ["Gone with the Wind", "Casablanca", "Wings", "The Jazz Singer"],
+                correct: 2
+            },
+            {
+                question: "Who is the only actor to win an Oscar for playing a character with no lines?",
+                options: ["John Wayne", "Clint Eastwood", "Robert De Niro", "Marlon Brando"],
+                correct: 0
+            },
+            {
+                question: "Which TV show has the most Emmy nominations?",
+                options: ["Game of Thrones", "Saturday Night Live", "The West Wing", "Breaking Bad"],
+                correct: 1
+            },
+            {
+                question: "Who directed the most Best Picture Oscar winners?",
+                options: ["Steven Spielberg", "William Wyler", "John Ford", "Frank Capra"],
+                correct: 1
+            },
+            {
+                question: "Which movie has the most Oscar nominations without winning any?",
+                options: ["The Color Purple", "The Turning Point", "Gangs of New York", "True Grit"],
+                correct: 1
+            },
+            {
+                question: "Who is the youngest person to win an Academy Award for acting?",
+                options: ["Tatum O'Neal", "Anna Paquin", "Timothy Hutton", "Patty Duke"],
+                correct: 0
+            },
+            {
+                question: "Which movie has the most Oscar wins?",
+                options: ["Titanic", "Ben-Hur", "The Lord of the Rings: The Return of the King", "West Side Story"],
+                correct: 1
+            },
+            {
+                question: "Who is the only person to win Oscars for both acting and directing the same film?",
+                options: ["Clint Eastwood", "Warren Beatty", "Robert Redford", "Woody Allen"],
+                correct: 1
+            },
+            {
+                question: "Which TV show has the most spin-offs?",
+                options: ["Law & Order", "CSI", "NCIS", "Star Trek"],
+                correct: 3
+            },
+            {
+                question: "Who is the only actor to win an Oscar for playing a real-life Oscar winner?",
+                options: ["Cate Blanchett", "Meryl Streep", "Nicole Kidman", "Helen Mirren"],
+                correct: 0
+            },
+            {
+                question: "Which movie has the most expensive production budget?",
+                options: ["Avatar", "Avengers: Endgame", "Pirates of the Caribbean: On Stranger Tides", "Justice League"],
+                correct: 2
+            },
+            {
+                question: "Who is the only person to win Oscars for both Best Actor and Best Supporting Actor?",
+                options: ["Jack Nicholson", "Robert De Niro", "Dustin Hoffman", "Gene Hackman"],
+                correct: 0
+            },
+            {
+                question: "Which TV show has the most episodes?",
+                options: ["The Simpsons", "Gunsmoke", "Law & Order", "Grey's Anatomy"],
+                correct: 0
+            },
+            {
+                question: "Who is the only person to win Oscars for both Best Actor and Best Actress?",
+                options: ["Katharine Hepburn", "Meryl Streep", "Ingrid Bergman", "Bette Davis"],
+                correct: 0
+            },
+            {
+                question: "Which movie has the most sequels?",
+                options: ["Friday the 13th", "Halloween", "A Nightmare on Elm Street", "Saw"],
+                correct: 0
+            },
+            {
+                question: "Who is the only person to win Oscars for both Best Director and Best Actor?",
+                options: ["Clint Eastwood", "Warren Beatty", "Robert Redford", "Woody Allen"],
+                correct: 1
+            },
+            {
+                question: "Which TV show has the most Emmy wins?",
+                options: ["Game of Thrones", "Saturday Night Live", "The West Wing", "Breaking Bad"],
+                correct: 1
+            },
+            {
+                question: "Who is the only person to win Oscars for both Best Picture and Best Director?",
+                options: ["Steven Spielberg", "James Cameron", "Clint Eastwood", "Peter Jackson"],
+                correct: 2
+            },
+            {
+                question: "Which movie has the most expensive marketing budget?",
+                options: ["Avatar", "Avengers: Endgame", "Pirates of the Caribbean: On Stranger Tides", "Justice League"],
+                correct: 2
+            },
+            {
+                question: "Who is the only person to win Oscars for both Best Picture and Best Actor?",
+                options: ["Clint Eastwood", "Warren Beatty", "Robert Redford", "Woody Allen"],
+                correct: 1
             }
         ],
         hard: [
@@ -1955,6 +2420,106 @@ const quizQuestions = {
                 question: "What is the next number in the sequence: 2, 4, 8, 16, ...?",
                 options: ["24", "28", "32", "36"],
                 correct: 2
+            },
+            {
+                question: "What is the value of e (Euler's number) to two decimal places?",
+                options: ["2.71", "2.72", "2.73", "2.74"],
+                correct: 0
+            },
+            {
+                question: "What is the derivative of x²?",
+                options: ["x", "2x", "x²", "2x²"],
+                correct: 1
+            },
+            {
+                question: "What is the integral of 2x?",
+                options: ["x", "x²", "2x", "2x²"],
+                correct: 1
+            },
+            {
+                question: "What is the value of sin(90°)?",
+                options: ["0", "0.5", "1", "2"],
+                correct: 2
+            },
+            {
+                question: "What is the value of log₁₀(100)?",
+                options: ["1", "2", "3", "4"],
+                correct: 1
+            },
+            {
+                question: "What is the value of cos(60°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 0
+            },
+            {
+                question: "What is the value of tan(45°)?",
+                options: ["0", "0.5", "1", "2"],
+                correct: 2
+            },
+            {
+                question: "What is the value of π (pi) to four decimal places?",
+                options: ["3.1415", "3.1416", "3.1417", "3.1418"],
+                correct: 1
+            },
+            {
+                question: "What is the value of √2 to two decimal places?",
+                options: ["1.41", "1.42", "1.43", "1.44"],
+                correct: 0
+            },
+            {
+                question: "What is the value of √3 to two decimal places?",
+                options: ["1.73", "1.74", "1.75", "1.76"],
+                correct: 0
+            },
+            {
+                question: "What is the value of ln(e)?",
+                options: ["0", "1", "e", "2"],
+                correct: 1
+            },
+            {
+                question: "What is the value of log₂(8)?",
+                options: ["2", "3", "4", "5"],
+                correct: 1
+            },
+            {
+                question: "What is the value of sin(30°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 0
+            },
+            {
+                question: "What is the value of cos(45°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 1
+            },
+            {
+                question: "What is the value of tan(30°)?",
+                options: ["0.577", "0.707", "0.866", "1"],
+                correct: 0
+            },
+            {
+                question: "What is the value of sin(45°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 1
+            },
+            {
+                question: "What is the value of cos(30°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 2
+            },
+            {
+                question: "What is the value of tan(60°)?",
+                options: ["0.577", "0.707", "1.732", "2"],
+                correct: 2
+            },
+            {
+                question: "What is the value of sin(60°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 2
+            },
+            {
+                question: "What is the value of cos(90°)?",
+                options: ["0", "0.5", "0.707", "1"],
+                correct: 0
             }
         ],
         hard: [
@@ -1982,6 +2547,81 @@ const quizQuestions = {
                 question: "What is the value of log₁₀(100)?",
                 options: ["1", "2", "3", "4"],
                 correct: 1
+            },
+            {
+                question: "What is the value of cos(60°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 0
+            },
+            {
+                question: "What is the value of tan(45°)?",
+                options: ["0", "0.5", "1", "2"],
+                correct: 2
+            },
+            {
+                question: "What is the value of π (pi) to four decimal places?",
+                options: ["3.1415", "3.1416", "3.1417", "3.1418"],
+                correct: 1
+            },
+            {
+                question: "What is the value of √2 to two decimal places?",
+                options: ["1.41", "1.42", "1.43", "1.44"],
+                correct: 0
+            },
+            {
+                question: "What is the value of √3 to two decimal places?",
+                options: ["1.73", "1.74", "1.75", "1.76"],
+                correct: 0
+            },
+            {
+                question: "What is the value of ln(e)?",
+                options: ["0", "1", "e", "2"],
+                correct: 1
+            },
+            {
+                question: "What is the value of log₂(8)?",
+                options: ["2", "3", "4", "5"],
+                correct: 1
+            },
+            {
+                question: "What is the value of sin(30°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 0
+            },
+            {
+                question: "What is the value of cos(45°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 1
+            },
+            {
+                question: "What is the value of tan(30°)?",
+                options: ["0.577", "0.707", "0.866", "1"],
+                correct: 0
+            },
+            {
+                question: "What is the value of sin(45°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 1
+            },
+            {
+                question: "What is the value of cos(30°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 2
+            },
+            {
+                question: "What is the value of tan(60°)?",
+                options: ["0.577", "0.707", "1.732", "2"],
+                correct: 2
+            },
+            {
+                question: "What is the value of sin(60°)?",
+                options: ["0.5", "0.707", "0.866", "1"],
+                correct: 2
+            },
+            {
+                question: "What is the value of cos(90°)?",
+                options: ["0", "0.5", "0.707", "1"],
+                correct: 0
             }
         ]
     }
