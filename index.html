@@ -15,6 +15,9 @@
             transition: all 0.5s ease;
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         @keyframes gradientBG {
@@ -30,15 +33,16 @@
 
         .card {
             background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
         }
 
         .dark-theme .card {
@@ -48,14 +52,26 @@
 
         .option-button {
             transition: all 0.3s ease;
-            background: rgba(255, 255, 255, 0.9);
-            border: 2px solid transparent;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            word-wrap: break-word;
+            overflow: hidden;
+            margin: 0.5rem 0;
         }
 
         .option-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border-color: #667eea;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.5);
         }
 
         .correct {
@@ -99,33 +115,72 @@
 
         .theme-toggle {
             transition: all 0.3s ease;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 0.75rem;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
         }
 
         .theme-toggle:hover {
             transform: rotate(180deg);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
         }
 
         .quiz-title {
             background: linear-gradient(45deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-weight: 700;
+            font-weight: 800;
+            font-size: 2.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .quiz-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .quiz-title:hover::after {
+            opacity: 1;
+            animation: underlineSlide 1.5s ease infinite;
+        }
+
+        @keyframes underlineSlide {
+            0% {
+                background-position: -100% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
         }
 
         .progress-bar {
-            height: 6px;
+            height: 8px;
             background: linear-gradient(90deg, #667eea, #764ba2);
-            border-radius: 3px;
+            border-radius: 4px;
             transition: width 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .leaderboard-item {
             transition: all 0.3s ease;
+            background: rgba(102, 126, 234, 0.1);
+            padding: 0.5rem;
+            border-radius: 8px;
         }
 
         .leaderboard-item:hover {
             transform: translateX(10px);
-            background: rgba(102, 126, 234, 0.1);
+            background: rgba(102, 126, 234, 0.2);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
         }
 
         .hidden {
@@ -200,6 +255,155 @@
             left: 1rem;
             z-index: 10;
         }
+
+        /* New UI Elements */
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(102, 126, 234, 0.3);
+            border-radius: 50%;
+            border-top-color: #667eea;
+            animation: spin 1s ease-in-out infinite;
+            margin: 2rem auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .progress-indicator {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .progress-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .progress-dot.active {
+            background: #667eea;
+            transform: scale(1.2);
+        }
+
+        .progress-dot.completed {
+            background: #4CAF50;
+        }
+
+        .feedback-message {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 0.3s ease;
+        }
+
+        .feedback-message.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .feedback-message.correct {
+            background: rgba(76, 175, 80, 0.1);
+            color: #4CAF50;
+        }
+
+        .feedback-message.wrong {
+            background: rgba(244, 67, 54, 0.1);
+            color: #f44336;
+        }
+
+        .results-summary {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .results-summary.dark-theme {
+            background: rgba(26, 26, 46, 0.95);
+        }
+
+        .results-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            padding: 1.5rem;
+            border-radius: 10px;
+            background: rgba(102, 126, 234, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .button-disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+
+        .button-disabled:hover {
+            transform: none !important;
+        }
+
+        .streak-counter {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 193, 7, 0.1);
+            border-radius: 20px;
+            color: #FFC107;
+        }
+
+        .streak-icon {
+            animation: pulse 1s infinite;
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        #question {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 15px;
+            line-height: 1.6;
+        }
+
+        #options {
+            margin-top: 2rem;
+            gap: 1.5rem;
+        }
+
+        .quiz-container {
+            padding: 2.5rem;
+        }
+
+        .progress-bar {
+            margin-bottom: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -207,6 +411,10 @@
         <div class="flex justify-between items-center mb-8">
             <h1 class="text-3xl font-bold quiz-title">QuizMaster</h1>
             <div class="flex items-center space-x-4">
+                <div id="streak-counter" class="streak-counter hidden">
+                    <span class="streak-icon">🔥</span>
+                    <span id="streak-count">0</span>
+                </div>
                 <button id="leaderboard-button" class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-2 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
                     Leaderboard
                 </button>
@@ -218,99 +426,18 @@
             </div>
         </div>
 
-        <div id="signup-container" class="max-w-md mx-auto card p-8">
-            <h1 class="text-3xl font-bold mb-6 text-center quiz-title">Create Your Account</h1>
-            <form id="signup-form" class="space-y-6">
-                <div>
-                    <label for="username" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Username</label>
-                    <input type="text" id="username" name="username" required
-                        class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-3"
-                        placeholder="Choose a username">
-                </div>
-                <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Email</label>
-                    <input type="email" id="email" name="email" required
-                        class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-3"
-                        placeholder="Enter your email">
-                </div>
-                <div class="space-y-2">
-                    <label for="password" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Password</label>
-                    <div class="relative">
-                        <input type="password" id="password" name="password" required
-                            class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-3"
-                            placeholder="Create a password">
-                        <button type="button" id="toggle-signup-password" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <p id="password-error" class="text-red-500 text-sm hidden">Password must be at least 6 characters long</p>
-                </div>
-                <button type="submit"
-                    class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
-                    Sign Up
-                </button>
-                <p class="text-center text-sm text-gray-600 dark:text-gray-300">
-                    Already have an account? <a href="#" id="login-link" class="text-indigo-600 hover:text-indigo-500">Log in</a>
-                </p>
-            </form>
-        </div>
+        <div id="loading-spinner" class="loading-spinner hidden"></div>
 
-        <div id="login-container" class="hidden max-w-md mx-auto card p-8">
-            <h1 class="text-3xl font-bold mb-6 text-center quiz-title">Welcome Back</h1>
-            <form id="login-form" class="space-y-6">
-                <div class="space-y-2">
-                    <label for="login-email" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Email</label>
-                    <input type="email" id="login-email" name="email" required
-                        class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-3 transition duration-200"
-                        placeholder="Enter your email">
-                    <p id="login-email-error" class="text-red-500 text-sm hidden">Please enter a valid email address</p>
-                </div>
-                <div class="space-y-2">
-                    <label for="login-password" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Password</label>
-                    <div class="relative">
-                        <input type="password" id="login-password" name="password" required
-                            class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-3 transition duration-200"
-                            placeholder="Enter your password">
-                        <button type="button" id="toggle-password" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <p id="login-password-error" class="text-red-500 text-sm hidden">Password is required</p>
-                </div>
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <input type="checkbox" id="remember-me" name="remember-me"
-                            class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
-                        <label for="remember-me" class="ml-2 block text-sm text-gray-700 dark:text-gray-200">
-                            Remember me
-                        </label>
-                    </div>
-                    <a href="#" class="text-sm text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300">
-                        Forgot password?
-                    </a>
-                </div>
-                <button type="submit" id="login-submit"
-                    class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed">
-                    Log In
-                </button>
-                <div id="login-error" class="text-red-500 text-sm text-center hidden"></div>
-                <p class="text-center text-sm text-gray-600 dark:text-gray-300">
-                    Don't have an account? <a href="#" id="signup-link" class="text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300">Sign up</a>
-                </p>
-            </form>
-        </div>
-
-        <div id="landing-page" class="hidden max-w-2xl mx-auto card p-8">
-            <h1 class="text-3xl font-bold mb-4 text-center">Welcome, <span id="user-name" class="quiz-title"></span>!</h1>
+        <div id="landing-page" class="max-w-2xl mx-auto card p-8">
+            <h1 class="text-3xl font-bold mb-4 text-center">Welcome to QuizMaster!</h1>
             <p class="text-center mb-8 text-gray-600 dark:text-gray-300">Choose your quiz preferences to get started!</p>
             
             <div class="space-y-8">
+                <div class="space-y-3">
+                    <label for="username" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Enter Your Username:</label>
+                    <input type="text" id="username" class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-3" placeholder="Enter your username" required>
+                </div>
+
                 <div class="space-y-3">
                     <label for="theme" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Select Quiz Theme:</label>
                     <select id="theme" class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-3">
@@ -321,6 +448,13 @@
                         <option value="sports">Sports</option>
                         <option value="entertainment">Entertainment</option>
                         <option value="math">Math</option>
+                        <option value="business">Business</option>
+                        <option value="technology">Technology</option>
+                        <option value="art">Art</option>
+                        <option value="music">Music</option>
+                        <option value="literature">Literature</option>
+                        <option value="food">Food</option>
+                        <option value="animals">Animals</option>
                     </select>
                 </div>
 
@@ -334,36 +468,14 @@
                     </select>
                 </div>
 
-                <div class="user-stats">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-value" id="current-score">0</div>
-                            <div class="stat-label">Current Score</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value" id="user-rank">-</div>
-                            <div class="stat-label">Your Rank</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value" id="total-quizzes">0</div>
-                            <div class="stat-label">Quizzes Taken</div>
-                        </div>
-                    </div>
-                </div>
-
                 <button id="start-quiz"
                     class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
                     Start Quiz
                 </button>
-
-                <button id="logout-button"
-                    class="w-full bg-gradient-to-r from-red-600 to-pink-600 text-white py-3 px-4 rounded-lg hover:from-red-700 hover:to-pink-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
-                    Logout
-                </button>
             </div>
         </div>
 
-        <div id="quiz-container" class="hidden max-w-2xl mx-auto card p-8">
+        <div id="quiz-container" class="hidden max-w-2xl mx-auto card p-8 quiz-container">
             <div class="flex justify-between items-center mb-8">
                 <div id="timer" class="timer">
                     Time: 10s
@@ -373,12 +485,43 @@
                 </div>
             </div>
             <div class="progress-bar mb-6" id="progress-bar"></div>
-            <div id="question" class="text-2xl font-semibold mb-8 text-center"></div>
-            <div id="options" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+            <div class="progress-indicator" id="progress-indicator"></div>
+            <div id="category-badge" class="category-badge text-center"></div>
+            <div id="question" class="text-2xl font-semibold text-center"></div>
+            <div id="feedback-message" class="feedback-message"></div>
+            <div id="options" class="grid grid-cols-1 md:grid-cols-2"></div>
             <button id="next-button"
                 class="mt-8 w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
                 Next Question
             </button>
+        </div>
+
+        <div id="results-page" class="hidden max-w-2xl mx-auto">
+            <div class="results-summary">
+                <h2 class="text-3xl font-bold mb-6">Quiz Results</h2>
+                <div class="results-stats">
+                    <div class="stat-card">
+                        <h3 class="text-lg font-semibold mb-2">Final Score</h3>
+                        <p id="final-score" class="text-2xl font-bold text-indigo-600">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="text-lg font-semibold mb-2">Correct Answers</h3>
+                        <p id="correct-answers" class="text-2xl font-bold text-green-500">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="text-lg font-semibold mb-2">Time Taken</h3>
+                        <p id="time-taken" class="text-2xl font-bold text-purple-600">0s</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="text-lg font-semibold mb-2">Accuracy</h3>
+                        <p id="accuracy" class="text-2xl font-bold text-blue-500">0%</p>
+                    </div>
+                </div>
+                <button id="restart-quiz"
+                    class="mt-6 w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
+                    Try Another Quiz
+                </button>
+            </div>
         </div>
 
         <div id="leaderboard-page" class="leaderboard-page max-w-4xl mx-auto">
@@ -388,15 +531,20 @@
             
             <div class="card p-8">
                 <h2 class="text-3xl font-bold mb-8 text-center quiz-title">Leaderboard</h2>
+                <div class="flex justify-end mb-4">
+                    <button id="reset-leaderboard" class="bg-gradient-to-r from-red-600 to-pink-600 text-white py-2 px-4 rounded-lg hover:from-red-700 hover:to-pink-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
+                        Reset Leaderboard
+                    </button>
+                </div>
                 <div class="overflow-x-auto">
                     <table class="w-full">
                         <thead>
                             <tr class="text-left border-b-2 border-gray-200 dark:border-gray-700">
-                                <th class="pb-4">Rank</th>
-                                <th class="pb-4">Username</th>
-                                <th class="pb-4">Score</th>
-                                <th class="pb-4">Quizzes Taken</th>
-                                <th class="pb-4">Last Played</th>
+                                <th class="py-4 text-center">Rank</th>
+                                <th class="py-4 text-center">Username</th>
+                                <th class="py-4 text-center">Score</th>
+                                <th class="py-4 text-center">Theme & Level</th>
+                                <th class="py-4 text-center">Date & Time</th>
                             </tr>
                         </thead>
                         <tbody id="leaderboard-table" class="divide-y divide-gray-200 dark:divide-gray-700">
