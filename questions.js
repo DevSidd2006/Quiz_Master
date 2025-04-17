@@ -2059,89 +2059,314 @@ const quizQuestions = {
             }
         ]
     },
-    food: {
-        easy: [
+        "food": {
+          "easy": [
             {
-                question: "What is the main ingredient in guacamole?",
-                options: ["Tomato", "Avocado", "Onion", "Lime"],
-                correct: 1
+              "question": "Which fruit is known for keeping the doctor away if eaten daily?",
+              "options": ["Banana", "Orange", "Apple", "Grapes"],
+              "correct": 2
             },
             {
-                question: "Which country is known for sushi?",
-                options: ["China", "Japan", "Korea", "Thailand"],
-                correct: 1
+              "question": "Which vegetable is commonly used to make french fries?",
+              "options": ["Carrot", "Potato", "Cucumber", "Tomato"],
+              "correct": 1
             },
             {
-                question: "What is the main ingredient in hummus?",
-                options: ["Chickpeas", "Lentils", "Beans", "Peas"],
-                correct: 0
+              "question": "Which beverage is most commonly consumed for breakfast?",
+              "options": ["Milk", "Juice", "Tea", "Coffee"],
+              "correct": 0
             },
             {
-                question: "Which country is known for pizza?",
-                options: ["Italy", "France", "Spain", "Greece"],
-                correct: 0
+              "question": "Which of these is a dairy product?",
+              "options": ["Bread", "Butter", "Chicken", "Rice"],
+              "correct": 1
             },
             {
-                question: "What is the main ingredient in paella?",
-                options: ["Rice", "Pasta", "Bread", "Potatoes"],
-                correct: 0
+              "question": "Which grain is most commonly used to make bread?",
+              "options": ["Rice", "Barley", "Wheat", "Corn"],
+              "correct": 2
+            },
+            {
+              "question": "Which fruit is yellow and curved?",
+              "options": ["Banana", "Mango", "Pineapple", "Lemon"],
+              "correct": 0
+            },
+            {
+              "question": "What type of food is cheddar?",
+              "options": ["Meat", "Cheese", "Fruit", "Vegetable"],
+              "correct": 1
+            },
+            {
+              "question": "Which of these is a common topping on pizza?",
+              "options": ["Lettuce", "Tomato Sauce", "Olives", "Both 2 and 3"],
+              "correct": 3
+            },
+            {
+              "question": "What color is a ripe tomato?",
+              "options": ["Green", "Yellow", "Red", "Purple"],
+              "correct": 2
+            },
+            {
+              "question": "What is the main ingredient in guacamole?",
+              "options": ["Onion", "Tomato", "Avocado", "Lettuce"],
+              "correct": 2
+            },
+            {
+              "question": "Which of the following is a citrus fruit?",
+              "options": ["Apple", "Lime", "Banana", "Pear"],
+              "correct": 1
+            },
+            {
+              "question": "Which food is known for being long and used in Italian dishes?",
+              "options": ["Rice", "Spaghetti", "Bread", "Sushi"],
+              "correct": 1
+            },
+            {
+              "question": "Which dairy product is used to make a milkshake?",
+              "options": ["Butter", "Cheese", "Milk", "Cream"],
+              "correct": 2
+            },
+            {
+              "question": "Which fast food chain is famous for the Big Mac?",
+              "options": ["Burger King", "Wendy's", "KFC", "McDonald's"],
+              "correct": 3
+            },
+            {
+              "question": "Which fruit has seeds on the outside?",
+              "options": ["Apple", "Strawberry", "Grape", "Peach"],
+              "correct": 1
+            },
+            {
+              "question": "What type of food is a croissant?",
+              "options": ["Cake", "Bread", "Pastry", "Cookie"],
+              "correct": 2
+            },
+            {
+              "question": "Which of these is not a fruit?",
+              "options": ["Cucumber", "Pumpkin", "Apple", "Carrot"],
+              "correct": 3
+            },
+            {
+              "question": "What is tofu made from?",
+              "options": ["Rice", "Soybeans", "Milk", "Lentils"],
+              "correct": 1
+            },
+            {
+              "question": "Which of these foods is commonly eaten with sushi?",
+              "options": ["Ketchup", "Mayonnaise", "Soy Sauce", "Mustard"],
+              "correct": 2
+            },
+            {
+              "question": "What type of food is mozzarella?",
+              "options": ["Vegetable", "Cheese", "Meat", "Fruit"],
+              "correct": 1
             }
-        ],
-        medium: [
+          ],
+          "medium": [
             {
-                question: "Which country is known for kimchi?",
-                options: ["Japan", "Korea", "China", "Thailand"],
-                correct: 1
+              "question": "Which vitamin is most present in citrus fruits?",
+              "options": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"],
+              "correct": 1
             },
             {
-                question: "What is the main ingredient in ratatouille?",
-                options: ["Eggplant", "Zucchini", "Tomato", "All of the above"],
-                correct: 3
+              "question": "Which country is the origin of sushi?",
+              "options": ["China", "Japan", "Korea", "Thailand"],
+              "correct": 1
             },
             {
-                question: "Which country is known for pho?",
-                options: ["Thailand", "Vietnam", "Cambodia", "Laos"],
-                correct: 1
+              "question": "What is the main ingredient in hummus?",
+              "options": ["Lentils", "Beans", "Chickpeas", "Tofu"],
+              "correct": 2
             },
             {
-                question: "What is the main ingredient in falafel?",
-                options: ["Chickpeas", "Lentils", "Beans", "Peas"],
-                correct: 0
+              "question": "Which of these is a type of mushroom?",
+              "options": ["Portobello", "Basil", "Radicchio", "Arugula"],
+              "correct": 0
             },
             {
-                question: "Which country is known for pad thai?",
-                options: ["Thailand", "Vietnam", "Cambodia", "Laos"],
-                correct: 0
+              "question": "Which type of fat is considered healthy?",
+              "options": ["Trans fat", "Saturated fat", "Monounsaturated fat", "Hydrogenated fat"],
+              "correct": 2
+            },
+            {
+              "question": "Which mineral is found in spinach and is important for blood health?",
+              "options": ["Calcium", "Magnesium", "Iron", "Potassium"],
+              "correct": 2
+            },
+            {
+              "question": "What type of rice is used in risotto?",
+              "options": ["Basmati", "Jasmine", "Arborio", "Sticky"],
+              "correct": 2
+            },
+            {
+              "question": "Which food is highest in protein per gram?",
+              "options": ["Lentils", "Tofu", "Chicken breast", "Spinach"],
+              "correct": 2
+            },
+            {
+              "question": "What is the name for a vegetarian who also eats fish?",
+              "options": ["Pescatarian", "Vegan", "Lacto-vegetarian", "Flexitarian"],
+              "correct": 0
+            },
+            {
+              "question": "Which Indian dish is made with lentils and often eaten with rice or roti?",
+              "options": ["Paneer", "Chole", "Dal", "Rajma"],
+              "correct": 2
+            },
+            {
+              "question": "What spice gives curry its yellow color?",
+              "options": ["Cumin", "Coriander", "Turmeric", "Cardamom"],
+              "correct": 2
+            },
+            {
+              "question": "Which sweetener comes from the agave plant?",
+              "options": ["Stevia", "Honey", "Agave syrup", "Maple syrup"],
+              "correct": 2
+            },
+            {
+              "question": "Which of these is a gluten-free grain?",
+              "options": ["Barley", "Wheat", "Quinoa", "Rye"],
+              "correct": 2
+            },
+            {
+              "question": "What type of food is tempeh?",
+              "options": ["Dairy", "Soy-based", "Nut", "Fruit"],
+              "correct": 1
+            },
+            {
+              "question": "Which vitamin is essential for calcium absorption?",
+              "options": ["Vitamin C", "Vitamin D", "Vitamin B12", "Vitamin E"],
+              "correct": 1
+            },
+            {
+              "question": "Which acid is found in lemons?",
+              "options": ["Acetic acid", "Lactic acid", "Citric acid", "Malic acid"],
+              "correct": 2
+            },
+            {
+              "question": "What is the national dish of the UK?",
+              "options": ["Biryani", "Pizza", "Fish and Chips", "Tacos"],
+              "correct": 2
+            },
+            {
+              "question": "Which nut is used to make marzipan?",
+              "options": ["Cashew", "Pistachio", "Almond", "Hazelnut"],
+              "correct": 2
+            },
+            {
+              "question": "What is seitan made from?",
+              "options": ["Rice", "Soy", "Wheat gluten", "Corn"],
+              "correct": 2
+            },
+            {
+              "question": "Which Indian spice blend is commonly used in tandoori dishes?",
+              "options": ["Garam Masala", "Chaat Masala", "Tandoori Masala", "Panch Phoron"],
+              "correct": 2
             }
-        ],
-        hard: [
+          ],
+          "hard": [
             {
-                question: "Which country is known for mole sauce?",
-                options: ["Mexico", "Spain", "Portugal", "Brazil"],
-                correct: 0
+              "question": "What is the Maillard reaction responsible for in cooking?",
+              "options": ["Spiciness", "Fermentation", "Browning and flavor", "Preservation"],
+              "correct": 2
             },
             {
-                question: "What is the main ingredient in borscht?",
-                options: ["Beets", "Carrots", "Potatoes", "Cabbage"],
-                correct: 0
+              "question": "Which acid is most commonly used in pickling?",
+              "options": ["Sulfuric acid", "Acetic acid", "Citric acid", "Formic acid"],
+              "correct": 1
             },
             {
-                question: "Which country is known for ceviche?",
-                options: ["Peru", "Mexico", "Brazil", "Argentina"],
-                correct: 0
+              "question": "Which country is the origin of the dish 'kimchi'?",
+              "options": ["Japan", "China", "Thailand", "South Korea"],
+              "correct": 3
             },
             {
-                question: "What is the main ingredient in tzatziki?",
-                options: ["Yogurt", "Sour Cream", "Mayonnaise", "Butter"],
-                correct: 0
+              "question": "What is surimi typically made from?",
+              "options": ["Crab meat", "Imitation crab from fish paste", "Shrimp", "Octopus"],
+              "correct": 1
             },
             {
-                question: "Which country is known for injera?",
-                options: ["Ethiopia", "Egypt", "Morocco", "Tunisia"],
-                correct: 0
+              "question": "Which process involves cooking food in vacuum-sealed bags at precise temperatures?",
+              "options": ["Grilling", "Sous vide", "Braising", "Roasting"],
+              "correct": 1
+            },
+            {
+              "question": "What is the primary ingredient in wasabi paste?",
+              "options": ["Mustard seeds", "Real wasabi root", "Horseradish", "Green chili"],
+              "correct": 2
+            },
+            {
+              "question": "Which cheese is traditionally used in Greek salad?",
+              "options": ["Mozzarella", "Feta", "Ricotta", "Cheddar"],
+              "correct": 1
+            },
+            {
+              "question": "What is the main ingredient in the Japanese dish miso soup?",
+              "options": ["Soy sauce", "Seaweed", "Miso paste", "Tofu"],
+              "correct": 2
+            },
+            {
+              "question": "Which Indian state is famous for its 'Dhokla' dish?",
+              "options": ["Punjab", "Kerala", "Gujarat", "Maharashtra"],
+              "correct": 2
+            },
+            {
+              "question": "Which country consumes the most chocolate per capita?",
+              "options": ["Germany", "USA", "Switzerland", "France"],
+              "correct": 2
+            },
+            {
+              "question": "What is the Japanese word for grilled skewered chicken?",
+              "options": ["Ramen", "Sashimi", "Yakitori", "Tempura"],
+              "correct": 2
+            },
+            {
+              "question": "Which fungus is considered a delicacy and is found underground?",
+              "options": ["Morel", "Mushroom", "Truffle", "Chanterelle"],
+              "correct": 2
+            },
+            {
+              "question": "What is the name of the Italian dish made of thinly sliced raw meat or fish?",
+              "options": ["Carpaccio", "Risotto", "Lasagna", "Gnocchi"],
+              "correct": 0
+            },
+            {
+              "question": "Which vitamin is absent in plant-based diets and must be supplemented?",
+              "options": ["Vitamin C", "Vitamin B12", "Vitamin A", "Vitamin D"],
+              "correct": 1
+            },
+            {
+              "question": "Which food item contains capsaicin, the compound that makes it spicy?",
+              "options": ["Garlic", "Onion", "Chili Pepper", "Ginger"],
+              "correct": 2
+            },
+            {
+              "question": "Which part of the saffron flower is used as a spice?",
+              "options": ["Petals", "Stigma", "Stem", "Leaves"],
+              "correct": 1
+            },
+            {
+              "question": "Which of these fish is known for being oily and high in Omega-3?",
+              "options": ["Cod", "Salmon", "Tuna", "Sardine"],
+              "correct": 1
+            },
+            {
+              "question": "What is the culinary term for cooking with steam in parchment paper?",
+              "options": ["En papillote", "Sous vide", "Blanching", "Roasting"],
+              "correct": 0
+            },
+            {
+              "question": "Which beverage is made by fermenting tea with bacteria and yeast?",
+              "options": ["Kombucha", "Lassi", "Kvass", "Kefir"],
+              "correct": 0
+            },
+            {
+              "question": "Which cooking oil has the highest smoke point?",
+              "options": ["Olive oil", "Butter", "Ghee", "Avocado oil"],
+              "correct": 3
             }
-        ]
-    },
+          ]
+      },
         animals: {
             easy: [
                 {
