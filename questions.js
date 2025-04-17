@@ -107,93 +107,353 @@ const quizQuestions = {
             }
         ]
     },
-    science: {
-        easy: [
-            {
-                question: "What is the chemical symbol for water?",
-                options: ["H2O", "CO2", "O2", "N2"],
-                correct: 0
-            },
-            {
-                question: "Which gas do plants absorb from the atmosphere?",
-                options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-                correct: 1
-            },
-            {
-                question: "What is the boiling point of water in Celsius?",
-                options: ["90°C", "100°C", "110°C", "120°C"],
-                correct: 1
-            },
-            {
-                question: "Which planet is known as the 'Morning Star'?",
-                options: ["Mars", "Venus", "Jupiter", "Mercury"],
-                correct: 1
-            },
-            {
-                question: "What is the main component of the Sun?",
-                options: ["Oxygen", "Hydrogen", "Helium", "Carbon"],
-                correct: 1
-            }
-        ],
-        medium: [
-            {
-                question: "What is the speed of light in vacuum?",
-                options: ["299,792 km/s", "199,792 km/s", "399,792 km/s", "249,792 km/s"],
-                correct: 0
-            },
-            {
-                question: "What is the pH value of pure water?",
-                options: ["5", "6", "7", "8"],
-                correct: 2
-            },
-            {
-                question: "Which element has the atomic number 1?",
-                options: ["Helium", "Hydrogen", "Oxygen", "Carbon"],
-                correct: 1
-            },
-            {
-                question: "What is the unit of electrical resistance?",
-                options: ["Volt", "Ampere", "Ohm", "Watt"],
-                correct: 2
-            },
-            {
-                question: "Which vitamin is produced by the human body when exposed to sunlight?",
-                options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-                correct: 3
-            }
-        ],
-        hard: [
-            {
-                question: "What is the Heisenberg Uncertainty Principle?",
-                options: [
-                    "Position and momentum cannot be measured simultaneously",
-                    "Energy is always conserved",
-                    "Matter cannot be created or destroyed",
-                    "Light behaves as both wave and particle"
-                ],
-                correct: 0
-            },
-            {
-                question: "What is the chemical formula for ozone?",
-                options: ["O2", "O3", "O4", "O5"],
-                correct: 1
-            },
-            {
-                question: "Which scientist discovered penicillin?",
-                options: ["Louis Pasteur", "Alexander Fleming", "Marie Curie", "Robert Koch"],
-                correct: 1
-            },
-            {
-                question: "What is the study of the behavior of matter at very low temperatures called?",
-                options: ["Thermodynamics", "Cryogenics", "Quantum Physics", "Nuclear Physics"],
-                correct: 1
-            },
-            {
-                question: "Which element is liquid at room temperature?",
-                options: ["Bromine", "Mercury", "Gallium", "All of the above"],
-                correct: 3
-            }
-        ]
+        science: {
+            easy: [
+                {
+                    "question": "What is the chemical symbol for water?",
+                    "options": ["H2O", "CO2", "O2", "N2"],
+                    "correct": 0
+                },
+                {
+                    "question": "Which gas do plants absorb from the atmosphere?",
+                    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the boiling point of water in Celsius?",
+                    "options": ["90°C", "100°C", "110°C", "120°C"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which planet is known as the 'Morning Star'?",
+                    "options": ["Mars", "Venus", "Jupiter", "Mercury"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the main component of the Sun?",
+                    "options": ["Oxygen", "Hydrogen", "Helium", "Carbon"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which force pulls objects toward Earth's center?",
+                    "options": ["Magnetism", "Gravity", "Friction", "Inertia"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the hardest natural substance on Earth?",
+                    "options": ["Gold", "Iron", "Diamond", "Quartz"],
+                    "correct": 2
+                },
+                {
+                    "question": "How many bones are in the adult human body?",
+                    "options": ["206", "300", "150", "432"],
+                    "correct": 0
+                },
+                {
+                    "question": "Which organ pumps blood throughout the body?",
+                    "options": ["Liver", "Brain", "Heart", "Lungs"],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the closest star to Earth?",
+                    "options": ["Alpha Centauri", "Betelgeuse", "The Sun", "Sirius"],
+                    "correct": 2
+                },
+                {
+                    "question": "Which gas makes up most of Earth's atmosphere?",
+                    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the chemical symbol for gold?",
+                    "options": ["Go", "Gd", "Au", "Ag"],
+                    "correct": 2
+                },
+                {
+                    "question": "Which planet is known as the 'Red Planet'?",
+                    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the process by which plants make food?",
+                    "options": ["Respiration", "Photosynthesis", "Transpiration", "Fermentation"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which of these is NOT a primary color of light?",
+                    "options": ["Red", "Blue", "Green", "Yellow"],
+                    "correct": 3
+                },
+                {
+                    "question": "What is the largest organ in the human body?",
+                    "options": ["Liver", "Brain", "Skin", "Heart"],
+                    "correct": 2
+                },
+                {
+                    "question": "Which scientist proposed the theory of relativity?",
+                    "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Nikola Tesla"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the freezing point of water in Fahrenheit?",
+                    "options": ["0°F", "32°F", "100°F", "212°F"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which of these is a non-metal?",
+                    "options": ["Iron", "Copper", "Sulfur", "Aluminum"],
+                    "correct": 2
+                },
+                {
+                    "question": "What type of energy is stored in a battery?",
+                    "options": ["Mechanical", "Thermal", "Chemical", "Nuclear"],
+                    "correct": 2
+                }
+            ],
+            medium: [
+                {
+                    "question": "What is the speed of light in vacuum?",
+                    "options": ["299,792 km/s", "199,792 km/s", "399,792 km/s", "249,792 km/s"],
+                    "correct": 0
+                },
+                {
+                    "question": "What is the pH value of pure water?",
+                    "options": ["5", "6", "7", "8"],
+                    "correct": 2
+                },
+                {
+                    "question": "Which element has the atomic number 1?",
+                    "options": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the unit of electrical resistance?",
+                    "options": ["Volt", "Ampere", "Ohm", "Watt"],
+                    "correct": 2
+                },
+                {
+                    "question": "Which vitamin is produced by the human body when exposed to sunlight?",
+                    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+                    "correct": 3
+                },
+                {
+                    "question": "What is the atomic mass of carbon?",
+                    "options": ["10", "12", "14", "16"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which law states 'for every action, there is an equal and opposite reaction'?",
+                    "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Gravitation"],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the most abundant gas in Earth's atmosphere?",
+                    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+                    "correct": 2
+                },
+                {
+                    "question": "Which subatomic particle has a negative charge?",
+                    "options": ["Proton", "Neutron", "Electron", "Nucleus"],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the chemical symbol for sodium?",
+                    "options": ["So", "Sd", "Na", "No"],
+                    "correct": 2
+                },
+                {
+                    "question": "Which planet has the most moons?",
+                    "options": ["Jupiter", "Saturn", "Mars", "Neptune"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the study of fossils called?",
+                    "options": ["Geology", "Paleontology", "Archaeology", "Meteorology"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which blood type is the universal donor?",
+                    "options": ["A", "B", "AB", "O"],
+                    "correct": 3
+                },
+                {
+                    "question": "What is the main component of natural gas?",
+                    "options": ["Propane", "Butane", "Methane", "Ethane"],
+                    "correct": 2
+                },
+                {
+                    "question": "Which scientist discovered radioactivity?",
+                    "options": ["Marie Curie", "Ernest Rutherford", "Henri Becquerel", "Niels Bohr"],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the chemical formula for table salt?",
+                    "options": ["NaCl", "H2O", "CO2", "CaCO3"],
+                    "correct": 0
+                },
+                {
+                    "question": "Which part of the cell is called the 'powerhouse'?",
+                    "options": ["Nucleus", "Ribosome", "Mitochondria", "Golgi Apparatus"],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the SI unit of force?",
+                    "options": ["Joule", "Watt", "Newton", "Pascal"],
+                    "correct": 2
+                },
+                {
+                    "question": "Which metal is liquid at room temperature?",
+                    "options": ["Bromine", "Gallium", "Mercury", "Francium"],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the chemical symbol for potassium?",
+                    "options": ["Pt", "P", "Po", "K"],
+                    "correct": 3
+                }
+            ],
+            hard: [
+                {
+                    "question": "What is the Heisenberg Uncertainty Principle?",
+                    "options": [
+                        "Position and momentum cannot be measured simultaneously",
+                        "Energy is always conserved",
+                        "Matter cannot be created or destroyed",
+                        "Light behaves as both wave and particle"
+                    ],
+                    "correct": 0
+                },
+                {
+                    "question": "What is the chemical formula for ozone?",
+                    "options": ["O2", "O3", "O4", "O5"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which scientist discovered penicillin?",
+                    "options": ["Louis Pasteur", "Alexander Fleming", "Marie Curie", "Robert Koch"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the study of the behavior of matter at very low temperatures called?",
+                    "options": ["Thermodynamics", "Cryogenics", "Quantum Physics", "Nuclear Physics"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which element is liquid at room temperature?",
+                    "options": ["Bromine", "Mercury", "Gallium", "All of the above"],
+                    "correct": 3
+                },
+                {
+                    "question": "What is the Pauli Exclusion Principle?",
+                    "options": [
+                        "No two electrons can have the same quantum state",
+                        "Energy is quantized in atoms",
+                        "Light exhibits wave-particle duality",
+                        "Entropy always increases"
+                    ],
+                    "correct": 0
+                },
+                {
+                    "question": "Which particle mediates the electromagnetic force?",
+                    "options": ["Gluon", "Photon", "W Boson", "Graviton"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the Chandrasekhar limit?",
+                    "options": [
+                        "Maximum mass of a white dwarf",
+                        "Minimum mass for nuclear fusion",
+                        "Event horizon of a black hole",
+                        "Speed limit in the universe"
+                    ],
+                    "correct": 0
+                },
+                {
+                    "question": "Which quantum number describes electron spin?",
+                    "options": ["Principal", "Azimuthal", "Magnetic", "Spin"],
+                    "correct": 3
+                },
+                {
+                    "question": "What is the main component of a black hole's singularity?",
+                    "options": ["Neutrons", "Quarks", "Spacetime curvature", "Unknown"],
+                    "correct": 3
+                },
+                {
+                    "question": "Which theorem states 'no free lunch' in mathematical optimization?",
+                    "options": ["Gödel's Theorem", "No-Free-Lunch Theorem", "Nash Equilibrium", "Pigeonhole Principle"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the Bekenstein bound?",
+                    "options": [
+                        "Maximum entropy in a region",
+                        "Minimum temperature in space",
+                        "Limit of quantum entanglement",
+                        "Boundary of a wormhole"
+                    ],
+                    "correct": 0
+                },
+                {
+                    "question": "Which phenomenon causes neutron stars to emit beams of radiation?",
+                    "options": ["Synchrotron Radiation", "Hawking Radiation", "Lighthouse Effect", "Pulsar Mechanism"],
+                    "correct": 3
+                },
+                {
+                    "question": "What is the Riemann Hypothesis about?",
+                    "options": [
+                        "Distribution of prime numbers",
+                        "Solutions to polynomial equations",
+                        "Non-Euclidean geometry",
+                        "Quantum field theory"
+                    ],
+                    "correct": 0
+                },
+                {
+                    "question": "Which protein is responsible for muscle contraction?",
+                    "options": ["Keratin", "Actin", "Collagen", "Myosin"],
+                    "correct": 3
+                },
+                {
+                    "question": "What is the Casimir effect?",
+                    "options": [
+                        "Attraction between uncharged plates in a vacuum",
+                        "Quantum tunneling in superconductors",
+                        "Time dilation near black holes",
+                        "Entanglement of photons"
+                    ],
+                    "correct": 0
+                },
+                {
+                    "question": "Which enzyme is responsible for DNA replication?",
+                    "options": ["Helicase", "Polymerase", "Ligase", "Primase"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the holographic principle in theoretical physics?",
+                    "options": [
+                        "Information in a volume is encoded on its boundary",
+                        "Universe is a computer simulation",
+                        "Time is an emergent property",
+                        "Gravity is an entropic force"
+                    ],
+                    "correct": 0
+                },
+                {
+                    "question": "Which paradox illustrates quantum superposition?",
+                    "options": ["Fermi Paradox", "Schrödinger's Cat", "Olbers' Paradox", "EPR Paradox"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the main challenge in unifying general relativity and quantum mechanics?",
+                    "options": [
+                        "Incompatible mathematical frameworks",
+                        "Lack of experimental evidence",
+                        "Different concepts of time",
+                        "All of the above"
+                    ],
+                    "correct": 3
+                }
+            ]
     },
     history: {
         easy: [
@@ -278,170 +538,620 @@ const quizQuestions = {
             }
         ]
     },
-    geography: {
-        easy: [
+        geography: {
+          easy: [
             {
-                question: "What is the largest continent?",
-                options: ["Africa", "Asia", "North America", "Europe"],
-                correct: 1
+              question: "What is the largest continent?",
+              options: ["Africa", "Asia", "North America", "Europe"],
+              correct: 1
             },
             {
-                question: "Which country has the most population?",
-                options: ["India", "China", "USA", "Indonesia"],
-                correct: 1
+              question: "Which country has the most population?",
+              options: ["India", "China", "USA", "Indonesia"],
+              correct: 1
             },
             {
-                question: "What is the capital of Australia?",
-                options: ["Sydney", "Melbourne", "Canberra", "Perth"],
-                correct: 2
+              "question": "What is the capital of Australia?",
+              "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+              "correct": 2
             },
             {
-                question: "Which ocean is the largest?",
-                options: ["Atlantic", "Indian", "Arctic", "Pacific"],
-                correct: 3
+              "question": "Which ocean is the largest?",
+              "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+              "correct": 3
             },
             {
-                question: "What is the longest river in Africa?",
-                options: ["Congo", "Nile", "Niger", "Zambezi"],
-                correct: 1
+              "question": "What is the longest river in Africa?",
+              "options": ["Congo", "Nile", "Niger", "Zambezi"],
+              "correct": 1
+            },
+            {
+              "question": "Which is the smallest continent?",
+              "options": ["Australia", "Europe", "Antarctica", "South America"],
+              "correct": 0
+            },
+            {
+              "question": "Which desert is the largest in the world?",
+              "options": ["Sahara", "Arctic", "Gobi", "Antarctica"],
+              "correct": 3
+            },
+            {
+              "question": "What is the capital of Japan?",
+              "options": ["Kyoto", "Osaka", "Tokyo", "Nagoya"],
+              "correct": 2
+            },
+            {
+              "question": "Which country is known as the Land of the Rising Sun?",
+              "options": ["China", "Japan", "Thailand", "Vietnam"],
+              "correct": 1
+            },
+            {
+              "question": "Which continent is the Sahara Desert located in?",
+              "options": ["Asia", "Africa", "Australia", "Europe"],
+              "correct": 1
+            },
+            {
+              "question": "What is the capital of India?",
+              "options": ["Mumbai", "New Delhi", "Chennai", "Kolkata"],
+              "correct": 1
+            },
+            {
+              "question": "Which continent is India located in?",
+              "options": ["Africa", "Europe", "Asia", "Australia"],
+              "correct": 2
+            },
+            {
+              "question": "Which country is famous for tulips and windmills?",
+              "options": ["Germany", "Switzerland", "Netherlands", "France"],
+              "correct": 2
+            },
+            {
+              "question": "Which continent is Brazil in?",
+              "options": ["South America", "North America", "Europe", "Africa"],
+              "correct": 0
+            },
+            {
+              "question": "What is the capital of the USA?",
+              "options": ["New York", "Los Angeles", "Washington, D.C.", "Chicago"],
+              "correct": 2
+            },
+            {
+              "question": "Which is the coldest continent?",
+              "options": ["Asia", "Europe", "Antarctica", "North America"],
+              "correct": 2
+            },
+            {
+              "question": "Which is the tallest mountain in the world?",
+              "options": ["K2", "Mount Everest", "Kangchenjunga", "Lhotse"],
+              "correct": 1
+            },
+            {
+              "question": "What is the capital of France?",
+              "options": ["Berlin", "Madrid", "Rome", "Paris"],
+              "correct": 3
+            },
+            {
+              "question": "Which is the longest river in the world?",
+              "options": ["Amazon", "Yangtze", "Nile", "Mississippi"],
+              "correct": 2
+            },
+            {
+              "question": "Which country is shaped like a boot?",
+              "options": ["Italy", "Spain", "France", "Portugal"],
+              "correct": 0
             }
-        ],
-        medium: [
+          ],
+          medium: [
             {
-                question: "Which country has the longest coastline?",
-                options: ["Russia", "Canada", "USA", "Australia"],
-                correct: 1
+              "question": "Which country has the longest coastline?",
+              "options": ["Russia", "Canada", "USA", "Australia"],
+              "correct": 1
             },
             {
-                question: "What is the capital of Argentina?",
-                options: ["Buenos Aires", "Córdoba", "Rosario", "Mendoza"],
-                correct: 0
+              "question": "What is the capital of Argentina?",
+              "options": ["Buenos Aires", "Córdoba", "Rosario", "Mendoza"],
+              "correct": 0
             },
             {
-                question: "What is the largest lake by volume?",
-                options: ["Caspian Sea", "Lake Superior", "Lake Baikal", "Lake Victoria"],
-                correct: 2
+              "question": "What is the largest lake by volume?",
+              "options": ["Caspian Sea", "Lake Superior", "Lake Baikal", "Lake Victoria"],
+              "correct": 2
             },
             {
-                question: "Which country has the most rivers?",
-                options: ["Russia", "Brazil", "China", "USA"],
-                correct: 1
+              "question": "Which country has the most rivers?",
+              "options": ["Russia", "Brazil", "China", "USA"],
+              "correct": 1
             },
             {
-                question: "What is the capital of Bhutan?",
-                options: ["Paro", "Thimphu", "Punakha", "Wangdue Phodrang"],
-                correct: 1
+              "question": "What is the capital of Bhutan?",
+              "options": ["Paro", "Thimphu", "Punakha", "Wangdue Phodrang"],
+              "correct": 1
+            },
+            {
+              "question": "Which country is known as the Land of Fire and Ice?",
+              "options": ["Iceland", "Greenland", "Norway", "Canada"],
+              "correct": 0
+            },
+            {
+              "question": "Which is the most populous city in the world?",
+              "options": ["Tokyo", "Delhi", "Shanghai", "Sao Paulo"],
+              "correct": 0
+            },
+            {
+              "question": "What is the capital of Nigeria?",
+              "options": ["Abuja", "Lagos", "Kano", "Port Harcourt"],
+              "correct": 0
+            },
+            {
+              "question": "Which country is landlocked?",
+              "options": ["Afghanistan", "Vietnam", "Thailand", "Malaysia"],
+              "correct": 0
+            },
+            {
+              "question": "Which country has the most islands?",
+              "options": ["Norway", "Canada", "Indonesia", "Sweden"],
+              "correct": 3
+            },
+            {
+              "question": "Which country spans both Europe and Asia?",
+              "options": ["Russia", "India", "Turkey", "Kazakhstan"],
+              "correct": 0
+            },
+            {
+              "question": "What is the smallest country in the world?",
+              "options": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+              "correct": 1
+            },
+            {
+              "question": "Which capital is located on two continents?",
+              "options": ["Moscow", "Cairo", "Istanbul", "Ankara"],
+              "correct": 2
+            },
+            {
+              "question": "Which is the highest capital city in the world?",
+              "options": ["Quito", "La Paz", "Bogotá", "Kathmandu"],
+              "correct": 1
+            },
+            {
+              "question": "What is the capital of New Zealand?",
+              "options": ["Auckland", "Wellington", "Christchurch", "Hamilton"],
+              "correct": 1
+            },
+            {
+              "question": "What mountain range separates Europe and Asia?",
+              "options": ["Alps", "Urals", "Caucasus", "Himalayas"],
+              "correct": 1
+            },
+            {
+              "question": "What is the capital of South Korea?",
+              "options": ["Seoul", "Busan", "Incheon", "Daegu"],
+              "correct": 0
+            },
+            {
+              "question": "Which is the flattest country in the world?",
+              "options": ["Maldives", "Bangladesh", "Denmark", "Netherlands"],
+              "correct": 0
+            },
+            {
+              "question": "Which desert is located in Mongolia and China?",
+              "options": ["Gobi", "Sahara", "Karakum", "Kalahari"],
+              "correct": 0
+            },
+            {
+              "question": "Which river flows through Paris?",
+              "options": ["Rhine", "Seine", "Thames", "Danube"],
+              "correct": 1
             }
-        ],
-        hard: [
+          ],
+          hard: [
             {
-                question: "Which country has the highest average elevation?",
-                options: ["Nepal", "Bhutan", "Switzerland", "Lesotho"],
-                correct: 1
+              "question": "Which country has the highest average elevation?",
+              "options": ["Nepal", "Bhutan", "Switzerland", "Lesotho"],
+              "correct": 1
             },
             {
-                question: "What is the largest underground lake in the world?",
-                options: ["Lost Sea", "Dragon's Breath Cave", "Lake Vostok", "Lake Baikal"],
-                correct: 0
+              "question": "What is the largest underground lake in the world?",
+              "options": ["Lost Sea", "Dragon's Breath Cave", "Lake Vostok", "Lake Baikal"],
+              "correct": 0
             },
             {
-                question: "What is the largest uninhabited island in the world?",
-                options: ["Devon Island", "Greenland", "Antarctica", "Baffin Island"],
-                correct: 0
+              "question": "What is the largest uninhabited island in the world?",
+              "options": ["Devon Island", "Greenland", "Antarctica", "Baffin Island"],
+              "correct": 0
             },
             {
-                question: "Which country has the most UNESCO Biosphere Reserves?",
-                options: ["USA", "Spain", "Mexico", "Russia"],
-                correct: 1
+              "question": "Which country has the most UNESCO Biosphere Reserves?",
+              "options": ["USA", "Spain", "Mexico", "Russia"],
+              "correct": 1
             },
             {
-                question: "Which country has the most borders with other countries?",
-                options: ["Russia", "China", "Brazil", "Germany"],
-                correct: 1
+              "question": "Which country has the most borders with other countries?",
+              "options": ["Russia", "China", "Brazil", "Germany"],
+              "correct": 1
+            },
+            {
+              "question": "Which capital city is the most northern?",
+              "options": ["Reykjavik", "Oslo", "Helsinki", "Stockholm"],
+              "correct": 0
+            },
+            {
+              "question": "Which is the deepest canyon in the world?",
+              "options": ["Grand Canyon", "Yarlung Tsangpo", "Colca Canyon", "Copper Canyon"],
+              "correct": 1
+            },
+            {
+              "question": "Which island nation has no rivers?",
+              "options": ["Bahrain", "Malta", "Maldives", "Cyprus"],
+              "correct": 2
+            },
+            {
+              "question": "Which desert is the oldest in the world?",
+              "options": ["Atacama", "Gobi", "Namib", "Sahara"],
+              "correct": 2
+            },
+            {
+              "question": "Which country has the most volcanoes?",
+              "options": ["Indonesia", "Japan", "USA", "Chile"],
+              "correct": 0
+            },
+            {
+              "question": "Which ocean current is the fastest?",
+              "options": ["Kuroshio", "Gulf Stream", "Agulhas", "Antarctic Circumpolar"],
+              "correct": 3
+            },
+            {
+              "question": "Which island is shared by three countries?",
+              "options": ["Borneo", "New Guinea", "Hispaniola", "Timor"],
+              "correct": 0
+            },
+            {
+              "question": "What is the driest inhabited place on Earth?",
+              "options": ["Atacama", "Aswan", "McMurdo", "Arica"],
+              "correct": 3
+            },
+            {
+              "question": "What is the capital of Kazakhstan?",
+              "options": ["Almaty", "Astana", "Shymkent", "Karaganda"],
+              "correct": 1
+            },
+            {
+              "question": "Which country is home to Lake Titicaca?",
+              "options": ["Peru", "Bolivia", "Chile", "Both A and B"],
+              "correct": 3
+            },
+            {
+              "question": "Which is the least densely populated country?",
+              "options": ["Australia", "Namibia", "Mongolia", "Canada"],
+              "correct": 2
+            },
+            {
+              "question": "Which sea has no coastline?",
+              "options": ["Aral Sea", "Sargasso Sea", "Dead Sea", "Baltic Sea"],
+              "correct": 1
+            },
+            {
+              "question": "Which country has cities in both hemispheres?",
+              "options": ["Brazil", "Kenya", "Indonesia", "All of the above"],
+              "correct": 3
+            },
+            {
+              "question": "Which river flows north?",
+              "options": ["Nile", "Amazon", "Danube", "Yangtze"],
+              "correct": 0
+            },
+            {
+              "question": "Which island has the most biodiversity?",
+              "options": ["Borneo", "Galápagos", "Madagascar", "New Guinea"],
+              "correct": 2
             }
-        ]
+          ]
     },
     sports: {
         easy: [
-            {
-                question: "In which sport would you perform a slam dunk?",
-                options: ["Football", "Basketball", "Tennis", "Golf"],
-                correct: 1
-            },
-            {
-                question: "How many players are there in a standard soccer team?",
-                options: ["9", "10", "11", "12"],
-                correct: 2
-            },
-            {
-                question: "Which sport uses a shuttlecock?",
-                options: ["Tennis", "Badminton", "Squash", "Table Tennis"],
-                correct: 1
-            },
-            {
-                question: "In which sport would you use a putter?",
-                options: ["Golf", "Hockey", "Cricket", "Baseball"],
-                correct: 0
-            },
-            {
-                question: "How many players are there in a standard basketball team?",
-                options: ["4", "5", "6", "7"],
-                correct: 1
-            }
+          {
+            question: "In which sport would you perform a slam dunk?",
+            options: ["Basketball", "Football", "Tennis", "Golf"],
+            correct: 0
+          },
+          {
+            "question": "How many players are there in a standard soccer team?",
+            "options": ["9", "10", "11", "12"],
+            "correct": 2
+          },
+          {
+            "question": "Which sport uses a shuttlecock?",
+            "options": ["Tennis", "Badminton", "Squash", "Table Tennis"],
+            "correct": 1
+          },
+          {
+            "question": "In which sport would you use a putter?",
+            "options": ["Golf", "Hockey", "Cricket", "Baseball"],
+            "correct": 0
+          },
+          {
+            "question": "How many players are there in a standard basketball team?",
+            "options": ["4", "5", "6", "7"],
+            "correct": 1
+          },
+          {
+            "question": "What is the standard length of a marathon?",
+            "options": ["26.2 miles", "20 miles", "15 miles", "10 miles"],
+            "correct": 0
+          },
+          {
+            "question": "Which country is known for the martial art of Taekwondo?",
+            "options": ["South Korea", "Japan", "China", "Thailand"],
+            "correct": 0
+          },
+          {
+            "question": "What is the national sport of Canada?",
+            "options": ["Lacrosse", "Hockey", "Soccer", "Basketball"],
+            "correct": 0
+          },
+          {
+            "question": "In which sport would you perform a checkmate?",
+            "options": ["Chess", "Checkers", "Poker", "Bridge"],
+            "correct": 0
+          },
+          {
+            "question": "How many innings are there in a standard game of baseball?",
+            "options": ["6", "7", "8", "9"],
+            "correct": 3
+          },
+          {
+            "question": "Which sport involves kicking a ball into a net without using hands?",
+            "options": ["Soccer", "Rugby", "American Football", "Basketball"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the trophy awarded to the winner of the Indianapolis 500?",
+            "options": ["Borg-Warner Trophy", "Stanley Cup", "FIFA World Cup", "Vince Lombardi Trophy"],
+            "correct": 0
+          },
+          {
+            "question": "In which sport would you perform a hat-trick?",
+            "options": ["Soccer", "Cricket", "Baseball", "Tennis"],
+            "correct": 0
+          },
+          {
+            "question": "How many rings are there on the Olympic flag?",
+            "options": ["5", "6", "7", "8"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport is played on a court with a net in the middle?",
+            "options": ["Tennis", "Badminton", "Volleyball", "Table Tennis"],
+            "correct": 2
+          },
+          {
+            "question": "What is the name of the governing body for international football?",
+            "options": ["FIFA", "UEFA", "NBA", "NFL"],
+            "correct": 0
+          },
+          {
+            "question": "In which sport would you use a cue stick?",
+            "options": ["Billiards", "Bowling", "Darts", "Archery"],
+            "correct": 0
+          },
+          {
+            "question": "How many holes are there in a standard round of golf?",
+            "options": ["18", "15", "12", "9"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport involves running, swimming, and cycling?",
+            "options": ["Triathlon", "Decathlon", "Pentathlon", "Heptathlon"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous cycling race held in France every year?",
+            "options": ["Tour de France", "Giro d'Italia", "Vuelta a España", "Tour of California"],
+            "correct": 0
+          }
         ],
         medium: [
-            {
-                question: "Which country has won the most FIFA World Cups?",
-                options: ["Germany", "Brazil", "Italy", "Argentina"],
-                correct: 1
-            },
-            {
-                question: "Who holds the record for most Olympic gold medals?",
-                options: ["Michael Phelps", "Usain Bolt", "Carl Lewis", "Mark Spitz"],
-                correct: 0
-            },
-            {
-                question: "Which tennis player has won the most Grand Slam titles?",
-                options: ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Pete Sampras"],
-                correct: 2
-            },
-            {
-                question: "In which year did the first modern Olympic Games take place?",
-                options: ["1886", "1896", "1906", "1916"],
-                correct: 1
-            },
-            {
-                question: "Which country has won the most Olympic gold medals?",
-                options: ["United States", "China", "Russia", "Great Britain"],
-                correct: 0
-            }
+          {
+            "question": "Which country has won the most FIFA World Cups?",
+            "options": ["Germany", "Brazil", "Italy", "Argentina"],
+            "correct": 1
+          },
+          {
+            "question": "Who holds the record for most Olympic gold medals?",
+            "options": ["Michael Phelps", "Usain Bolt", "Carl Lewis", "Mark Spitz"],
+            "correct": 0
+          },
+          {
+            "question": "Which tennis player has won the most Grand Slam titles?",
+            "options": ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Pete Sampras"],
+            "correct": 2
+          },
+          {
+            "question": "In which year did the first modern Olympic Games take place?",
+            "options": ["1886", "1896", "1906", "1916"],
+            "correct": 1
+          },
+          {
+            "question": "Which country has won the most Olympic gold medals?",
+            "options": ["United States", "China", "Russia", "Great Britain"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous boxer known as 'The Greatest'?",
+            "options": ["Muhammad Ali", "Mike Tyson", "Floyd Mayweather", "Joe Frazier"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport is known as the 'king of sports'?",
+            "options": ["Soccer", "Cricket", "Baseball", "Rugby"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous tennis tournament held at Wimbledon?",
+            "options": ["Wimbledon Championships", "US Open", "French Open", "Australian Open"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport involves a puck and sticks?",
+            "options": ["Ice Hockey", "Field Hockey", "Lacrosse", "Polo"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous cycling race held in Italy every year?",
+            "options": ["Giro d'Italia", "Tour de France", "Vuelta a España", "Tour of California"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport involves a small white ball and mallets?",
+            "options": ["Croquet", "Golf", "Polo", "Bowling"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous horse racing event held in the UK every year?",
+            "options": ["Grand National", "Kentucky Derby", "Melbourne Cup", "Prix de l'Arc de Triomphe"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport involves a small white ball and a court divided by a net?",
+            "options": ["Tennis", "Badminton", "Volleyball", "Table Tennis"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous golf tournament held at Augusta National Golf Club?",
+            "options": ["The Masters", "The Open Championship", "The US Open", "The PGA Championship"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport involves a small white ball and a course with 18 holes?",
+            "options": ["Golf", "Mini Golf", "Croquet", "Bowling"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous tennis tournament held in New York every year?",
+            "options": ["US Open", "Wimbledon Championships", "French Open", "Australian Open"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport involves a small white ball and a racket?",
+            "options": ["Tennis", "Badminton", "Squash", "Table Tennis"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous tennis tournament held in Paris every year?",
+            "options": ["French Open", "Wimbledon Championships", "US Open", "Australian Open"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport involves a small white ball and a court with a net in the middle?",
+            "options": ["Tennis", "Badminton", "Volleyball", "Table Tennis"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous tennis tournament held in Melbourne every year?",
+            "options": ["Australian Open", "Wimbledon Championships", "US Open", "French Open"],
+            "correct": 0
+          }
         ],
         hard: [
-            {
-                question: "Which sport has the most expensive equipment?",
-                options: ["Formula 1", "Golf", "Sailing", "Equestrian"],
-                correct: 0
-            },
-            {
-                question: "Which sport has the most complex scoring system?",
-                options: ["Gymnastics", "Figure Skating", "Diving", "Synchronized Swimming"],
-                correct: 1
-            },
-            {
-                question: "Which sport has the most injuries?",
-                options: ["Football", "Rugby", "Boxing", "Hockey"],
-                correct: 1
-            },
-            {
-                question: "Which sport has the most rules?",
-                options: ["Cricket", "Baseball", "American Football", "Rugby"],
-                correct: 0
-            },
-            {
-                question: "Which sport has the most expensive tickets?",
-                options: ["Formula 1", "Golf", "Tennis", "Football"],
-                correct: 0
-            }
+          {
+            "question": "Which sport has the most expensive equipment?",
+            "options": ["Formula 1", "Golf", "Sailing", "Equestrian"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport has the most complex scoring system?",
+            "options": ["Gymnastics", "Figure Skating", "Diving", "Synchronized Swimming"],
+            "correct": 1
+          },
+          {
+            "question": "Which sport has the most injuries?",
+            "options": ["Football", "Rugby", "Boxing", "Hockey"],
+            "correct": 1
+          },
+          {
+            "question": "Which sport has the most rules?",
+            "options": ["Cricket", "Baseball", "American Football", "Rugby"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport has the most expensive tickets?",
+            "options": ["Formula 1", "Golf", "Tennis", "Football"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport involves a small white ball and a course with 18 holes?",
+            "options": ["Golf", "Mini Golf", "Croquet", "Bowling"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport involves a small white ball and a racket?",
+            "options": ["Tennis", "Badminton", "Squash", "Table Tennis"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport involves a small white ball and a court divided by a net?",
+            "options": ["Tennis", "Badminton", "Volleyball", "Table Tennis"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport involves a small white ball and mallets?",
+            "options": ["Croquet", "Golf", "Polo", "Bowling"],
+            "correct": 0
+          },
+          {
+            "question": "Which sport involves a puck and sticks?",
+            "options": ["Ice Hockey", "Field Hockey", "Lacrosse", "Polo"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous cycling race held in France every year?",
+            "options": ["Tour de France", "Giro d'Italia", "Vuelta a España", "Tour of California"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous cycling race held in Italy every year?",
+            "options": ["Giro d'Italia", "Tour de France", "Vuelta a España", "Tour of California"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous cycling race held in Spain every year?",
+            "options": ["Vuelta a España", "Tour de France", "Giro d'Italia", "Tour of California"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous horse racing event held in the UK every year?",
+            "options": ["Grand National", "Kentucky Derby", "Melbourne Cup", "Prix de l'Arc de Triomphe"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous horse racing event held in the US every year?",
+            "options": ["Kentucky Derby", "Grand National", "Melbourne Cup", "Prix de l'Arc de Triomphe"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous horse racing event held in Australia every year?",
+            "options": ["Melbourne Cup", "Kentucky Derby", "Grand National", "Prix de l'Arc de Triomphe"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous horse racing event held in France every year?",
+            "options": ["Prix de l'Arc de Triomphe", "Kentucky Derby", "Grand National", "Melbourne Cup"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous golf tournament held at Augusta National Golf Club?",
+            "options": ["The Masters", "The Open Championship", "The US Open", "The PGA Championship"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous tennis tournament held in New York every year?",
+            "options": ["US Open", "Wimbledon Championships", "French Open", "Australian Open"],
+            "correct": 0
+          },
+          {
+            "question": "What is the name of the famous tennis tournament held in Paris every year?",
+            "options": ["French Open", "Wimbledon Championships", "US Open", "Australian Open"],
+            "correct": 0
+          }
         ]
     },
     business: {
@@ -643,88 +1353,238 @@ const quizQuestions = {
         ]
     },
     technology: {
-        easy: [
-            {
-                question: "What does 'HTML' stand for?",
-                options: ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Language", "Home Tool Markup Language"],
-                correct: 0
-            },
-            {
-                question: "Which company created the iPhone?",
-                options: ["Samsung", "Apple", "Google", "Microsoft"],
-                correct: 1
-            },
-            {
-                question: "What is the most popular operating system for computers?",
-                options: ["Windows", "macOS", "Linux", "Chrome OS"],
-                correct: 0
-            },
-            {
-                question: "Which social media platform has the most users?",
-                options: ["Facebook", "Instagram", "Twitter", "TikTok"],
-                correct: 0
-            },
-            {
-                question: "What does 'Wi-Fi' stand for?",
-                options: ["Wireless Fidelity", "Wide Frequency", "Wireless Frequency", "Wide Fidelity"],
-                correct: 0
-            }
-        ],
-        medium: [
-            {
-                question: "Which programming language is known as the 'language of the web'?",
-                options: ["Python", "Java", "JavaScript", "C++"],
-                correct: 2
-            },
-            {
-                question: "What is the name of Google's AI assistant?",
-                options: ["Alexa", "Siri", "Google Assistant", "Cortana"],
-                correct: 2
-            },
-            {
-                question: "Which company developed the Android operating system?",
-                options: ["Apple", "Microsoft", "Google", "Samsung"],
-                correct: 2
-            },
-            {
-                question: "What is the term for a computer program that replicates itself?",
-                options: ["Bug", "Virus", "Malware", "Spyware"],
-                correct: 1
-            },
-            {
-                question: "Which technology is used to create virtual reality experiences?",
-                options: ["AR", "VR", "MR", "XR"],
-                correct: 1
-            }
-        ],
-        hard: [
-            {
-                question: "What is the name of the first computer virus?",
-                options: ["ILOVEYOU", "Creeper", "Melissa", "Stuxnet"],
-                correct: 1
-            },
-            {
-                question: "Which company developed the first commercial computer?",
-                options: ["Apple", "Microsoft", "IBM", "Intel"],
-                correct: 2
-            },
-            {
-                question: "What is the term for a computer's ability to learn and improve from experience?",
-                options: ["Machine Learning", "Artificial Intelligence", "Deep Learning", "Neural Networks"],
-                correct: 0
-            },
-            {
-                question: "Which technology is used to create secure online transactions?",
-                options: ["HTTP", "HTTPS", "FTP", "SMTP"],
-                correct: 1
-            },
-            {
-                question: "What is the name of the first programming language?",
-                options: ["FORTRAN", "COBOL", "Assembly", "LISP"],
-                correct: 0
-            }
-        ]
-    },
+            easy: [
+              {
+                "question": "What does 'HTML' stand for?",
+                "options": ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Language", "Home Tool Markup Language"],
+                "correct": 0
+              },
+              {
+                "question": "Which company created the iPhone?",
+                "options": ["Samsung", "Apple", "Google", "Microsoft"],
+                "correct": 1
+              },
+              {
+                "question": "What is the most popular operating system for computers?",
+                "options": ["Windows", "macOS", "Linux", "Chrome OS"],
+                "correct": 0
+              },
+              {
+                "question": "Which social media platform has the most users?",
+                "options": ["Facebook", "Instagram", "Twitter", "TikTok"],
+                "correct": 0
+              },
+              {
+                "question": "What does 'Wi-Fi' stand for?",
+                "options": ["Wireless Fidelity", "Wide Frequency", "Wireless Frequency", "Wide Fidelity"],
+                "correct": 0
+              },
+              {
+                "question": "How many characters were originally allowed in a ‘Tweet’ when Twitter first launched in 2006?",
+                "options": ["140 characters", "280 characters", "500 characters", "1000 characters"],
+                "correct": 0
+              },
+              {
+                "question": "What type of computer file is a FLAC file?",
+                "options": ["Image", "Audio", "Text", "Video"],
+                "correct": 1
+              },
+              {
+                "question": "Which key on a PC, when pressed along with the 'Ctrl' key, is a shortcut for the ‘Undo’ command?",
+                "options": ["Z", "Y", "U", "X"],
+                "correct": 0
+              },
+              {
+                "question": "What does SD stand for in 'SD card'?",
+                "options": ["Secure Digital", "Storage Device", "System Disk", "Secure Drive"],
+                "correct": 0
+              },
+              {
+                "question": "What is the name of the first search engine in internet?",
+                "options": ["Google", "Archie", "Altavista", "WAIS"],
+                "correct": 1
+              },
+              {
+                "question": "What is the name of the classic 1972 arcade game based on table tennis?",
+                "options": ["Pong", "Pac-Man", "Space Invaders", "Donkey Kong"],
+                "correct": 0
+              },
+              {
+                "question": "What does the term LASER stand for?",
+                "options": ["Light Amplification by Stimulated Emission of Radiation", "Light and Sound Energy Radiation", "Laser Activated Stimulated Emission of Radiation", "Light Amplification by Stimulated Energy of Radiation"],
+                "correct": 0
+              },
+              {
+                "question": "Which duo invented the aeroplane?",
+                "options": ["The Wright Brothers - Orville and Wilbur Wright", "The Ford Brothers - Henry and Edsel Ford", "The Edison Brothers - Thomas and Mina Edison", "The Tesla Brothers - Nikola and Milka Tesla"],
+                "correct": 0
+              },
+              {
+                "question": "What is the name of the British computer scientist who invented the World Wide Web in 1989?",
+                "options": ["Tim Berners-Lee", "Alan Turing", "Ada Lovelace", "Steve Wozniak"],
+                "correct": 0
+              },
+              {
+                "question": "Originally Amazon only sold which product?",
+                "options": ["Books", "Electronics", "Clothing", "Food"],
+                "correct": 0
+              }
+            ],
+            meduim: [
+              {
+                "question": "Which programming language is known as the 'language of the web'?",
+                "options": ["Python", "Java", "JavaScript", "C++"],
+                "correct": 2
+              },
+              {
+                "question": "What is the name of Google's AI assistant?",
+                "options": ["Alexa", "Siri", "Google Assistant", "Cortana"],
+                "correct": 2
+              },
+              {
+                "question": "Which company developed the Android operating system?",
+                "options": ["Apple", "Microsoft", "Google", "Samsung"],
+                "correct": 2
+              },
+              {
+                "question": "What is the term for a computer's ability to learn and improve from experience?",
+                "options": ["Machine Learning", "Artificial Intelligence", "Deep Learning", "Neural Networks"],
+                "correct": 0
+              },
+              {
+                "question": "Which technology is used to create virtual reality experiences?",
+                "options": ["AR", "VR", "MR", "XR"],
+                "correct": 1
+              },
+              {
+                "question": "What is the name of the first computer virus?",
+                "options": ["ILOVEYOU", "Creeper", "Melissa", "Stuxnet"],
+                "correct": 1
+              },
+              {
+                "question": "Which company developed the first commercial computer?",
+                "options": ["Apple", "Microsoft", "IBM", "Intel"],
+                "correct": 2
+              },
+              {
+                "question": "What is the term for a computer program that replicates itself?",
+                "options": ["Bug", "Virus", "Malware", "Spyware"],
+                "correct": 1
+              },
+              {
+                "question": "Which technology is used to create secure online transactions?",
+                "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
+                "correct": 1
+              },
+              {
+                "question": "What is the name of the first programming language?",
+                "options": ["FORTRAN", "COBOL", "Assembly", "LISP"],
+                "correct": 0
+              },
+              {
+                "question": "Which company was co-founded by two former Facebook employees in 2010?",
+                "options": ["Quora", "Reddit", "Pinterest", "Snapchat"],
+                "correct": 0
+              },
+              {
+                "question": "What is the name of the first web browser?",
+                "options": ["Netscape", "Internet Explorer", "Mosaic", "Chrome"],
+                "correct": 0
+              },
+              {
+                "question": "Which company popularized the term 'Tablet PC' in 2001?",
+                "options": ["Apple", "Google", "Microsoft", "Samsung"],
+                "correct": 2
+              },
+              {
+                "question": "What is the name of the first e-commerce company?",
+                "options": ["Amazon", "eBay", "Alibaba", "Flipkart"],
+                "correct": 1
+              },
+              {
+                "question": "What is the name of the first social networking site launched on the internet in 1994?",
+                "options": ["Facebook", "MySpace", "GeoCities", "LinkedIn"],
+                "correct": 2
+              }
+            ],
+            hard: [
+              {
+                "question": "What was the first item to be scanned using a barcode?",
+                "options": ["Wrigley's chewing gum", "Coca-Cola", "Pepsi", "Mars bar"],
+                "correct": 0
+              },
+              {
+                "question": "In which year was the first e-mail sent?",
+                "options": ["1971", "1980", "1990", "2000"],
+                "correct": 0
+              },
+              {
+                "question": "Who was responsible for the introduction of the Ford Mustang in 1964?",
+                "options": ["Lee Iacocca", "Henry Ford", "Elon Musk", "Enzo Ferrari"],
+                "correct": 0
+              },
+              {
+                "question": "Who was founder and chairman of America Online Corporation?",
+                "options": ["Steve Case", "Bill Gates", "Steve Jobs", "Larry Page"],
+                "correct": 0
+              },
+              {
+                "question": "Which year were Toyotas first sold in the US?",
+                "options": ["1957", "1960", "1970", "1980"],
+                "correct": 0
+              },
+              {
+                "question": "Which subsidiary of General Motors established in 1985 was discontinued in 2010?",
+                "options": ["Saturn", "Chevrolet", "Cadillac", "Buick"],
+                "correct": 0
+              },
+              {
+                "question": "Which software company makes Excel?",
+                "options": ["Microsoft", "Apple", "Google", "Adobe"],
+                "correct": 0
+              },
+              {
+                "question": "Which popular 1960's American car was affectionately known as 'The Goat'?",
+                "options": ["Pontiac GTO", "Ford Mustang", "Chevrolet Camaro", "Dodge Challenger"],
+                "correct": 0
+              },
+              {
+                "question": "Which Florida city provides the name of Chevrolet's compact MPV unveiled at the 2008 Paris Motor Show?",
+                "options": ["Orlando", "Miami", "Tampa", "Jacksonville"],
+                "correct": 0
+              },
+              {
+                "question": "Which eternally popular Volkswagen car dropped the word New from its 2012 model?",
+                "options": ["Beetle", "Golf", "Passat", "Jetta"],
+                "correct": 0
+              },
+              {
+                "question": "Which company produced the Spitfire?",
+                "options": ["Triumph", "Rolls-Royce", "Bentley", "Aston Martin"],
+                "correct": 0
+              },
+              {
+                "question": "What is the name of the classic 1972 arcade game based on table tennis?",
+                "options": ["Pong", "Pac-Man", "Space Invaders", "Donkey Kong"],
+                "correct": 0
+              },
+              {
+                "question": "What is the name of the British computer scientist who invented the World Wide Web in 1989?",
+                "options": ["Tim Berners-Lee", "Alan Turing", "Ada Lovelace", "Steve Wozniak"],
+                "correct": 0
+              },
+              {
+                "question": "What is the name of the first web browser?",
+                "options": ["Netscape", "Internet Explorer", "Mosaic", "Chrome"],
+                "correct": 0
+              },
+              {
+                "question": "What is the name of the first social networking site launched on the internet in 1994?",
+                "options": ["Facebook", "MySpace", "GeoCities", "LinkedIn"],
+                "correct": 2
+              }
+            ]
+          },
     art: {
         easy: [
             {
@@ -1057,90 +1917,240 @@ const quizQuestions = {
             }
         ]
     },
-    animals: {
-        easy: [
-            {
-                question: "What is the largest mammal in the world?",
-                options: ["Elephant", "Blue Whale", "Giraffe", "Polar Bear"],
-                correct: 1
-            },
-            {
-                question: "Which animal is known as the 'King of the Jungle'?",
-                options: ["Tiger", "Lion", "Leopard", "Cheetah"],
-                correct: 1
-            },
-            {
-                question: "What is the fastest land animal?",
-                options: ["Cheetah", "Lion", "Tiger", "Leopard"],
-                correct: 0
-            },
-            {
-                question: "Which animal is known for its black and white stripes?",
-                options: ["Zebra", "Tiger", "Leopard", "Cheetah"],
-                correct: 0
-            },
-            {
-                question: "What is the largest bird in the world?",
-                options: ["Eagle", "Ostrich", "Albatross", "Condor"],
-                correct: 1
-            }
-        ],
-        medium: [
-            {
-                question: "Which animal is known for its ability to change color?",
-                options: ["Chameleon", "Octopus", "Cuttlefish", "All of the above"],
-                correct: 3
-            },
-            {
-                question: "What is the only mammal capable of true flight?",
-                options: ["Bat", "Flying Squirrel", "Flying Fox", "Colugo"],
-                correct: 0
-            },
-            {
-                question: "Which animal has the longest lifespan?",
-                options: ["Elephant", "Tortoise", "Whale", "Human"],
-                correct: 1
-            },
-            {
-                question: "What is the largest reptile in the world?",
-                options: ["Komodo Dragon", "Saltwater Crocodile", "Anaconda", "Nile Crocodile"],
-                correct: 1
-            },
-            {
-                question: "Which animal is known for its ability to regenerate lost limbs?",
-                options: ["Starfish", "Lizard", "Octopus", "All of the above"],
-                correct: 3
-            }
-        ],
-        hard: [
-            {
-                question: "Which animal has the most complex brain?",
-                options: ["Dolphin", "Elephant", "Chimpanzee", "Octopus"],
-                correct: 3
-            },
-            {
-                question: "What is the only mammal that lays eggs?",
-                options: ["Platypus", "Echidna", "Both A and B", "None of the above"],
-                correct: 2
-            },
-            {
-                question: "Which animal has the strongest bite force?",
-                options: ["Lion", "Tiger", "Saltwater Crocodile", "Great White Shark"],
-                correct: 2
-            },
-            {
-                question: "What is the only bird that can fly backwards?",
-                options: ["Hummingbird", "Kingfisher", "Bee-eater", "Swallow"],
-                correct: 0
-            },
-            {
-                question: "Which animal has the most complex social structure?",
-                options: ["Chimpanzee", "Elephant", "Dolphin", "Ant"],
-                correct: 3
-            }
-        ]
-    }
-};
+        animals: {
+            easy: [
+                {
+                    "question": "What is the largest mammal in the world?",
+                    "options": ["Elephant", "Blue Whale", "Giraffe", "Polar Bear"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which animal is known as the 'King of the Jungle'?",
+                    "options": ["Tiger", "Lion", "Leopard", "Cheetah"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the fastest land animal?",
+                    "options": ["Cheetah", "Lion", "Tiger", "Leopard"],
+                    "correct": 0
+                },
+                {
+                    "question": "Which animal is known for its black and white stripes?",
+                    "options": ["Zebra", "Tiger", "Leopard", "Cheetah"],
+                    "correct": 0
+                },
+                {
+                    "question": "What is the largest bird in the world?",
+                    "options": ["Eagle", "Ostrich", "Albatross", "Condor"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which of these animals is not a mammal?",
+                    "options": ["Dolphin", "Penguin", "Bat", "Kangaroo"],
+                    "correct": 1
+                },
+                {
+                    "question": "What do you call a baby cow?",
+                    "options": ["Puppy", "Calf", "Kitten", "Foal"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which animal is known for its humps?",
+                    "options": ["Camel", "Elephant", "Rhino", "Hippo"],
+                    "correct": 0
+                },
+                {
+                    "question": "What is a female deer called?",
+                    "options": ["Doe", "Buck", "Fawn", "Mare"],
+                    "correct": 0
+                },
+                {
+                    "question": "Which animal is the tallest in the world?",
+                    "options": ["Elephant", "Giraffe", "Ostrich", "Polar Bear"],
+                    "correct": 1
+                },
+                {
+                    "question": "What do bees collect to make honey?",
+                    "options": ["Pollen", "Nectar", "Water", "Sap"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which animal is not a reptile?",
+                    "options": ["Turtle", "Frog", "Snake", "Lizard"],
+                    "correct": 1
+                },
+                {
+                    "question": "How many legs does a spider typically have?",
+                    "options": ["6", "8", "10", "12"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which animal is known for carrying its baby in a pouch?",
+                    "options": ["Kangaroo", "Koala", "Platypus", "Both A and B"],
+                    "correct": 3
+                },
+                {
+                    "question": "What is the most common domesticated pet in the world?",
+                    "options": ["Dog", "Cat", "Fish", "Bird"],
+                    "correct": 1
+                }
+            ],
+            medium: [
+                {
+                    "question": "Which animal is known for its ability to change color?",
+                    "options": ["Chameleon", "Octopus", "Cuttlefish", "All of the above"],
+                    "correct": 3
+                },
+                {
+                    "question": "What is the only mammal capable of true flight?",
+                    "options": ["Bat", "Flying Squirrel", "Flying Fox", "Colugo"],
+                    "correct": 0
+                },
+                {
+                    "question": "Which animal has the longest lifespan?",
+                    "options": ["Elephant", "Tortoise", "Whale", "Human"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the largest reptile in the world?",
+                    "options": ["Komodo Dragon", "Saltwater Crocodile", "Anaconda", "Nile Crocodile"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which animal is known for its ability to regenerate lost limbs?",
+                    "options": ["Starfish", "Lizard", "Octopus", "All of the above"],
+                    "correct": 3
+                },
+                {
+                    "question": "What is the only continent where giraffes live in the wild?",
+                    "options": ["Asia", "Africa", "South America", "Australia"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which animal has the strongest relative bite force?",
+                    "options": ["Hyena", "Jaguar", "Tasmanian Devil", "Hippopotamus"],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the fastest marine animal?",
+                    "options": ["Dolphin", "Sailfish", "Killer Whale", "Swordfish"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which animal has the most powerful venom?",
+                    "options": ["Black Mamba", "Box Jellyfish", "Inland Taipan", "Stonefish"],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the only bird that can swim but cannot fly?",
+                    "options": ["Ostrich", "Penguin", "Kiwi", "Emu"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which animal has fingerprints most similar to humans?",
+                    "options": ["Gorilla", "Chimpanzee", "Koala", "Raccoon"],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the largest species of bear?",
+                    "options": ["Grizzly Bear", "Polar Bear", "Kodiak Bear", "Black Bear"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which animal has the longest migration?",
+                    "options": ["Monarch Butterfly", "Arctic Tern", "Gray Whale", "Caribou"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the only big cat that lives in groups called prides?",
+                    "options": ["Tiger", "Lion", "Leopard", "Jaguar"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which animal has the thickest fur?",
+                    "options": ["Musk Ox", "Sea Otter", "Polar Bear", "Bison"],
+                    "correct": 1
+                }
+            ],
+            hard: [
+                {
+                    "question": "Which animal has the most complex brain?",
+                    "options": ["Dolphin", "Elephant", "Chimpanzee", "Octopus"],
+                    "correct": 3
+                },
+                {
+                    "question": "What is the only mammal that lays eggs?",
+                    "options": ["Platypus", "Echidna", "Both A and B", "None of the above"],
+                    "correct": 2
+                },
+                {
+                    "question": "Which animal has the strongest bite force?",
+                    "options": ["Lion", "Tiger", "Saltwater Crocodile", "Great White Shark"],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the only bird that can fly backwards?",
+                    "options": ["Hummingbird", "Kingfisher", "Bee-eater", "Swallow"],
+                    "correct": 0
+                },
+                {
+                    "question": "Which animal has the most complex social structure?",
+                    "options": ["Chimpanzee", "Elephant", "Dolphin", "Ant"],
+                    "correct": 3
+                },
+                {
+                    "question": "Which animal has the highest blood pressure?",
+                    "options": ["Elephant", "Giraffe", "Blue Whale", "Hippopotamus"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the only venomous primate?",
+                    "options": ["Slow Loris", "Tarsier", "Aye-Aye", "Bush Baby"],
+                    "correct": 0
+                },
+                {
+                    "question": "Which animal can go the longest without water?",
+                    "options": ["Camel", "Kangaroo Rat", "Desert Tortoise", "Thorny Devil"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the loudest animal relative to its size?",
+                    "options": ["Howler Monkey", "Pistol Shrimp", "African Elephant", "Tiger Beetle"],
+                    "correct": 1
+                },
+                {
+                    "question": "Which animal has the most genes?",
+                    "options": ["Human", "Elephant", "Water Flea", "Rice Plant"],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the only animal known to recognize itself in a mirror?",
+                    "options": ["Dolphin", "Elephant", "Great Ape", "All of the above"],
+                    "correct": 3
+                },
+                {
+                    "question": "Which animal has the most advanced echolocation?",
+                    "options": ["Bat", "Dolphin", "Oilbird", "Aardvark"],
+                    "correct": 1
+                },
+                {
+                    "question": "What is the only animal that can see both ultraviolet and infrared light?",
+                    "options": ["Mantis Shrimp", "Eagle", "Butterfly", "Goldfish"],
+                    "correct": 0
+                },
+                {
+                    "question": "Which animal has the highest body temperature?",
+                    "options": ["Hummingbird", "Bat", "Tuna", "Desert Ant"],
+                    "correct": 0
+                },
+                {
+                    "question": "What is the only animal besides humans that goes through menopause?",
+                    "options": ["Elephant", "Orca", "Chimpanzee", "None of the above"],
+                    "correct": 1
+                }
+            ]
+        }
+    };
 
 // Add a Set to track used questions
 const usedQuestions = new Set();
