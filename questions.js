@@ -1,210 +1,510 @@
 const quizQuestions = {
-    general: {
-        easy: [
-            {
-            question: "What is the capital of India?",
-            options: ["Mumbai", "Delhi", "Kolkata", "Chennai"],
-            correct: 1
-            },
-            {
-                question: "Which planet is known as the Red Planet?",
-            options: ["Earth", "Mars", "Jupiter", "Venus"],
-                correct: 1
-            },
-            {
-            question: "How many days are there in a week?",
-            options: ["5", "6", "7", "8"],
-            correct: 2
-          },
-          {
-            question: "Which animal is known as the 'King of the Jungle'?",
-            options: ["Tiger", "Lion", "Elephant", "Cheetah"],
-                correct: 1
-            },
-            {
-            question: "Which shape has four equal sides?",
-            options: ["Triangle", "Rectangle", "Circle", "Square"],
-            correct: 3
-          },
-          {
-            question: "Which month comes after March?",
-            options: ["May", "June", "April", "February"],
-            correct: 2
-          },
-          {
-            question: "What color are bananas?",
-            options: ["Green", "Yellow", "Red", "Blue"],
-                correct: 1
-            },
-            {
-            question: "Which sense do we use to see?",
-            options: ["Touch", "Smell", "Sight", "Taste"],
-                correct: 2
-            },
-            {
-            question: "How many continents are there?",
-            options: ["5", "6", "7", "8"],
-            correct: 2
-          },
-          {
-            question: "Which is the tallest animal in the world?",
-            options: ["Elephant", "Giraffe", "Kangaroo", "Lion"],
-                correct: 1
-            },
-            {
-            question: "What is H2O commonly known as?",
-            options: ["Salt", "Air", "Water", "Acid"],
-            correct: 2
-          },
-          {
-            question: "Which fruit is red and often used to make ketchup?",
-            options: ["Apple", "Tomato", "Strawberry", "Cherry"],
-            correct: 1
-          },
-          {
-            question: "What do bees produce?",
-            options: ["Sugar", "Wax", "Honey", "Milk"],
-                correct: 2
-            },
-            {
-            question: "How many legs does a spider have?",
-            options: ["6", "8", "4", "10"],
-                correct: 1
-            },
-            {
-            question: "Which sport is played with a bat and ball?",
-            options: ["Football", "Tennis", "Cricket", "Basketball"],
-            correct: 2
-          },
-          {
-            question: "What is the opposite of 'hot'?",
-            options: ["Warm", "Cold", "Cool", "Heat"],
-            correct: 1
-          },
-          {
-            question: "Which bird can mimic human speech?",
-            options: ["Crow", "Owl", "Parrot", "Eagle"],
-            correct: 2
-          },
-          {
-            question: "Which vehicle flies in the sky?",
-            options: ["Car", "Bus", "Train", "Airplane"],
-            correct: 3
-          },
-          {
-            question: "How many hours are there in a day?",
-            options: ["12", "18", "24", "36"],
-            correct: 2
-          },
-          {
-            question: "What is the first letter of the English alphabet?",
-            options: ["Z", "B", "A", "C"],
-                correct: 2
-            }
-        ],
-        medium: [
-            {
-            question: "Which ocean is the largest in the world?",
-            options: ["Atlantic", "Indian", "Pacific", "Arctic"],
-                correct: 2
-            },
-            {
-            question: "Who wrote the play 'Romeo and Juliet'?",
-            options: ["Charles Dickens", "William Shakespeare", "Leo Tolstoy", "Jane Austen"],
-            correct: 1
-          },
-          {
-            question: "Which gas do plants absorb from the atmosphere?",
-            options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-            correct: 1
-          },
-          {
-            question: "What is the square root of 144?",
-            options: ["12", "11", "14", "10"],
-            correct: 0
-          },
-          {
-            question: "Who discovered gravity when an apple fell on his head?",
-            options: ["Albert Einstein", "Isaac Newton", "Galileo", "Stephen Hawking"],
-            correct: 1
-          },
-          {
-            question: "Which country is known as the Land of the Rising Sun?",
-            options: ["India", "China", "Japan", "Thailand"],
-                correct: 2
-            },
-            {
-            question: "In which year did India gain independence?",
-            options: ["1945", "1946", "1947", "1950"],
-            correct: 2
-          },
-          {
-            question: "What is the freezing point of water in Celsius?",
-            options: ["0°C", "100°C", "50°C", "10°C"],
-            correct: 0
-          },
-          {
-            question: "What is the main language spoken in Brazil?",
-            options: ["Spanish", "English", "Portuguese", "French"],
-            correct: 2
-          },
-          {
-            question: "How many bones are there in the adult human body?",
-            options: ["206", "205", "210", "198"],
-            correct: 0
-          },
-          {
-            question: "Who was the first President of the United States?",
-            options: ["Abraham Lincoln", "George Washington", "John Adams", "Thomas Jefferson"],
-                correct: 1
-            },
-            {
-            question: "What is the capital city of Australia?",
-            options: ["Sydney", "Melbourne", "Canberra", "Perth"],
-            correct: 2
-          },
-          {
-            question: "Which element has the chemical symbol 'O'?",
-            options: ["Osmium", "Oxygen", "Gold", "Ozone"],
-                correct: 1
-          },
-          {
-            question: "Which number comes next in the sequence: 2, 4, 8, 16, __?",
-            options: ["24", "32", "18", "20"],
-            correct: 1
-          },
-          {
-            question: "Which Indian festival is known as the Festival of Lights?",
-            options: ["Holi", "Diwali", "Eid", "Christmas"],
-            correct: 1
-          },
-          {
-            question: "Who was the first man to walk on the moon?",
-            options: ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Michael Collins"],
-            correct: 1
-          },
-          {
-            question: "What is the largest planet in our solar system?",
-            options: ["Earth", "Jupiter", "Saturn", "Neptune"],
-            correct: 1
-          },
-          {
-            question: "Which instrument is used to measure temperature?",
-            options: ["Barometer", "Thermometer", "Speedometer", "Altimeter"],
-            correct: 1
-          },
-          {
-            question: "Which is the national sport of Canada?",
-            options: ["Cricket", "Hockey", "Baseball", "Football"],
-            correct: 1
-          },
-          {
-            question: "How many colors are there in a rainbow?",
-            options: ["6", "8", "7", "5"],
-            correct: 2
-            }
-        ],
-        hard: [
+    "general": {
+      "easy": [
+        {
+          "question": "How many continents are there on Earth?",
+          "options": ["5", "6", "7", "8"],
+          "correct": 2
+        },
+        {
+          "question": "Which is the tallest animal in the world?",
+          "options": ["Elephant", "Giraffe", "Kangaroo", "Lion"],
+          "correct": 1
+        },
+        {
+          "question": "What is the freezing point of water in Celsius?",
+          "options": ["0°C", "32°C", "100°C", "-10°C"],
+          "correct": 0
+        },
+        {
+          "question": "Which country is famous for the Eiffel Tower?",
+          "options": ["Italy", "Spain", "France", "Germany"],
+          "correct": 2
+        },
+        {
+          "question": "What is the currency of Japan?",
+          "options": ["Won", "Yen", "Dollar", "Euro"],
+          "correct": 1
+        },
+        {
+          "question": "What is the largest mammal?",
+          "options": ["Elephant", "Whale", "Blue Whale", "Giraffe"],
+          "correct": 2
+        },
+        {
+          "question": "Which shape has three sides?",
+          "options": ["Square", "Circle", "Triangle", "Rectangle"],
+          "correct": 2
+        },
+        {
+          "question": "Which fruit is known for having seeds on the outside?",
+          "options": ["Apple", "Banana", "Strawberry", "Mango"],
+          "correct": 2
+        },
+        {
+          "question": "Which planet is closest to the Sun?",
+          "options": ["Venus", "Earth", "Mercury", "Mars"],
+          "correct": 2
+        },
+        {
+          "question": "How many legs does a spider have?",
+          "options": ["6", "8", "10", "12"],
+          "correct": 1
+        },
+        {
+          "question": "Which color do you get by mixing red and white?",
+          "options": ["Pink", "Purple", "Orange", "Brown"],
+          "correct": 0
+        },
+        {
+          "question": "What is the capital of India?",
+          "options": ["Mumbai", "Delhi", "Kolkata", "Chennai"],
+          "correct": 1
+        },
+        {
+          "question": "What is the national bird of the United States?",
+          "options": ["Sparrow", "Eagle", "Peacock", "Hawk"],
+          "correct": 1
+        },
+        {
+          "question": "What is the process of plants making food called?",
+          "options": ["Digestion", "Respiration", "Photosynthesis", "Fermentation"],
+          "correct": 2
+        },
+        {
+          "question": "How many hours are there in a day?",
+          "options": ["12", "24", "36", "48"],
+          "correct": 1
+        },
+        {
+          "question": "Which part of the plant conducts photosynthesis?",
+          "options": ["Roots", "Stem", "Leaves", "Flower"],
+          "correct": 2
+        },
+        {
+          "question": "Which animal is known as 'man’s best friend'?",
+          "options": ["Cat", "Dog", "Horse", "Parrot"],
+          "correct": 1
+        },
+        {
+          "question": "Which gas do humans need to breathe?",
+          "options": ["Carbon Dioxide", "Oxygen", "Hydrogen", "Nitrogen"],
+          "correct": 1
+        },
+        {
+          "question": "How many months are there in a year?",
+          "options": ["10", "11", "12", "13"],
+          "correct": 2
+        },
+        {
+          "question": "Which planet is known as the Red Planet?",
+          "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+          "correct": 1
+        },
+        {
+          "question": "What do bees produce?",
+          "options": ["Milk", "Butter", "Honey", "Wax"],
+          "correct": 2
+        },
+        {
+          "question": "What type of animal is a salmon?",
+          "options": ["Bird", "Mammal", "Reptile", "Fish"],
+          "correct": 3
+        },
+        {
+          "question": "Which day comes after Friday?",
+          "options": ["Saturday", "Sunday", "Thursday", "Monday"],
+          "correct": 0
+        },
+        {
+          "question": "Which number comes after 99?",
+          "options": ["98", "100", "101", "97"],
+          "correct": 1
+        },
+        {
+          "question": "What is the primary color of the sky on a clear day?",
+          "options": ["Red", "Yellow", "Blue", "Green"],
+          "correct": 2
+        },
+        {
+          "question": "How many continents are there on Earth?",
+          "options": ["5", "6", "7", "8"],
+          "correct": 2
+        },
+        {
+          "question": "Which is the tallest animal in the world?",
+          "options": ["Elephant", "Giraffe", "Kangaroo", "Lion"],
+          "correct": 1
+        },
+        {
+          "question": "What is the freezing point of water in Celsius?",
+          "options": ["0°C", "32°C", "100°C", "-10°C"],
+          "correct": 0
+        },
+        {
+          "question": "Which country is famous for the Eiffel Tower?",
+          "options": ["Italy", "Spain", "France", "Germany"],
+          "correct": 2
+        },
+        {
+          "question": "What is the currency of Japan?",
+          "options": ["Won", "Yen", "Dollar", "Euro"],
+          "correct": 1
+        },
+        {
+          "question": "What is the largest mammal?",
+          "options": ["Elephant", "Whale", "Blue Whale", "Giraffe"],
+          "correct": 2
+        },
+        {
+          "question": "Which shape has three sides?",
+          "options": ["Square", "Circle", "Triangle", "Rectangle"],
+          "correct": 2
+        },
+        {
+          "question": "Which fruit is known for having seeds on the outside?",
+          "options": ["Apple", "Banana", "Strawberry", "Mango"],
+          "correct": 2
+        },
+        {
+          "question": "Which planet is closest to the Sun?",
+          "options": ["Venus", "Earth", "Mercury", "Mars"],
+          "correct": 2
+        },
+        {
+          "question": "How many legs does a spider have?",
+          "options": ["6", "8", "10", "12"],
+          "correct": 1
+        },
+        {
+          "question": "Which color do you get by mixing red and white?",
+          "options": ["Pink", "Purple", "Orange", "Brown"],
+          "correct": 0
+        },
+        {
+          "question": "What is the capital of India?",
+          "options": ["Mumbai", "Delhi", "Kolkata", "Chennai"],
+          "correct": 1
+        },
+        {
+          "question": "What is the national bird of the United States?",
+          "options": ["Sparrow", "Eagle", "Peacock", "Hawk"],
+          "correct": 1
+        },
+        {
+          "question": "What is the process of plants making food called?",
+          "options": ["Digestion", "Respiration", "Photosynthesis", "Fermentation"],
+          "correct": 2
+        },
+        {
+          "question": "How many hours are there in a day?",
+          "options": ["12", "24", "36", "48"],
+          "correct": 1
+        },
+        {
+          "question": "Which part of the plant conducts photosynthesis?",
+          "options": ["Roots", "Stem", "Leaves", "Flower"],
+          "correct": 2
+        },
+        {
+          "question": "Which animal is known as 'man’s best friend'?",
+          "options": ["Cat", "Dog", "Horse", "Parrot"],
+          "correct": 1
+        },
+        {
+          "question": "Which gas do humans need to breathe?",
+          "options": ["Carbon Dioxide", "Oxygen", "Hydrogen", "Nitrogen"],
+          "correct": 1
+        },
+        {
+          "question": "How many months are there in a year?",
+          "options": ["10", "11", "12", "13"],
+          "correct": 2
+        },
+        {
+          "question": "Which planet is known as the Red Planet?",
+          "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+          "correct": 1
+        },
+        {
+          "question": "What do bees produce?",
+          "options": ["Milk", "Butter", "Honey", "Wax"],
+          "correct": 2
+        },
+        {
+          "question": "What type of animal is a salmon?",
+          "options": ["Bird", "Mammal", "Reptile", "Fish"],
+          "correct": 3
+        },
+        {
+          "question": "Which day comes after Friday?",
+          "options": ["Saturday", "Sunday", "Thursday", "Monday"],
+          "correct": 0
+        },
+        {
+          "question": "Which number comes after 99?",
+          "options": ["98", "100", "101", "97"],
+          "correct": 1
+        },
+        {
+          "question": "What is the primary color of the sky on a clear day?",
+          "options": ["Red", "Yellow", "Blue", "Green"],
+          "correct": 2
+        }
+      ],
+      "medium": [
+        {
+          "question": "Which is the smallest planet in the solar system?",
+          "options": ["Mars", "Venus", "Mercury", "Pluto"],
+          "correct": 2
+        },
+        {
+          "question": "Who invented the light bulb?",
+          "options": ["Nikola Tesla", "Thomas Edison", "Albert Einstein", "Isaac Newton"],
+          "correct": 1
+        },
+        {
+          "question": "How many elements are in the periodic table (as of 2024)?",
+          "options": ["112", "118", "120", "110"],
+          "correct": 1
+        },
+        {
+          "question": "Which language has the most native speakers worldwide?",
+          "options": ["English", "Mandarin Chinese", "Spanish", "Hindi"],
+          "correct": 1
+        },
+        {
+          "question": "Which desert is the largest in the world?",
+          "options": ["Gobi", "Sahara", "Arctic", "Antarctica"],
+          "correct": 3
+        },
+        {
+          "question": "What is the capital of Canada?",
+          "options": ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+          "correct": 1
+        },
+        {
+          "question": "What is the process by which plants lose water called?",
+          "options": ["Respiration", "Transpiration", "Photosynthesis", "Condensation"],
+          "correct": 1
+        },
+        {
+          "question": "Which is the longest bone in the human body?",
+          "options": ["Femur", "Tibia", "Humerus", "Radius"],
+          "correct": 0
+        },
+        {
+          "question": "In which year did World War II end?",
+          "options": ["1943", "1944", "1945", "1946"],
+          "correct": 2
+        },
+        {
+          "question": "Which planet has the most moons?",
+          "options": ["Earth", "Saturn", "Jupiter", "Mars"],
+          "correct": 1
+        },
+        {
+          "question": "Which ocean is the deepest?",
+          "options": ["Atlantic", "Indian", "Southern", "Pacific"],
+          "correct": 3
+        },
+        {
+          "question": "Which organ produces insulin?",
+          "options": ["Liver", "Pancreas", "Kidney", "Stomach"],
+          "correct": 1
+        },
+        {
+          "question": "What is the smallest prime number?",
+          "options": ["0", "1", "2", "3"],
+          "correct": 2
+        },
+        {
+          "question": "Which chemical element has the symbol 'Fe'?",
+          "options": ["Fluorine", "Iron", "Lead", "Gold"],
+          "correct": 1
+        },
+        {
+          "question": "What is the square root of 144?",
+          "options": ["10", "11", "12", "13"],
+          "correct": 2
+        },
+        {
+          "question": "Which famous scientist developed the laws of motion?",
+          "options": ["Newton", "Galileo", "Einstein", "Darwin"],
+          "correct": 0
+        },
+        {
+          "question": "Which blood type is known as the universal donor?",
+          "options": ["A", "B", "O-", "AB+"],
+          "correct": 2
+        },
+        {
+          "question": "How many chambers does the human heart have?",
+          "options": ["2", "3", "4", "5"],
+          "correct": 2
+        },
+        {
+          "question": "Which part of the cell contains genetic material?",
+          "options": ["Mitochondria", "Ribosome", "Nucleus", "Cytoplasm"],
+          "correct": 2
+        },
+        {
+          "question": "Which continent is known as the 'Dark Continent'?",
+          "options": ["Asia", "Africa", "Australia", "Antarctica"],
+          "correct": 1
+        },
+        {
+          "question": "How many strings does a standard violin have?",
+          "options": ["4", "5", "6", "7"],
+          "correct": 0
+        },
+        {
+          "question": "Which Indian state is known as the 'Land of Five Rivers'?",
+          "options": ["Punjab", "Haryana", "Rajasthan", "Bihar"],
+          "correct": 0
+        },
+        {
+          "question": "What is the name of the closest star to Earth?",
+          "options": ["Sirius", "Alpha Centauri", "Sun", "Proxima Centauri"],
+          "correct": 2
+        },
+        {
+          "question": "Which bird is the fastest in the world?",
+          "options": ["Eagle", "Falcon", "Ostrich", "Hawk"],
+          "correct": 1
+        },
+        {
+          "question": "What is the chemical symbol for Gold?",
+          "options": ["Go", "Au", "Ag", "Gd"],
+          "correct": 1
+        },
+              {
+                "question": "Which is the smallest planet in the solar system?",
+                "options": ["Mars", "Venus", "Mercury", "Pluto"],
+                "correct": 2
+              },
+              {
+                "question": "Who invented the light bulb?",
+                "options": ["Nikola Tesla", "Thomas Edison", "Albert Einstein", "Isaac Newton"],
+                "correct": 1
+              },
+              {
+                "question": "How many elements are in the periodic table (as of 2024)?",
+                "options": ["112", "118", "120", "110"],
+                "correct": 1
+              },
+              {
+                "question": "Which language has the most native speakers worldwide?",
+                "options": ["English", "Mandarin Chinese", "Spanish", "Hindi"],
+                "correct": 1
+              },
+              {
+                "question": "Which desert is the largest in the world?",
+                "options": ["Gobi", "Sahara", "Arctic", "Antarctica"],
+                "correct": 3
+              },
+              {
+                "question": "What is the capital of Canada?",
+                "options": ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+                "correct": 1
+              },
+              {
+                "question": "What is the process by which plants lose water called?",
+                "options": ["Respiration", "Transpiration", "Photosynthesis", "Condensation"],
+                "correct": 1
+              },
+              {
+                "question": "Which is the longest bone in the human body?",
+                "options": ["Femur", "Tibia", "Humerus", "Radius"],
+                "correct": 0
+              },
+              {
+                "question": "In which year did World War II end?",
+                "options": ["1943", "1944", "1945", "1946"],
+                "correct": 2
+              },
+              {
+                "question": "Which planet has the most moons?",
+                "options": ["Earth", "Saturn", "Jupiter", "Mars"],
+                "correct": 1
+              },
+              {
+                "question": "Which ocean is the deepest?",
+                "options": ["Atlantic", "Indian", "Southern", "Pacific"],
+                "correct": 3
+              },
+              {
+                "question": "Which organ produces insulin?",
+                "options": ["Liver", "Pancreas", "Kidney", "Stomach"],
+                "correct": 1
+              },
+              {
+                "question": "What is the smallest prime number?",
+                "options": ["0", "1", "2", "3"],
+                "correct": 2
+              },
+              {
+                "question": "Which chemical element has the symbol 'Fe'?",
+                "options": ["Fluorine", "Iron", "Lead", "Gold"],
+                "correct": 1
+              },
+              {
+                "question": "What is the square root of 144?",
+                "options": ["10", "11", "12", "13"],
+                "correct": 2
+              },
+              {
+                "question": "Which famous scientist developed the laws of motion?",
+                "options": ["Newton", "Galileo", "Einstein", "Darwin"],
+                "correct": 0
+              },
+              {
+                "question": "Which blood type is known as the universal donor?",
+                "options": ["A", "B", "O-", "AB+"],
+                "correct": 2
+              },
+              {
+                "question": "How many chambers does the human heart have?",
+                "options": ["2", "3", "4", "5"],
+                "correct": 2
+              },
+              {
+                "question": "Which part of the cell contains genetic material?",
+                "options": ["Mitochondria", "Ribosome", "Nucleus", "Cytoplasm"],
+                "correct": 2
+              },
+              {
+                "question": "Which continent is known as the 'Dark Continent'?",
+                "options": ["Asia", "Africa", "Australia", "Antarctica"],
+                "correct": 1
+              },
+              {
+                "question": "How many strings does a standard violin have?",
+                "options": ["4", "5", "6", "7"],
+                "correct": 0
+              },
+              {
+                "question": "Which Indian state is known as the 'Land of Five Rivers'?",
+                "options": ["Punjab", "Haryana", "Rajasthan", "Bihar"],
+                "correct": 0
+              },
+              {
+                "question": "What is the name of the closest star to Earth?",
+                "options": ["Sirius", "Alpha Centauri", "Sun", "Proxima Centauri"],
+                "correct": 2
+              },
+              {
+                "question": "Which bird is the fastest in the world?",
+                "options": ["Eagle", "Falcon", "Ostrich", "Hawk"],
+                "correct": 1
+              },
+              {
+                "question": "What is the chemical symbol for Gold?",
+                "options": ["Go", "Au", "Ag", "Gd"],
+                "correct": 1
+              }
+          ],
+        "hard": [
             {
             question: "What is the currency of South Korea?",
             options: ["Yuan", "Won", "Yen", "Ringgit"],
@@ -213,7 +513,7 @@ const quizQuestions = {
           {
             question: "Who is the author of the book '1984'?",
             options: ["George Orwell", "Aldous Huxley", "Ernest Hemingway", "F. Scott Fitzgerald"],
-                correct: 0
+            correct: 0
             },
             {
             question: "Which chemical element has the atomic number 79?",
@@ -223,7 +523,7 @@ const quizQuestions = {
           {
             question: "What is the hardest natural substance on Earth?",
             options: ["Iron", "Graphite", "Diamond", "Quartz"],
-                correct: 2
+            correct: 2
             },
             {
             question: "Who painted the ceiling of the Sistine Chapel?",
@@ -238,17 +538,17 @@ const quizQuestions = {
           {
             question: "What is the smallest prime number?",
             options: ["0", "1", "2", "3"],
-                correct: 2
+            correct: 2
             },
             {
             question: "Who developed the theory of relativity?",
             options: ["Newton", "Einstein", "Tesla", "Bohr"],
-                correct: 1
-    },
+            correct: 1
+            },
             {
             question: "Which metal is liquid at room temperature?",
             options: ["Mercury", "Lead", "Zinc", "Iron"],
-                correct: 0
+            correct: 0
             },
             {
             question: "What is the name of the deepest part of the ocean?",
@@ -304,7 +604,132 @@ const quizQuestions = {
             question: "What is the powerhouse of the cell?",
             options: ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
             correct: 2
-          }
+          },
+                {
+                  "question": "Which physicist is credited with the discovery of the neutron?",
+                  "options": ["Ernest Rutherford", "Niels Bohr", "James Chadwick", "Enrico Fermi"],
+                  "correct": 2
+                },
+                {
+                  "question": "Which country was formerly known as Abyssinia?",
+                  "options": ["Sudan", "Ethiopia", "Somalia", "Kenya"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the mathematical name for a shape with 12 sides?",
+                  "options": ["Decagon", "Hendecagon", "Dodecagon", "Tetradecagon"],
+                  "correct": 2
+                },
+                {
+                  "question": "Which gas is most abundant in the Earth's atmosphere?",
+                  "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+                  "correct": 2
+                },
+                {
+                  "question": "Who was the first woman to win a Nobel Prize?",
+                  "options": ["Marie Curie", "Rosalind Franklin", "Lise Meitner", "Dorothy Hodgkin"],
+                  "correct": 0
+                },
+                {
+                  "question": "Which ancient civilization built the Machu Picchu complex in Peru?",
+                  "options": ["Maya", "Aztec", "Inca", "Olmec"],
+                  "correct": 2
+                },
+                {
+                  "question": "What is the SI unit of electrical capacitance?",
+                  "options": ["Farad", "Ohm", "Henry", "Joule"],
+                  "correct": 0
+                },
+                {
+                  "question": "Which enzyme breaks down proteins in the stomach?",
+                  "options": ["Lipase", "Amylase", "Pepsin", "Trypsin"],
+                  "correct": 2
+                },
+                {
+                  "question": "Which planet has the shortest day in the solar system?",
+                  "options": ["Earth", "Jupiter", "Mars", "Mercury"],
+                  "correct": 1
+                },
+                {
+                  "question": "Which battle marked the end of Napoleon’s rule in 1815?",
+                  "options": ["Battle of Leipzig", "Battle of Austerlitz", "Battle of Trafalgar", "Battle of Waterloo"],
+                  "correct": 3
+                },
+                {
+                  "question": "Which country has the most UNESCO World Heritage Sites?",
+                  "options": ["China", "India", "Italy", "France"],
+                  "correct": 2
+                },
+                {
+                  "question": "Which scientist coined the term 'cell' after observing cork under a microscope?",
+                  "options": ["Antonie van Leeuwenhoek", "Robert Hooke", "Louis Pasteur", "Matthias Schleiden"],
+                  "correct": 1
+                },
+                {
+                  "question": "Who painted 'The Birth of Venus'?",
+                  "options": ["Leonardo da Vinci", "Michelangelo", "Botticelli", "Raphael"],
+                  "correct": 2
+                },
+                {
+                  "question": "What does HTTP stand for?",
+                  "options": ["HyperText Transmission Protocol", "HighText Transfer Protocol", "HyperText Transfer Protocol", "Hyper Transmission Transfer Process"],
+                  "correct": 2
+                },
+                {
+                  "question": "Which blood vessels carry blood away from the heart?",
+                  "options": ["Veins", "Capillaries", "Arteries", "Venules"],
+                  "correct": 2
+                },
+                {
+                  "question": "Which country launched the first satellite into space?",
+                  "options": ["USA", "Russia", "Germany", "France"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the approximate age of the Earth?",
+                  "options": ["2.5 billion years", "4.5 billion years", "6.5 billion years", "3.5 billion years"],
+                  "correct": 1
+                },
+                {
+                  "question": "Which philosopher is known for the phrase 'I think, therefore I am'?",
+                  "options": ["Plato", "Descartes", "Socrates", "Aristotle"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the term for animals that eat both plants and meat?",
+                  "options": ["Carnivores", "Herbivores", "Omnivores", "Insectivores"],
+                  "correct": 2
+                },
+                {
+                  "question": "What does DNA stand for?",
+                  "options": ["Deoxynucleic Acid", "Dioxinucleic Acid", "Deoxyribonucleic Acid", "Deoxyribose Acid"],
+                  "correct": 2
+                },
+                {
+                  "question": "Who was the first person to measure the Earth's circumference accurately?",
+                  "options": ["Pythagoras", "Aristotle", "Eratosthenes", "Archimedes"],
+                  "correct": 2
+                },
+                {
+                  "question": "Which Indian mathematician invented the concept of zero?",
+                  "options": ["Aryabhata", "Bhaskara I", "Varahamihira", "Brahmagupta"],
+                  "correct": 3
+                },
+                {
+                  "question": "Which treaty ended World War I?",
+                  "options": ["Treaty of Tordesillas", "Treaty of Paris", "Treaty of Versailles", "Treaty of Utrecht"],
+                  "correct": 2
+                },
+                {
+                  "question": "What is the powerhouse of the cell?",
+                  "options": ["Nucleus", "Chloroplast", "Mitochondria", "Golgi apparatus"],
+                  "correct": 2
+                },
+                {
+                  "question": "Which element has the highest melting point?",
+                  "options": ["Iron", "Platinum", "Tungsten", "Carbon"],
+                  "correct": 2
+                }
         ]
       },
       science: {
@@ -408,9 +833,9 @@ const quizQuestions = {
                     "question": "What type of energy is stored in a battery?",
                     "options": ["Mechanical", "Thermal", "Chemical", "Nuclear"],
                     "correct": 2
-            }
+          }
         ],
-        medium: [
+          medium: [
             {
                     "question": "What is the speed of light in vacuum?",
                     "options": ["299,792 km/s", "199,792 km/s", "399,792 km/s", "249,792 km/s"],

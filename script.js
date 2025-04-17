@@ -34,9 +34,11 @@ let leaderboardData = {
 // Add scoring constants
 const SCORING = {
     BASE_POINTS: 10,
-    TIME_BONUS_MULTIPLIER: 1.0, // 100% of base points possible as time bonus
-    STREAK_BONUS_MULTIPLIER: 0.1, // 10% increase per streak
-    MAX_STREAK_BONUS: 0.5, // Maximum 50% bonus from streaks
+    TIME_BONUS_MULTIPLIER: 0.67, // 67% of base points possible as time bonus
+    STREAK_BONUS: {
+        3: 5,  // 5 points bonus at 3 correct answers
+        5: 10  // 10 points bonus at 5 correct answers
+    },
     MIN_TIME_FOR_BONUS: 5 // Minimum seconds required for time bonus
 };
 
@@ -46,11 +48,12 @@ let incorrectAnswers = 0;
 let skippedQuestions = 0;
 let hintsUsed = 0;
 let powerUpsUsed = 0;
+let totalStreakBonus = 0; // Add this to track total streak bonus
 
 // Update penalty constants
 const PENALTIES = {
-    HINT: 5, // 5 points penalty per hint used
-    SKIP: 10, // 10 points penalty per skip
+    HINT: 5,     // 5 points penalty per hint used
+    SKIP: 10,    // 10 points penalty per skip
     TIME_FREEZE: 10, // 10 points penalty per time freeze
     DOUBLE_POINTS: 10 // 10 points penalty per double points used
 };
@@ -213,10 +216,26 @@ function updateLeaderboardDisplay() {
     leaderboardData.scores.forEach((entry, index) => {
         const row = document.createElement('tr');
         row.className = 'leaderboard-item hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors';
+        
+        // Add medal emoji for top 3 positions
+        let rankDisplay = index + 1;
+        if (index === 0) {
+            rankDisplay = '🥇';
+        } else if (index === 1) {
+            rankDisplay = '🥈';
+        } else if (index === 2) {
+            rankDisplay = '🥉';
+        }
+
+        // Add special styling for top 3 positions
+        const rankClass = index < 3 ? 'text-2xl' : 'font-semibold text-gray-700 dark:text-gray-300';
+        const scoreClass = index < 3 ? 'text-2xl font-bold' : 'font-bold text-green-500 dark:text-green-400';
+        const usernameClass = index < 3 ? 'text-xl font-bold text-indigo-600 dark:text-indigo-400' : 'font-medium text-indigo-600 dark:text-indigo-400';
+
         row.innerHTML = `
-            <td class="py-4 text-center font-semibold text-gray-700 dark:text-gray-300">${index + 1}</td>
-            <td class="py-4 text-center font-medium text-indigo-600 dark:text-indigo-400">${entry.username}</td>
-            <td class="py-4 text-center font-bold text-green-500 dark:text-green-400">${entry.score}</td>
+            <td class="py-4 text-center ${rankClass}">${rankDisplay}</td>
+            <td class="py-4 text-center ${usernameClass}">${entry.username}</td>
+            <td class="py-4 text-center ${scoreClass}">${entry.score}</td>
             <td class="py-4 text-center text-sm text-gray-500 dark:text-gray-400">${entry.theme} (${entry.level})</td>
             <td class="py-4 text-center text-sm text-gray-500 dark:text-gray-400">${new Date(entry.timestamp).toLocaleString()}</td>
         `;
@@ -402,21 +421,29 @@ function selectAnswer(index) {
         const basePoints = SCORING.BASE_POINTS;
         let timeBonus = 0;
         
+        // Calculate time bonus
         if (timeLeft >= SCORING.MIN_TIME_FOR_BONUS) {
             const timeRatio = (timeLeft - SCORING.MIN_TIME_FOR_BONUS) / (15 - SCORING.MIN_TIME_FOR_BONUS);
             timeBonus = Math.floor(basePoints * SCORING.TIME_BONUS_MULTIPLIER * timeRatio);
         }
         
-        const streakBonus = Math.min(
-            SCORING.MAX_STREAK_BONUS,
-            streak * SCORING.STREAK_BONUS_MULTIPLIER
-        ) * basePoints;
+        // Calculate streak bonus
+        let streakBonus = 0;
+        streak++; // Increment streak before checking for bonus
         
-        const pointsEarned = Math.floor(basePoints + timeBonus + streakBonus);
+        // Check for streak bonuses
+        if (streak === 3) {
+            streakBonus = SCORING.STREAK_BONUS[3];
+            totalStreakBonus += streakBonus;
+        } else if (streak === 5) {
+            streakBonus = SCORING.STREAK_BONUS[5];
+            totalStreakBonus += streakBonus;
+        }
+        
+        const pointsEarned = basePoints + timeBonus + streakBonus;
         
         score += pointsEarned;
         totalTimeBonus += timeBonus;
-        streak++;
         
         // Update score display
         if (scoreElement) {
@@ -438,7 +465,7 @@ function selectAnswer(index) {
     
     // Show next button
     if (nextButton) {
-    nextButton.classList.remove('hidden');
+        nextButton.classList.remove('hidden');
     }
 }
 
@@ -500,7 +527,7 @@ function handleTimeUp() {
     correctButton.classList.add('correct');
     
     if (nextButton) {
-    nextButton.classList.remove('hidden');
+        nextButton.classList.remove('hidden');
     }
 }
 
@@ -560,7 +587,7 @@ function endQuiz() {
                         </div>
                         <div class="flex justify-between">
                             <span>Streak Bonus:</span>
-                            <span class="text-purple-500">+${Math.floor(streak * SCORING.STREAK_BONUS_MULTIPLIER * SCORING.BASE_POINTS)}</span>
+                            <span class="text-purple-500">+${totalStreakBonus}</span>
                         </div>
                         <div class="flex justify-between text-red-500">
                             <span>Penalties:</span>

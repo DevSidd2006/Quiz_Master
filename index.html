@@ -69,18 +69,59 @@
         .welcome-text {
             font-size: 2.5rem;
             font-weight: 800;
-            background: linear-gradient(45deg, #667eea, #764ba2, #9f7aea);
-            background-size: 200% 200%;
+            background: linear-gradient(45deg, #667eea, #764ba2, #9f7aea, #667eea, #764ba2, #9f7aea);
+            background-size: 400% 400%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: gradientText 3s ease infinite;
+            animation: gradientText 4s ease infinite;
             text-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .welcome-text::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #9f7aea, #667eea, #764ba2, #9f7aea);
+            background-size: 400% 400%;
+            animation: gradientText 4s ease infinite;
+            border-radius: 2px;
         }
 
         @keyframes gradientText {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% { 
+                background-position: 0% 50%;
+            }
+            25% { 
+                background-position: 50% 50%;
+            }
+            50% { 
+                background-position: 100% 50%;
+            }
+            75% { 
+                background-position: 50% 50%;
+            }
+            100% { 
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Add container for welcome text */
+        .welcome-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 2rem;
         }
 
         .option-button {
@@ -600,7 +641,9 @@
             <div id="loading-spinner" class="loading-spinner hidden"></div>
 
             <div id="landing-page" class="max-w-2xl mx-auto card p-8">
-                <h1 class="welcome-text">Are you a Quiz Master?</h1>
+                <div class="welcome-container">
+                    <h1 class="welcome-text">Are you a Quiz Master?</h1>
+                </div>
                 <p class="text-center mb-8 text-gray-600 dark:text-gray-300">Choose your quiz preferences and get started to know!</p>
                 
                 <div class="space-y-8">
@@ -699,8 +742,8 @@
                         <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm">
                             <h3 class="text-xl font-semibold mb-4 text-indigo-600 dark:text-indigo-400">🔥 Streak System</h3>
                             <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-                                <li>3 correct answers: "Good!" (+10% bonus)</li>
-                                <li>5 correct answers: "Great!" (+20% bonus)</li>
+                                <li>3 correct answers: "Good!" (+5 points bonus)</li>
+                                <li>5 correct answers: "Great!" (+10 points bonus)</li>
                             </ul>
                         </div>
                     </div>
