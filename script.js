@@ -49,7 +49,7 @@ let powerUpsUsed = 0;
 
 // Update penalty constants
 const PENALTIES = {
-    HINT: 10, // 10 points penalty per hint used
+    HINT: 5, // 5 points penalty per hint used
     SKIP: 10, // 10 points penalty per skip
     TIME_FREEZE: 10, // 10 points penalty per time freeze
     DOUBLE_POINTS: 10 // 10 points penalty per double points used
@@ -184,6 +184,10 @@ function addScoreToLeaderboard(score, theme, level) {
         id: Date.now() // Unique identifier for each entry
     };
     
+    // Remove any existing entries for this user
+    leaderboardData.scores = leaderboardData.scores.filter(entry => entry.username !== username);
+    
+    // Add the new entry
     leaderboardData.scores.push(entry);
     leaderboardData.lastUpdated = new Date().toISOString();
     

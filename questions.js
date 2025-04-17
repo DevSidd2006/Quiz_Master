@@ -1,17 +1,17 @@
 const quizQuestions = {
     general: {
         easy: [
-          {
+            {
             question: "What is the capital of India?",
             options: ["Mumbai", "Delhi", "Kolkata", "Chennai"],
             correct: 1
-          },
-          {
-            question: "Which planet is known as the Red Planet?",
+            },
+            {
+                question: "Which planet is known as the Red Planet?",
             options: ["Earth", "Mars", "Jupiter", "Venus"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "How many days are there in a week?",
             options: ["5", "6", "7", "8"],
             correct: 2
@@ -19,9 +19,9 @@ const quizQuestions = {
           {
             question: "Which animal is known as the 'King of the Jungle'?",
             options: ["Tiger", "Lion", "Elephant", "Cheetah"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Which shape has four equal sides?",
             options: ["Triangle", "Rectangle", "Circle", "Square"],
             correct: 3
@@ -34,14 +34,14 @@ const quizQuestions = {
           {
             question: "What color are bananas?",
             options: ["Green", "Yellow", "Red", "Blue"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Which sense do we use to see?",
             options: ["Touch", "Smell", "Sight", "Taste"],
-            correct: 2
-          },
-          {
+                correct: 2
+            },
+            {
             question: "How many continents are there?",
             options: ["5", "6", "7", "8"],
             correct: 2
@@ -49,9 +49,9 @@ const quizQuestions = {
           {
             question: "Which is the tallest animal in the world?",
             options: ["Elephant", "Giraffe", "Kangaroo", "Lion"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "What is H2O commonly known as?",
             options: ["Salt", "Air", "Water", "Acid"],
             correct: 2
@@ -64,14 +64,14 @@ const quizQuestions = {
           {
             question: "What do bees produce?",
             options: ["Sugar", "Wax", "Honey", "Milk"],
-            correct: 2
-          },
-          {
+                correct: 2
+            },
+            {
             question: "How many legs does a spider have?",
             options: ["6", "8", "4", "10"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Which sport is played with a bat and ball?",
             options: ["Football", "Tennis", "Cricket", "Basketball"],
             correct: 2
@@ -99,16 +99,16 @@ const quizQuestions = {
           {
             question: "What is the first letter of the English alphabet?",
             options: ["Z", "B", "A", "C"],
-            correct: 2
-          }
+                correct: 2
+            }
         ],
         medium: [
-          {
+            {
             question: "Which ocean is the largest in the world?",
             options: ["Atlantic", "Indian", "Pacific", "Arctic"],
-            correct: 2
-          },
-          {
+                correct: 2
+            },
+            {
             question: "Who wrote the play 'Romeo and Juliet'?",
             options: ["Charles Dickens", "William Shakespeare", "Leo Tolstoy", "Jane Austen"],
             correct: 1
@@ -131,9 +131,9 @@ const quizQuestions = {
           {
             question: "Which country is known as the Land of the Rising Sun?",
             options: ["India", "China", "Japan", "Thailand"],
-            correct: 2
-          },
-          {
+                correct: 2
+            },
+            {
             question: "In which year did India gain independence?",
             options: ["1945", "1946", "1947", "1950"],
             correct: 2
@@ -156,9 +156,9 @@ const quizQuestions = {
           {
             question: "Who was the first President of the United States?",
             options: ["Abraham Lincoln", "George Washington", "John Adams", "Thomas Jefferson"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "What is the capital city of Australia?",
             options: ["Sydney", "Melbourne", "Canberra", "Perth"],
             correct: 2
@@ -166,7 +166,7 @@ const quizQuestions = {
           {
             question: "Which element has the chemical symbol 'O'?",
             options: ["Osmium", "Oxygen", "Gold", "Ozone"],
-            correct: 1
+                correct: 1
           },
           {
             question: "Which number comes next in the sequence: 2, 4, 8, 16, __?",
@@ -202,10 +202,10 @@ const quizQuestions = {
             question: "How many colors are there in a rainbow?",
             options: ["6", "8", "7", "5"],
             correct: 2
-          }
+            }
         ],
         hard: [
-          {
+            {
             question: "What is the currency of South Korea?",
             options: ["Yuan", "Won", "Yen", "Ringgit"],
             correct: 1
@@ -213,9 +213,9 @@ const quizQuestions = {
           {
             question: "Who is the author of the book '1984'?",
             options: ["George Orwell", "Aldous Huxley", "Ernest Hemingway", "F. Scott Fitzgerald"],
-            correct: 0
-          },
-          {
+                correct: 0
+            },
+            {
             question: "Which chemical element has the atomic number 79?",
             options: ["Silver", "Gold", "Copper", "Platinum"],
             correct: 1
@@ -223,14 +223,14 @@ const quizQuestions = {
           {
             question: "What is the hardest natural substance on Earth?",
             options: ["Iron", "Graphite", "Diamond", "Quartz"],
-            correct: 2
-          },
-          {
+                correct: 2
+            },
+            {
             question: "Who painted the ceiling of the Sistine Chapel?",
             options: ["Leonardo da Vinci", "Raphael", "Michelangelo", "Donatello"],
-            correct: 2
-          },
-          {
+                correct: 2
+            },
+            {
             question: "Which is the longest river in the world?",
             options: ["Amazon", "Nile", "Yangtze", "Mississippi"],
             correct: 1
@@ -238,19 +238,19 @@ const quizQuestions = {
           {
             question: "What is the smallest prime number?",
             options: ["0", "1", "2", "3"],
-            correct: 2
-          },
-          {
+                correct: 2
+            },
+            {
             question: "Who developed the theory of relativity?",
             options: ["Newton", "Einstein", "Tesla", "Bohr"],
-            correct: 1
-          },
-          {
+                correct: 1
+    },
+            {
             question: "Which metal is liquid at room temperature?",
             options: ["Mercury", "Lead", "Zinc", "Iron"],
-            correct: 0
-          },
-          {
+                correct: 0
+            },
+            {
             question: "What is the name of the deepest part of the ocean?",
             options: ["Mariana Trench", "Indian Basin", "Pacific Pit", "Atlantic Hollow"],
             correct: 0
@@ -278,17 +278,17 @@ const quizQuestions = {
           {
             question: "In which country did the Olympic Games originate?",
             options: ["Italy", "Greece", "USA", "France"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Who invented the telephone?",
             options: ["Edison", "Bell", "Tesla", "Newton"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "What is the most abundant gas in Earth's atmosphere?",
             options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
-            correct: 1
+                correct: 1
           },
           {
             question: "What is the capital of Argentina?",
@@ -962,7 +962,7 @@ const quizQuestions = {
               "correct": 2
             }
         ]
-      },
+    },
         geography: {
           easy: [
             {
@@ -1892,14 +1892,14 @@ const quizQuestions = {
           {
             question: "Who played Iron Man in the Marvel Cinematic Universe?",
             options: ["Chris Evans", "Chris Hemsworth", "Robert Downey Jr.", "Mark Ruffalo"],
-            correct: 2
-          },
-          {
+                correct: 2
+            },
+            {
             question: "Which animated movie features a snowman named Olaf?",
             options: ["Moana", "Frozen", "Tangled", "Brave"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Which superhero is known as the 'Caped Crusader'?",
             options: ["Superman", "Batman", "Spider-Man", "Iron Man"],
             correct: 1
@@ -1907,14 +1907,14 @@ const quizQuestions = {
           {
             question: "Who is the host of 'The Tonight Show'?",
             options: ["Jimmy Kimmel", "Jimmy Fallon", "Stephen Colbert", "James Corden"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Which movie features the line 'I'm the king of the world'?",
             options: ["Titanic", "Avatar", "Gladiator", "The Lion King"],
-            correct: 0
-          },
-          {
+                correct: 0
+            },
+            {
             question: "What is the name of Harry Potter's pet owl?",
             options: ["Errol", "Hedwig", "Crookshanks", "Scabbers"],
             correct: 1
@@ -1927,9 +1927,9 @@ const quizQuestions = {
           {
             question: "Which show features a coffee shop named Central Perk?",
             options: ["How I Met Your Mother", "Friends", "Seinfeld", "The Office"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Which animated series features characters named Homer, Marge, and Bart?",
             options: ["Family Guy", "The Simpsons", "Rick and Morty", "South Park"],
             correct: 1
@@ -1942,9 +1942,9 @@ const quizQuestions = {
           {
             question: "What color is SpongeBob SquarePants?",
             options: ["Red", "Yellow", "Green", "Blue"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Which actor voiced Woody in Toy Story?",
             options: ["Tom Hanks", "Tim Allen", "Johnny Depp", "Brad Pitt"],
             correct: 0
@@ -1967,12 +1967,12 @@ const quizQuestions = {
           {
             question: "Which movie features talking toys?",
             options: ["Shrek", "Toy Story", "Cars", "Monsters, Inc."],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Who played Wolverine in the X-Men series?",
             options: ["Ryan Reynolds", "Chris Hemsworth", "Hugh Jackman", "Tom Hardy"],
-            correct: 2
+                correct: 2
           },
           {
             question: "Which show features the characters Sheldon, Leonard, and Penny?",
@@ -1988,15 +1988,15 @@ const quizQuestions = {
             question: "Who is Batman's butler?",
             options: ["James", "Alfred", "Jarvis", "Arthur"],
             correct: 1
-          }
+            }
         ],
         medium: [
-          {
+            {
             question: "What is the name of the fictional continent where Game of Thrones is primarily set?",
             options: ["Essos", "Westeros", "Narnia", "Middle-earth"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Which actor starred in both 'The Matrix' and 'John Wick'?",
             options: ["Tom Cruise", "Keanu Reeves", "Brad Pitt", "Matt Damon"],
             correct: 1
@@ -2004,9 +2004,9 @@ const quizQuestions = {
           {
             question: "In which year was the first Star Wars movie released?",
             options: ["1975", "1977", "1980", "1983"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Who directed the movie 'Inception'?",
             options: ["Christopher Nolan", "Steven Spielberg", "James Cameron", "Quentin Tarantino"],
             correct: 0
@@ -2014,9 +2014,9 @@ const quizQuestions = {
           {
             question: "Which musical instrument is featured in the movie 'Whiplash'?",
             options: ["Guitar", "Drums", "Violin", "Piano"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Which city is the setting of the TV show 'Stranger Things'?",
             options: ["Riverdale", "Hawkins", "Mystic Falls", "Sunnydale"],
             correct: 1
@@ -2029,9 +2029,9 @@ const quizQuestions = {
           {
             question: "Which actor has won the most Oscars for acting?",
             options: ["Daniel Day-Lewis", "Jack Nicholson", "Katharine Hepburn", "Meryl Streep"],
-            correct: 2
-          },
-          {
+                correct: 2
+            },
+            {
             question: "Which film studio produced the Harry Potter movies?",
             options: ["Disney", "Paramount", "Warner Bros.", "Universal"],
             correct: 2
@@ -2044,9 +2044,9 @@ const quizQuestions = {
           {
             question: "Which actress plays Eleven in 'Stranger Things'?",
             options: ["Millie Bobby Brown", "Sadie Sink", "Natalia Dyer", "Winona Ryder"],
-            correct: 0
-          },
-          {
+                correct: 0
+            },
+            {
             question: "In 'The Lion King', what is the name of Simba's father?",
             options: ["Scar", "Mufasa", "Zazu", "Rafiki"],
             correct: 1
@@ -2054,9 +2054,9 @@ const quizQuestions = {
           {
             question: "Which movie features a DeLorean time machine?",
             options: ["Time Bandits", "The Time Traveler's Wife", "Back to the Future", "Looper"],
-            correct: 2
-          },
-          {
+                correct: 2
+            },
+            {
             question: "Who wrote the 'James Bond' novels?",
             options: ["John le Carré", "Ian Fleming", "Tom Clancy", "Robert Ludlum"],
             correct: 1
@@ -2064,14 +2064,14 @@ const quizQuestions = {
           {
             question: "Which actress starred in 'La La Land' and 'Cruella'?",
             options: ["Emma Watson", "Emma Stone", "Jennifer Lawrence", "Scarlett Johansson"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "In which movie would you find the character Gollum?",
             options: ["Harry Potter", "The Hobbit", "The Chronicles of Narnia", "Percy Jackson"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Which famous detective lives at 221B Baker Street?",
             options: ["Hercule Poirot", "Sherlock Holmes", "Miss Marple", "Columbo"],
             correct: 1
@@ -2084,16 +2084,16 @@ const quizQuestions = {
           {
             question: "What genre is the movie 'The Conjuring'?",
             options: ["Comedy", "Romance", "Horror", "Sci-Fi"],
-            correct: 2
+                correct: 2
           },
           {
             question: "Which animated film features the character Lightning McQueen?",
             options: ["Cars", "Planes", "Ratatouille", "Bolt"],
             correct: 0
-          }
+            }
         ],
         hard: [
-          {
+            {
             question: "Which film won the first Academy Award for Best Picture?",
             options: ["Wings", "Gone with the Wind", "Sunrise", "All Quiet on the Western Front"],
             correct: 0
@@ -2101,9 +2101,9 @@ const quizQuestions = {
           {
             question: "Who played the Joker in 'The Dark Knight'?",
             options: ["Joaquin Phoenix", "Heath Ledger", "Jared Leto", "Jack Nicholson"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Which director is known for the 'Three Colors' trilogy?",
             options: ["Francois Truffaut", "Krzysztof Kieślowski", "Federico Fellini", "Jean-Luc Godard"],
             correct: 1
@@ -2116,19 +2116,19 @@ const quizQuestions = {
           {
             question: "Which 1927 film is considered the first 'talkie'?",
             options: ["The Jazz Singer", "Metropolis", "Wings", "The General"],
-            correct: 0
-          },
-          {
+                correct: 0
+            },
+            {
             question: "Which actor has received the most Oscar nominations?",
             options: ["Robert De Niro", "Al Pacino", "Meryl Streep", "Jack Nicholson"],
-            correct: 2
-          },
-          {
+                correct: 2
+            },
+            {
             question: "In which year were the Oscars first held?",
             options: ["1927", "1929", "1931", "1933"],
-            correct: 1
-          },
-          {
+                correct: 1
+            },
+            {
             question: "Which animated movie won the first Academy Award for Best Animated Feature?",
             options: ["Toy Story", "Shrek", "Finding Nemo", "The Incredibles"],
             correct: 1
@@ -2151,9 +2151,9 @@ const quizQuestions = {
           {
             question: "What’s the name of the AI in the movie 'Her'?",
             options: ["Samantha", "Alexa", "Eva", "Aurora"],
-            correct: 0
-          },
-          {
+                correct: 0
+            },
+            {
             question: "Which movie won Best Picture at the 2020 Academy Awards?",
             options: ["1917", "Parasite", "Joker", "Once Upon a Time in Hollywood"],
             correct: 1
@@ -2171,9 +2171,9 @@ const quizQuestions = {
           {
             question: "Which composer scored the music for 'Star Wars'?",
             options: ["Hans Zimmer", "James Horner", "John Williams", "Danny Elfman"],
-            correct: 2
-          },
-          {
+                correct: 2
+            },
+            {
             question: "In which film did Audrey Hepburn play Holly Golightly?",
             options: ["Sabrina", "Funny Face", "Breakfast at Tiffany's", "Roman Holiday"],
             correct: 2
@@ -2181,9 +2181,9 @@ const quizQuestions = {
           {
             question: "What’s the longest-running Broadway show?",
             options: ["Chicago", "The Lion King", "Les Misérables", "The Phantom of the Opera"],
-            correct: 3
-          },
-          {
+                correct: 3
+            },
+            {
             question: "Which movie features the character Tyler Durden?",
             options: ["Se7en", "American Psycho", "Fight Club", "The Machinist"],
             correct: 2
@@ -2191,10 +2191,10 @@ const quizQuestions = {
           {
             question: "Which 1972 film is based on a novel by Mario Puzo?",
             options: ["Scarface", "The Godfather", "Goodfellas", "The Irishman"],
-            correct: 1
-          }
+                correct: 1
+            }
         ]
-      },
+    },
     technology: {
             easy: [
               {
@@ -2428,9 +2428,9 @@ const quizQuestions = {
               }
             ]
           },
-          art: {
-            easy: [
-              {
+    art: {
+        easy: [
+            {
                 question: "Who painted the Mona Lisa?",
                 options: ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Claude Monet"],
                 correct: 0
@@ -2444,8 +2444,8 @@ const quizQuestions = {
                 question: "Which shape has three sides?",
                 options: ["Square", "Circle", "Triangle", "Rectangle"],
                 correct: 2
-              },
-              {
+            },
+            {
                 question: "Which primary color is missing: Red, Blue, and ___?",
                 options: ["Green", "Black", "Yellow", "Orange"],
                 correct: 2
@@ -2454,13 +2454,13 @@ const quizQuestions = {
                 question: "What do you call the art of folding paper into shapes?",
                 options: ["Calligraphy", "Origami", "Mosaic", "Graffiti"],
                 correct: 1
-              },
-              {
+            },
+            {
                 question: "What is the color of the sky on a clear day?",
                 options: ["Red", "Blue", "Green", "Orange"],
                 correct: 1
-              },
-              {
+            },
+            {
                 question: "Which artist is known for cutting off his ear?",
                 options: ["Van Gogh", "Picasso", "Michelangelo", "Rembrandt"],
                 correct: 0
@@ -2484,8 +2484,8 @@ const quizQuestions = {
                 question: "What do you call a person who paints?",
                 options: ["Sculptor", "Painter", "Architect", "Writer"],
                 correct: 1
-              },
-              {
+            },
+            {
                 question: "What is a mural?",
                 options: ["Tiny drawing", "Wall painting", "Sketch", "Sculpture"],
                 correct: 1
@@ -2529,10 +2529,10 @@ const quizQuestions = {
                 question: "What is a 'self-portrait'?",
                 options: ["Portrait of another person", "Drawing of a pet", "Painting of oneself", "Landscape drawing"],
                 correct: 2
-              }
-            ],
-            medium: [
-              {
+            }
+        ],
+        medium: [
+            {
                 question: "Which movement is associated with Claude Monet?",
                 options: ["Cubism", "Surrealism", "Impressionism", "Expressionism"],
                 correct: 2
@@ -2541,18 +2541,18 @@ const quizQuestions = {
                 question: "In which country did the Renaissance begin?",
                 options: ["France", "Italy", "Spain", "Germany"],
                 correct: 1
-              },
-              {
+            },
+            {
                 question: "What is the main ingredient in tempera paint?",
                 options: ["Oil", "Egg yolk", "Acrylic", "Water"],
                 correct: 1
-              },
-              {
+            },
+            {
                 question: "Which artist painted 'Guernica'?",
                 options: ["Picasso", "Kandinsky", "Pollock", "Van Gogh"],
                 correct: 0
-              },
-              {
+            },
+            {
                 question: "Who sculpted 'David'?",
                 options: ["Donatello", "Bernini", "Michelangelo", "Rodin"],
                 correct: 2
@@ -2601,8 +2601,8 @@ const quizQuestions = {
                 question: "Which artist is known for painting water lilies?",
                 options: ["Monet", "Renoir", "Cézanne", "Seurat"],
                 correct: 0
-              },
-              {
+            },
+            {
                 question: "What type of paint is used in oil painting?",
                 options: ["Oil-based", "Water-based", "Ink", "Chalk"],
                 correct: 0
@@ -2631,10 +2631,10 @@ const quizQuestions = {
                 question: "Who painted 'The Last Supper'?",
                 options: ["Raphael", "Da Vinci", "Titian", "Vermeer"],
                 correct: 1
-              }
-            ],
-            hard: [
-              {
+            }
+        ],
+        hard: [
+            {
                 question: "Who painted 'The School of Athens'?",
                 options: ["Leonardo", "Raphael", "Michelangelo", "Donatello"],
                 correct: 1
@@ -2648,8 +2648,8 @@ const quizQuestions = {
                 question: "What is 'sfumato'?",
                 options: ["Blurring edges to create soft transitions", "Sculpting technique", "Type of brushstroke", "Color blending"],
                 correct: 0
-              },
-              {
+            },
+            {
                 question: "Which material is used in encaustic painting?",
                 options: ["Acrylic", "Wax", "Water", "Oil"],
                 correct: 1
@@ -2658,18 +2658,18 @@ const quizQuestions = {
                 question: "Who designed the dome of the Florence Cathedral?",
                 options: ["Brunelleschi", "Ghiberti", "Michelangelo", "Bernini"],
                 correct: 0
-              },
-              {
+            },
+            {
                 question: "Which painter used a camera obscura technique?",
                 options: ["Vermeer", "Van Gogh", "Kandinsky", "Seurat"],
                 correct: 0
-              },
-              {
+            },
+            {
                 question: "What is the term for art created with found objects?",
                 options: ["Assemblage", "Collage", "Impressionism", "Chiaroscuro"],
                 correct: 0
-              },
-              {
+            },
+            {
                 question: "Which French artist is known for painting ballet dancers?",
                 options: ["Monet", "Degas", "Manet", "Delacroix"],
                 correct: 1
@@ -2688,28 +2688,28 @@ const quizQuestions = {
                 question: "Which artist is associated with the Blue Period?",
                 options: ["Picasso", "Matisse", "Warhol", "Klee"],
                 correct: 0
-              },
-              {
+    },
+            {
                 question: "Who painted 'The Birth of Venus'?",
                 options: ["Raphael", "Botticelli", "Michelangelo", "Titian"],
                 correct: 1
-              },
-              {
+            },
+            {
                 question: "What is a diptych?",
                 options: ["Three-panel art", "Two-panel art", "Four-panel art", "One-panel art"],
                 correct: 1
-              },
-              {
+            },
+            {
                 question: "Which art movement did Marcel Duchamp belong to?",
                 options: ["Futurism", "Dadaism", "Impressionism", "Realism"],
                 correct: 1
-              },
-              {
+            },
+            {
                 question: "Who painted 'American Gothic'?",
                 options: ["Edward Hopper", "Grant Wood", "Georgia O'Keeffe", "Andrew Wyeth"],
                 correct: 1
-              },
-              {
+            },
+            {
                 question: "What is 'trompe-l'œil'?",
                 options: ["Color blending", "Sculpture method", "Optical illusion in painting", "Brushstroke style"],
                 correct: 2
@@ -3351,8 +3351,8 @@ const quizQuestions = {
               "options": ["Sacred musical work for orchestra and voices", "Opera", "Instrumental solo", "Symphony"],
               "correct": 0
             }
-          ]
-      },
+        ]
+    },
     literature: {
         easy: [
             {
