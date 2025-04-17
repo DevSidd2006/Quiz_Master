@@ -109,6 +109,10 @@ function hideAllContainers() {
     landingPage.classList.add('hidden');
     quizContainer.classList.add('hidden');
     leaderboardPage.classList.remove('visible');
+    const rulesContainer = document.getElementById('rules-container');
+    if (rulesContainer) {
+        rulesContainer.classList.add('hidden');
+    }
 }
 
 // Show specific container with animations
@@ -237,57 +241,70 @@ function showQuestion() {
     
     const question = currentQuiz[currentQuestionIndex];
     
-    // Create a new container for the question and hints
-    const questionContainer = document.createElement('div');
-    questionContainer.className = 'question-container mb-8 max-w-4xl mx-auto';
-    
-    // Add power-ups and hints UI above the question
-    const powerUpsDiv = document.createElement('div');
-    powerUpsDiv.className = 'power-ups grid grid-cols-2 md:grid-cols-4 gap-4 mb-8';
-    powerUpsDiv.innerHTML = `
-        <button id="hint-button" class="power-up-button bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors flex items-center justify-center space-x-2 ${hintsAvailable === 0 ? 'opacity-50 cursor-not-allowed' : ''}">
-            <span>💡</span>
-            <span>Hint (${hintsAvailable})</span>
-        </button>
-        <button id="skip-button" class="power-up-button bg-purple-500 text-white px-6 py-3 rounded-lg hover:bg-purple-600 transition-colors flex items-center justify-center space-x-2 ${powerUps.skip === 0 ? 'opacity-50 cursor-not-allowed' : ''}">
-            <span>⏩</span>
-            <span>Skip (${powerUps.skip})</span>
-        </button>
-        <button id="time-freeze-button" class="power-up-button bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center space-x-2 ${powerUps.timeFreeze === 0 ? 'opacity-50 cursor-not-allowed' : ''}">
-            <span>⏸️</span>
-            <span>Time Freeze (${powerUps.timeFreeze})</span>
-        </button>
-        <button id="double-points-button" class="power-up-button bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-600 transition-colors flex items-center justify-center space-x-2 ${powerUps.doublePoints === 0 ? 'opacity-50 cursor-not-allowed' : ''}">
-            <span>2️⃣</span>
-            <span>Double Points (${powerUps.doublePoints})</span>
+    // Clear the quiz container
+    quizContainer.innerHTML = `
+        <div class="flex justify-between items-center mb-8">
+            <div id="timer" class="timer text-xl font-semibold bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded-lg shadow-sm">⏱️ Time: ${timeLeft}s</div>
+            <div id="score" class="score text-xl font-semibold bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded-lg shadow-sm">🏆 Score: ${score}</div>
+        </div>
+        <div class="progress-bar mb-6" id="progress-bar"></div>
+        
+        <!-- Power-ups Section -->
+        <div class="power-ups-section mb-8">
+            <h3 class="text-lg font-semibold mb-4 text-center text-gray-700 dark:text-gray-300">Power-ups & Hints</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <button id="hint-button" class="power-up-button bg-blue-500 text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-colors flex items-center justify-center space-x-2 ${hintsAvailable === 0 ? 'opacity-50 cursor-not-allowed' : ''}">
+                    <span>💡</span>
+                    <span>Hint (${hintsAvailable})</span>
+                </button>
+                <button id="skip-button" class="power-up-button bg-purple-500 text-white px-4 py-3 rounded-lg hover:bg-purple-600 transition-colors flex items-center justify-center space-x-2 ${powerUps.skip === 0 ? 'opacity-50 cursor-not-allowed' : ''}">
+                    <span>⏩</span>
+                    <span>Skip (${powerUps.skip})</span>
+                </button>
+                <button id="time-freeze-button" class="power-up-button bg-green-500 text-white px-4 py-3 rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center space-x-2 ${powerUps.timeFreeze === 0 ? 'opacity-50 cursor-not-allowed' : ''}">
+                    <span>⏸️</span>
+                    <span>Time Freeze (${powerUps.timeFreeze})</span>
+                </button>
+                <button id="double-points-button" class="power-up-button bg-yellow-500 text-white px-4 py-3 rounded-lg hover:bg-yellow-600 transition-colors flex items-center justify-center space-x-2 ${powerUps.doublePoints === 0 ? 'opacity-50 cursor-not-allowed' : ''}">
+                    <span>2️⃣</span>
+                    <span>Double Points (${powerUps.doublePoints})</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Question Section -->
+        <div class="question-section mb-8 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-sm">
+            <div id="question" class="text-2xl font-semibold text-center text-gray-800 dark:text-gray-200">
+                ${question.question}
+            </div>
+        </div>
+
+        <!-- Options Section -->
+        <div id="options" class="options-section grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            ${question.options.map((option, index) => `
+                <button class="option-button w-full bg-white text-gray-800 py-4 px-6 rounded-lg border-2 border-gray-200 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:bg-gray-700 dark:border-gray-600 dark:text-white transition-all duration-200 text-lg font-medium shadow-sm hover:shadow-md">
+                    ${option}
+                </button>
+            `).join('')}
+        </div>
+
+        <!-- Next Button -->
+        <button id="next-button" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105 hidden">
+            Next Question
         </button>
     `;
-    
-    // Add question text with better styling
-    const questionText = document.createElement('div');
-    questionText.className = 'text-2xl font-semibold text-center mb-8 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-sm';
-    questionText.textContent = question.question;
-    
-    questionContainer.appendChild(powerUpsDiv);
-    questionContainer.appendChild(questionText);
-    
-    // Clear and update the options container
-    optionsElement.innerHTML = '';
-    optionsElement.appendChild(questionContainer);
-    
-    // Add options in a grid with better styling
-    const optionsGrid = document.createElement('div');
-    optionsGrid.className = 'grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto';
-    
-    question.options.forEach((option, index) => {
-        const button = document.createElement('button');
-        button.textContent = option;
-        button.className = 'option-button w-full bg-white text-gray-800 py-4 px-6 rounded-lg border-2 border-gray-200 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:bg-gray-700 dark:border-gray-600 dark:text-white transition-all duration-200 text-lg font-medium shadow-sm hover:shadow-md';
+
+    // Initialize DOM elements
+    timerElement = document.getElementById('timer');
+    scoreElement = document.getElementById('score');
+    optionsElement = document.getElementById('options');
+    nextButton = document.getElementById('next-button');
+
+    // Add option click event listeners
+    const optionButtons = optionsElement.querySelectorAll('.option-button');
+    optionButtons.forEach((button, index) => {
         button.addEventListener('click', () => selectAnswer(index));
-        optionsGrid.appendChild(button);
     });
-    
-    optionsElement.appendChild(optionsGrid);
 
     // Add power-up event listeners
     document.getElementById('hint-button').addEventListener('click', useHint);
@@ -295,8 +312,13 @@ function showQuestion() {
     document.getElementById('time-freeze-button').addEventListener('click', useTimeFreeze);
     document.getElementById('double-points-button').addEventListener('click', useDoublePoints);
 
-    nextButton.classList.add('hidden');
+    // Add next button event listener
+    nextButton.addEventListener('click', showNextQuestion);
+
+    // Update progress bar
     updateProgressBar();
+    
+    // Start timer
     startTimer();
 }
 
@@ -353,68 +375,50 @@ function startQuiz() {
 }
 
 function selectAnswer(index) {
+    // Stop the timer
     stopTimer();
+    
     const question = currentQuiz[currentQuestionIndex];
     const buttons = optionsElement.querySelectorAll('.option-button');
     
     // Store user's answer
     userAnswers[currentQuestionIndex] = index;
     
+    // Disable all buttons
     buttons.forEach(button => {
         button.disabled = true;
     });
     
+    // Check if answer is correct
     if (index === question.correct) {
         buttons[index].classList.add('correct');
         correctAnswers++;
         
-        // Calculate precise scoring breakdown
+        // Calculate points
         const basePoints = SCORING.BASE_POINTS;
-        
-        // Time bonus calculation
         let timeBonus = 0;
+        
         if (timeLeft >= SCORING.MIN_TIME_FOR_BONUS) {
             const timeRatio = (timeLeft - SCORING.MIN_TIME_FOR_BONUS) / (15 - SCORING.MIN_TIME_FOR_BONUS);
             timeBonus = Math.floor(basePoints * SCORING.TIME_BONUS_MULTIPLIER * timeRatio);
         }
         
-        // Streak bonus calculation
         const streakBonus = Math.min(
             SCORING.MAX_STREAK_BONUS,
             streak * SCORING.STREAK_BONUS_MULTIPLIER
         ) * basePoints;
         
-        // Total points for this answer
         const pointsEarned = Math.floor(basePoints + timeBonus + streakBonus);
         
-        // Update score and stats
         score += pointsEarned;
         totalTimeBonus += timeBonus;
         streak++;
         
-        // Show detailed score breakdown
-        const scoreBreakdown = document.createElement('div');
-        scoreBreakdown.className = 'score-breakdown fixed top-4 right-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg animate-fade-in';
-        scoreBreakdown.innerHTML = `
-            <div class="text-sm font-semibold mb-2">Score Breakdown:</div>
-            <div class="grid grid-cols-2 gap-2 text-sm">
-                <div>Base Points:</div>
-                <div class="text-right">+${basePoints}</div>
-                <div>Time Bonus:</div>
-                <div class="text-right text-blue-500">+${timeBonus}</div>
-                <div>Streak Bonus:</div>
-                <div class="text-right text-purple-500">+${Math.floor(streakBonus)}</div>
-                <div class="font-bold">Total:</div>
-                <div class="text-right font-bold text-green-500">+${pointsEarned}</div>
-            </div>
-        `;
-        document.body.appendChild(scoreBreakdown);
+        // Update score display
+        if (scoreElement) {
+            scoreElement.textContent = `🏆 Score: ${score} (+${pointsEarned})`;
+        }
         
-        setTimeout(() => {
-            scoreBreakdown.remove();
-        }, 2000);
-        
-        scoreElement.textContent = `Score: ${score} (+${pointsEarned})`;
         sounds.correct.play();
         
         if (streak >= 3) {
@@ -428,7 +432,10 @@ function selectAnswer(index) {
         sounds.wrong.play();
     }
     
-    nextButton.classList.remove('hidden');
+    // Show next button
+    if (nextButton) {
+        nextButton.classList.remove('hidden');
+    }
 }
 
 function showNextQuestion() {
@@ -447,16 +454,21 @@ function updateProgressBar() {
 }
 
 function startTimer() {
-    timeLeft = 15;
-    timerElement.textContent = `Time: ${timeLeft}s`;
-    
+    // Clear any existing timer
     if (timer) {
         clearInterval(timer);
+    }
+
+    timeLeft = 15;
+    if (timerElement) {
+        timerElement.textContent = `⏱️ Time: ${timeLeft}s`;
     }
     
     timer = setInterval(() => {
         timeLeft--;
-        timerElement.textContent = `Time: ${timeLeft}s`;
+        if (timerElement) {
+            timerElement.textContent = `⏱️ Time: ${timeLeft}s`;
+        }
         
         if (timeLeft <= 0) {
             clearInterval(timer);
@@ -469,11 +481,12 @@ function startTimer() {
 function stopTimer() {
     if (timer) {
         clearInterval(timer);
+        timer = null;
     }
 }
 
 function handleTimeUp() {
-    const buttons = optionsElement.querySelectorAll('button');
+    const buttons = optionsElement.querySelectorAll('.option-button');
     buttons.forEach(button => {
         button.disabled = true;
     });
@@ -482,7 +495,9 @@ function handleTimeUp() {
     const correctButton = buttons[question.correct];
     correctButton.classList.add('correct');
     
-    nextButton.classList.remove('hidden');
+    if (nextButton) {
+        nextButton.classList.remove('hidden');
+    }
 }
 
 function endQuiz() {
@@ -756,53 +771,61 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listeners
     if (startQuizButton) {
         console.log("Adding click event listener to start quiz button");
-        startQuizButton.addEventListener('click', function() {
-            console.log("Start Quiz button clicked");
-            console.log("Theme:", themeSelect.value);
-            console.log("Level:", levelSelect.value);
-            
-            const theme = themeSelect.value;
-            const level = levelSelect.value;
-            
-            // Reset quiz state before starting new quiz
-            resetQuizState();
-            
-            // Get random questions for selected category and difficulty
-            currentQuiz = getRandomQuestions(theme, level, 5);
-            console.log("Questions loaded:", currentQuiz.length);
-            
-            if (!currentQuiz || currentQuiz.length === 0) {
-                alert('No questions available for this combination. Please try another.');
+        startQuizButton.addEventListener('click', () => {
+            const username = document.getElementById('username').value.trim();
+            const theme = document.getElementById('theme').value;
+            const level = document.getElementById('level').value;
+
+            if (!username) {
+                // Show error message
+                const errorMessage = document.createElement('div');
+                errorMessage.className = 'text-red-500 text-center mb-4 animate-pulse';
+                errorMessage.textContent = 'Please enter your username to start the quiz!';
+                
+                // Remove any existing error message
+                const existingError = document.querySelector('.text-red-500');
+                if (existingError) {
+                    existingError.remove();
+                }
+                
+                // Insert error message after the username input
+                const usernameInput = document.getElementById('username');
+                usernameInput.parentNode.insertBefore(errorMessage, usernameInput.nextSibling);
+                
+                // Add red border to username input
+                usernameInput.classList.add('border-red-500');
+                usernameInput.classList.add('focus:border-red-500');
+                usernameInput.classList.add('focus:ring-red-500');
+                
+                // Remove error styling after 3 seconds
+                setTimeout(() => {
+                    errorMessage.remove();
+                    usernameInput.classList.remove('border-red-500');
+                    usernameInput.classList.remove('focus:border-red-500');
+                    usernameInput.classList.remove('focus:ring-red-500');
+                }, 3000);
+                
                 return;
             }
+
+            // Store username in localStorage
+            localStorage.setItem('currentUser', username);
             
-            // Reset the quiz container to its original state with improved layout
-            quizContainer.innerHTML = `
-                <div class="flex justify-between items-center mb-6 max-w-4xl mx-auto">
-                    <div id="timer" class="timer text-xl font-semibold bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded-lg shadow-sm">⏱️ Time: 15s</div>
-                    <div id="score" class="score text-xl font-semibold bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded-lg shadow-sm">🏆 Score: 0</div>
-                </div>
-                <div class="progress-bar mb-6 max-w-4xl mx-auto" id="progress-bar"></div>
-                <div id="question" class="text-2xl font-semibold mb-8 text-center"></div>
-                <div id="options" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
-                <button id="next-button" class="mt-8 w-full max-w-4xl mx-auto bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
-                    Next Question
-                </button>
-            `;
-            
-            // Re-initialize DOM elements after resetting container
-            initializeDOMElements();
-            
-            // Add event listener for next button
-            if (nextButton) {
-                nextButton.addEventListener('click', showNextQuestion);
-            }
-            
-            showContainer(quizContainer);
-            showQuestion();
+            // Show rules instead of starting quiz immediately
+            showRules(theme, level);
         });
     } else {
         console.error("Start quiz button not found!");
+    }
+
+    // Add event listener for "I Understand" button
+    const understandButton = document.getElementById('understand-button');
+    if (understandButton) {
+        understandButton.addEventListener('click', () => {
+            const theme = document.getElementById('theme').value;
+            const level = document.getElementById('level').value;
+            startQuiz(theme, level);
+        });
     }
 
     if (backButton) {
@@ -841,3 +864,18 @@ themeToggle.addEventListener('click', function() {
         icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />';
     }
 });
+
+// Add function to show rules
+function showRules(theme, level) {
+    const rulesContainer = document.getElementById('rules-container');
+    if (rulesContainer) {
+        hideAllContainers();
+        rulesContainer.classList.remove('hidden');
+        
+        // Add animation class
+        rulesContainer.classList.add('animate-fade-in');
+    } else {
+        console.error("Rules container not found!");
+        startQuiz(theme, level); // Fallback to starting quiz directly if rules container is not found
+    }
+}

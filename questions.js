@@ -107,9 +107,9 @@ const quizQuestions = {
             }
         ]
     },
-        science: {
-            easy: [
-                {
+    science: {
+        easy: [
+            {
                     "question": "What is the chemical symbol for water?",
                     "options": ["H2O", "CO2", "O2", "N2"],
                     "correct": 0
@@ -208,10 +208,10 @@ const quizQuestions = {
                     "question": "What type of energy is stored in a battery?",
                     "options": ["Mechanical", "Thermal", "Chemical", "Nuclear"],
                     "correct": 2
-                }
-            ],
-            medium: [
-                {
+            }
+        ],
+        medium: [
+            {
                     "question": "What is the speed of light in vacuum?",
                     "options": ["299,792 km/s", "199,792 km/s", "399,792 km/s", "249,792 km/s"],
                     "correct": 0
@@ -310,17 +310,17 @@ const quizQuestions = {
                     "question": "What is the chemical symbol for potassium?",
                     "options": ["Pt", "P", "Po", "K"],
                     "correct": 3
-                }
-            ],
-            hard: [
-                {
+            }
+        ],
+        hard: [
+            {
                     "question": "What is the Heisenberg Uncertainty Principle?",
                     "options": [
-                        "Position and momentum cannot be measured simultaneously",
-                        "Energy is always conserved",
-                        "Matter cannot be created or destroyed",
-                        "Light behaves as both wave and particle"
-                    ],
+                    "Position and momentum cannot be measured simultaneously",
+                    "Energy is always conserved",
+                    "Matter cannot be created or destroyed",
+                    "Light behaves as both wave and particle"
+                ],
                     "correct": 0
                 },
                 {
@@ -452,8 +452,8 @@ const quizQuestions = {
                         "All of the above"
                     ],
                     "correct": 3
-                }
-            ]
+            }
+        ]
     },
     history: {
         easy: [
@@ -1153,7 +1153,7 @@ const quizQuestions = {
             "correct": 0
           }
         ]
-    },
+      },
     business: {
         easy: [
             {
