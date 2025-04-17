@@ -1579,204 +1579,622 @@ const quizQuestions = {
           }
         ]
       },
-    business: {
-        easy: [
+        "business": {
+          "easy": [
             {
-                question: "What does CEO stand for?",
-                options: ["Chief Executive Officer", "Chief Education Officer", "Chief Engineering Officer", "Chief Economic Officer"],
-                correct: 0
+              "question": "What does CEO stand for?",
+              "options": ["Chief Executive Officer", "Central Executive Officer", "Corporate Executive Organizer", "Chief Economic Officer"],
+              "correct": 0
             },
             {
-                question: "Which company owns WhatsApp?",
-                options: ["Google", "Microsoft", "Meta (Facebook)", "Apple"],
-                correct: 2
+              "question": "Which company is known for its iPhone and Mac products?",
+              "options": ["Microsoft", "Samsung", "Apple", "Google"],
+              "correct": 2
             },
             {
-                question: "What is the currency of the European Union?",
-                options: ["Dollar", "Pound", "Euro", "Yen"],
-                correct: 2
+              "question": "What is the main purpose of advertising?",
+              "options": ["Reduce staff", "Cut costs", "Promote products or services", "Calculate taxes"],
+              "correct": 2
             },
             {
-                question: "Which company is the largest smartphone manufacturer?",
-                options: ["Apple", "Samsung", "Xiaomi", "Huawei"],
-                correct: 1
+              "question": "Which symbol is used to represent a company on the stock exchange?",
+              "options": ["Code", "Hashtag", "Ticker", "Tag"],
+              "correct": 2
             },
             {
-                question: "What is the largest stock exchange in the world?",
-                options: ["NYSE", "NASDAQ", "London Stock Exchange", "Tokyo Stock Exchange"],
-                correct: 0
+              "question": "What do you call a person who starts a business?",
+              "options": ["Investor", "Banker", "Entrepreneur", "Manager"],
+              "correct": 2
             },
             {
-                question: "Which company created the iPhone?",
-                options: ["Samsung", "Apple", "Google", "Microsoft"],
-                correct: 1
+              "question": "Which of the following is an example of an e-commerce company?",
+              "options": ["Amazon", "ExxonMobil", "Toyota", "Walmart (offline)"],
+              "correct": 0
             },
             {
-                question: "What is the main purpose of a business plan?",
-                options: ["To get funding", "To track expenses", "To hire employees", "To decorate the office"],
-                correct: 0
+              "question": "Which app is primarily used for business networking?",
+              "options": ["Facebook", "LinkedIn", "Instagram", "Snapchat"],
+              "correct": 1
             },
             {
-                question: "Which company owns YouTube?",
-                options: ["Google", "Microsoft", "Amazon", "Apple"],
-                correct: 0
+              "question": "Which currency is used in the United States?",
+              "options": ["Euro", "Pound", "Dollar", "Yen"],
+              "correct": 2
             },
             {
-                question: "What is the most valuable company in the world?",
-                options: ["Apple", "Microsoft", "Amazon", "Google"],
-                correct: 0
+              "question": "What is profit?",
+              "options": ["Revenue minus cost", "Revenue plus cost", "Only income", "Only expenses"],
+              "correct": 0
             },
             {
-                question: "Which company created Windows operating system?",
-                options: ["Apple", "Microsoft", "Google", "IBM"],
-                correct: 1
+              "question": "What does HR stand for in a company?",
+              "options": ["Hiring Resource", "Human Revenue", "Human Relations", "Human Resources"],
+              "correct": 3
             },
             {
-                question: "What is the main purpose of marketing?",
-                options: ["To sell products", "To create awareness", "To build brand image", "All of the above"],
-                correct: 3
+              "question": "Which of the following is NOT a business type?",
+              "options": ["Partnership", "Sole Proprietorship", "Corporation", "Democracy"],
+              "correct": 3
             },
             {
-                question: "Which company owns Instagram?",
-                options: ["Google", "Meta (Facebook)", "Twitter", "Snapchat"],
-                correct: 1
+              "question": "Which brand is known for the slogan 'Just Do It'?",
+              "options": ["Puma", "Adidas", "Nike", "Reebok"],
+              "correct": 2
             },
             {
-                question: "What is the term for money invested in a business?",
-                options: ["Revenue", "Capital", "Profit", "Expense"],
-                correct: 1
+              "question": "Which department deals with money and budgets?",
+              "options": ["HR", "Finance", "Marketing", "Legal"],
+              "correct": 1
             },
             {
-                question: "Which company is the largest online retailer?",
-                options: ["eBay", "Amazon", "Walmart", "Alibaba"],
-                correct: 1
+              "question": "Which company owns the Android operating system?",
+              "options": ["Apple", "Samsung", "Microsoft", "Google"],
+              "correct": 3
             },
             {
-                question: "What is the main purpose of a SWOT analysis?",
-                options: ["To track sales", "To analyze competition", "To evaluate business position", "To calculate profits"],
-                correct: 2
+              "question": "Which of these is a soft skill in business?",
+              "options": ["Excel", "C++", "Communication", "Java"],
+              "correct": 2
+            },
+            {
+              "question": "Which term describes a company's identity (like logo and colors)?",
+              "options": ["Financing", "Branding", "Hiring", "Budgeting"],
+              "correct": 1
+            },
+            {
+              "question": "What does 'B2B' stand for?",
+              "options": ["Back to Business", "Business to Business", "Bank to Bank", "Business to Bank"],
+              "correct": 1
+            },
+            {
+              "question": "Which sector includes farming and fishing?",
+              "options": ["Primary", "Secondary", "Tertiary", "Quaternary"],
+              "correct": 0
+            },
+            {
+              "question": "Who leads a meeting in a company?",
+              "options": ["Host", "Facilitator", "Leader", "Chairperson"],
+              "correct": 3
+            },
+            {
+              "question": "Which of these is a multinational company?",
+              "options": ["Tata", "Swiggy", "Zomato", "Google"],
+              "correct": 3
             }
+          ],
+          "medium": [
+            {
+              "question": "What does SWOT analysis stand for?",
+              "options": ["Strengths, Weaknesses, Options, Techniques", "Structure, Work, Opportunities, Targets", "Strengths, Weaknesses, Opportunities, Threats", "System, Work, Order, Team"],
+              "correct": 2
+            },
+            {
+              "question": "Which financial statement shows a company’s revenues and expenses?",
+              "options": ["Balance Sheet", "Cash Flow Statement", "Income Statement", "Equity Statement"],
+              "correct": 2
+            },
+            {
+              "question": "Which of the following is a fixed cost?",
+              "options": ["Electricity Bill", "Raw Materials", "Employee Salary", "Advertising Campaigns"],
+              "correct": 2
+            },
+            {
+              "question": "Which term refers to the total market value of a company's outstanding shares?",
+              "options": ["Assets", "Net Worth", "Market Capitalization", "Shareholding"],
+              "correct": 2
+            },
+            {
+              "question": "What does IPO stand for?",
+              "options": ["Initial Product Offering", "Initial Public Offering", "International Policy Option", "Invested Private Offer"],
+              "correct": 1
+            },
+            {
+              "question": "Which company acquired WhatsApp in 2014?",
+              "options": ["Google", "Amazon", "Microsoft", "Facebook"],
+              "correct": 3
+            },
+            {
+              "question": "What is the primary goal of a for-profit business?",
+              "options": ["Social Impact", "Employee Growth", "Customer Loyalty", "Profit Maximization"],
+              "correct": 3
+            },
+            {
+              "question": "Which role is responsible for a company’s financial planning?",
+              "options": ["CTO", "CMO", "CFO", "COO"],
+              "correct": 2
+            },
+            {
+              "question": "Which term refers to reducing staff to cut costs?",
+              "options": ["Hiring", "Outsourcing", "Downsizing", "Merging"],
+              "correct": 2
+            },
+            {
+              "question": "What is another term for a business's target market?",
+              "options": ["Audience", "Clientele", "Demographic", "Niche"],
+              "correct": 3
+            },
+            {
+              "question": "Which document outlines a company's future goals and strategies?",
+              "options": ["Financial Report", "Business Plan", "Resume", "Tax Form"],
+              "correct": 1
+            },
+            {
+              "question": "What does CRM stand for in business software?",
+              "options": ["Customer Return Management", "Customer Revenue Model", "Customer Relationship Management", "Client Resource Monitoring"],
+              "correct": 2
+            },
+            {
+              "question": "Which Indian company owns brands like Tata Tea and Jaguar?",
+              "options": ["Wipro", "Infosys", "Tata Group", "Adani Group"],
+              "correct": 2
+            },
+            {
+              "question": "Which of the following best defines equity?",
+              "options": ["Revenue from sales", "Company debts", "Ownership interest in a company", "Cash on hand"],
+              "correct": 2
+            },
+            {
+              "question": "Which stock market is based in New York?",
+              "options": ["NASDAQ", "BSE", "NSE", "LSE"],
+              "correct": 0
+            },
+            {
+              "question": "Who is considered the Oracle of Omaha?",
+              "options": ["Elon Musk", "Jeff Bezos", "Warren Buffett", "Bill Gates"],
+              "correct": 2
+            },
+            {
+              "question": "What is diversification in business?",
+              "options": ["Firing employees", "Investing in different sectors", "Exporting goods", "Increasing prices"],
+              "correct": 1
+            },
+            {
+              "question": "Which of these is a liability?",
+              "options": ["Cash", "Inventory", "Loan", "Revenue"],
+              "correct": 2
+            },
+            {
+              "question": "Which country has the largest number of startups?",
+              "options": ["China", "India", "USA", "Germany"],
+              "correct": 2
+            },
+            {
+              "question": "What is the minimum number of people required to form a private limited company in India?",
+              "options": ["1", "2", "3", "5"],
+              "correct": 1
+            }
+          ],
+          "hard": [
+            {
+              "question": "Which model explains the five competitive forces in business strategy?",
+              "options": ["Porter's Five Forces", "SWOT Matrix", "BCG Matrix", "Ansoff Matrix"],
+              "correct": 0
+            },
+            {
+              "question": "Which accounting principle requires recording expenses in the same period as related revenues?",
+              "options": ["Accrual", "Matching", "Consistency", "Conservatism"],
+              "correct": 1
+            },
+            {
+              "question": "What is EBITDA?",
+              "options": ["Earnings Before Income Tax, Depreciation and Amortization", "Earnings Before Interest, Taxes, Depreciation and Amortization", "Earnings Before Investment, Tax and Debts", "Effective Business Income Tracking"],
+              "correct": 1
+            },
+            {
+              "question": "What does a high current ratio indicate?",
+              "options": ["Strong liquidity", "High debt", "Low revenue", "Low liquidity"],
+              "correct": 0
+            },
+            {
+              "question": "Which of these is a blue-chip stock in India?",
+              "options": ["Nykaa", "Paytm", "Infosys", "Zomato"],
+              "correct": 2
+            },
+            {
+              "question": "What is a unicorn company?",
+              "options": ["A company that is a century old", "A company valued at over $1 billion", "A company with magical innovation", "A publicly listed startup"],
+              "correct": 1
+            },
+            {
+              "question": "Which law governs company formation in India?",
+              "options": ["Companies Act 1956", "Companies Act 2013", "Business Act 2015", "Startup India Law"],
+              "correct": 1
+            },
+            {
+              "question": "What is the name of the process where a private company becomes publicly traded?",
+              "options": ["Merger", "Acquisition", "IPO", "Buyback"],
+              "correct": 2
+            },
+            {
+              "question": "Which valuation method uses future earnings and a discount rate?",
+              "options": ["Comparable Method", "Asset-Based Valuation", "Discounted Cash Flow", "Book Value"],
+              "correct": 2
+            },
+            {
+              "question": "Which of the following is a type of organizational structure?",
+              "options": ["Circular", "Pyramid", "Matrix", "Linear"],
+              "correct": 2
+            },
+            {
+              "question": "Which company owns the brand 'Ben & Jerry’s'?",
+              "options": ["Nestlé", "PepsiCo", "Unilever", "P&G"],
+              "correct": 2
+            },
+            {
+              "question": "What is an angel investor?",
+              "options": ["A spiritual business guide", "A wealthy individual investing in startups", "A government sponsor", "A public market investor"],
+              "correct": 1
+            },
+            {
+              "question": "Which financial statement shows a company’s assets, liabilities, and equity?",
+              "options": ["Cash Flow Statement", "Income Statement", "Balance Sheet", "Profit & Loss Statement"],
+              "correct": 2
+            },
+            {
+              "question": "Which investment vehicle pools money from many investors to buy stocks?",
+              "options": ["Stock Option", "Hedge Fund", "Mutual Fund", "ETF"],
+              "correct": 2
+            },
+            {
+              "question": "Which strategy involves selling a product at a loss to gain market share?",
+              "options": ["Loss Leader", "Cost-Plus", "Penetration", "Premium Pricing"],
+              "correct": 0
+            },
+            {
+              "question": "What is bootstrapping in business?",
+              "options": ["Raising funds externally", "Using personal savings to start a business", "Launching a business without any capital", "Hiring only interns"],
+              "correct": 1
+            },
+            {
+              "question": "Which business metric measures profitability per unit of revenue?",
+              "options": ["Gross Margin", "Net Worth", "ROI", "EBITDA"],
+              "correct": 0
+            },
+            {
+              "question": "What is the full form of SaaS?",
+              "options": ["System as a Software", "Software as a Service", "Solution as a Service", "Storage and Software"],
+              "correct": 1
+            },
+            {
+              "question": "Which act regulates competition in Indian markets?",
+              "options": ["FEMA", "SEBI Act", "Competition Act, 2002", "MRTP Act"],
+              "correct": 2
+            },
+            {
+              "question": "Which of the following is NOT a real business model?",
+              "options": ["Freemium", "Pay-Per-View", "Auction", "Boomerang"],
+              "correct": 3
+            }
+          ]
+      },
+    entertainment: {
+        easy: [
+          {
+            question: "Who played Iron Man in the Marvel Cinematic Universe?",
+            options: ["Chris Evans", "Chris Hemsworth", "Robert Downey Jr.", "Mark Ruffalo"],
+            correct: 2
+          },
+          {
+            question: "Which animated movie features a snowman named Olaf?",
+            options: ["Moana", "Frozen", "Tangled", "Brave"],
+            correct: 1
+          },
+          {
+            question: "Which superhero is known as the 'Caped Crusader'?",
+            options: ["Superman", "Batman", "Spider-Man", "Iron Man"],
+            correct: 1
+          },
+          {
+            question: "Who is the host of 'The Tonight Show'?",
+            options: ["Jimmy Kimmel", "Jimmy Fallon", "Stephen Colbert", "James Corden"],
+            correct: 1
+          },
+          {
+            question: "Which movie features the line 'I'm the king of the world'?",
+            options: ["Titanic", "Avatar", "Gladiator", "The Lion King"],
+            correct: 0
+          },
+          {
+            question: "What is the name of Harry Potter's pet owl?",
+            options: ["Errol", "Hedwig", "Crookshanks", "Scabbers"],
+            correct: 1
+          },
+          {
+            question: "Who played the role of Jack Sparrow?",
+            options: ["Brad Pitt", "Johnny Depp", "Leonardo DiCaprio", "Tom Cruise"],
+            correct: 1
+          },
+          {
+            question: "Which show features a coffee shop named Central Perk?",
+            options: ["How I Met Your Mother", "Friends", "Seinfeld", "The Office"],
+            correct: 1
+          },
+          {
+            question: "Which animated series features characters named Homer, Marge, and Bart?",
+            options: ["Family Guy", "The Simpsons", "Rick and Morty", "South Park"],
+            correct: 1
+          },
+          {
+            question: "Which Disney princess has a pet tiger named Rajah?",
+            options: ["Belle", "Ariel", "Jasmine", "Mulan"],
+            correct: 2
+          },
+          {
+            question: "What color is SpongeBob SquarePants?",
+            options: ["Red", "Yellow", "Green", "Blue"],
+            correct: 1
+          },
+          {
+            question: "Which actor voiced Woody in Toy Story?",
+            options: ["Tom Hanks", "Tim Allen", "Johnny Depp", "Brad Pitt"],
+            correct: 0
+          },
+          {
+            question: "Which superhero uses a shield as a weapon?",
+            options: ["Hulk", "Iron Man", "Captain America", "Thor"],
+            correct: 2
+          },
+          {
+            question: "Who is known as the 'King of Pop'?",
+            options: ["Prince", "Justin Timberlake", "Michael Jackson", "Elvis Presley"],
+            correct: 2
+          },
+          {
+            question: "What is the name of the wizarding school in Harry Potter?",
+            options: ["Beauxbatons", "Durmstrang", "Hogwarts", "Ilvermorny"],
+            correct: 2
+          },
+          {
+            question: "Which movie features talking toys?",
+            options: ["Shrek", "Toy Story", "Cars", "Monsters, Inc."],
+            correct: 1
+          },
+          {
+            question: "Who played Wolverine in the X-Men series?",
+            options: ["Ryan Reynolds", "Chris Hemsworth", "Hugh Jackman", "Tom Hardy"],
+            correct: 2
+          },
+          {
+            question: "Which show features the characters Sheldon, Leonard, and Penny?",
+            options: ["The Office", "Friends", "Modern Family", "The Big Bang Theory"],
+            correct: 3
+          },
+          {
+            question: "Which Disney movie features a fish named Dory?",
+            options: ["Finding Nemo", "Finding Dory", "Shark Tale", "The Little Mermaid"],
+            correct: 1
+          },
+          {
+            question: "Who is Batman's butler?",
+            options: ["James", "Alfred", "Jarvis", "Arthur"],
+            correct: 1
+          }
         ],
         medium: [
-            {
-                question: "What is the term for when a company buys back its own shares?",
-                options: ["Stock Split", "Share Buyback", "Dividend", "IPO"],
-                correct: 1
-            },
-            {
-                question: "Which company owns the Android operating system?",
-                options: ["Apple", "Microsoft", "Google", "Samsung"],
-                correct: 2
-            },
-            {
-                question: "What is the largest e-commerce company in the world?",
-                options: ["eBay", "Amazon", "Alibaba", "Walmart"],
-                correct: 1
-            },
-            {
-                question: "Which company is the largest producer of electric vehicles?",
-                options: ["Toyota", "Tesla", "General Motors", "Volkswagen"],
-                correct: 1
-            },
-            {
-                question: "What is the term for a company's first sale of stock to the public?",
-                options: ["Merger", "Acquisition", "IPO", "Stock Split"],
-                correct: 2
-            },
-            {
-                question: "Which company owns the most valuable brand in the world?",
-                options: ["Apple", "Google", "Amazon", "Microsoft"],
-                correct: 0
-            },
-            {
-                question: "What is the largest social media platform by number of users?",
-                options: ["Facebook", "Instagram", "Twitter", "TikTok"],
-                correct: 0
-            },
-            {
-                question: "Which company created the first commercial computer?",
-                options: ["Apple", "Microsoft", "IBM", "Intel"],
-                correct: 2
-            },
-            {
-                question: "What is the term for a company's total value of all its shares?",
-                options: ["Revenue", "Profit", "Market Capitalization", "Assets"],
-                correct: 2
-            },
-            {
-                question: "Which company owns the most patents in the world?",
-                options: ["Samsung", "IBM", "Microsoft", "Apple"],
-                correct: 0
-            },
-            {
-                question: "What is the term for a company's total revenue minus total expenses?",
-                options: ["Revenue", "Profit", "Capital", "Assets"],
-                correct: 1
-            },
-            {
-                question: "Which company has the largest market share in search engines?",
-                options: ["Bing", "Google", "Yahoo", "DuckDuckGo"],
-                correct: 1
-            },
-            {
-                question: "What is the term for a company's ability to pay its debts?",
-                options: ["Profitability", "Liquidity", "Solvency", "Efficiency"],
-                correct: 2
-            }
+          {
+            question: "What is the name of the fictional continent where Game of Thrones is primarily set?",
+            options: ["Essos", "Westeros", "Narnia", "Middle-earth"],
+            correct: 1
+          },
+          {
+            question: "Which actor starred in both 'The Matrix' and 'John Wick'?",
+            options: ["Tom Cruise", "Keanu Reeves", "Brad Pitt", "Matt Damon"],
+            correct: 1
+          },
+          {
+            question: "In which year was the first Star Wars movie released?",
+            options: ["1975", "1977", "1980", "1983"],
+            correct: 1
+          },
+          {
+            question: "Who directed the movie 'Inception'?",
+            options: ["Christopher Nolan", "Steven Spielberg", "James Cameron", "Quentin Tarantino"],
+            correct: 0
+          },
+          {
+            question: "Which musical instrument is featured in the movie 'Whiplash'?",
+            options: ["Guitar", "Drums", "Violin", "Piano"],
+            correct: 1
+          },
+          {
+            question: "Which city is the setting of the TV show 'Stranger Things'?",
+            options: ["Riverdale", "Hawkins", "Mystic Falls", "Sunnydale"],
+            correct: 1
+          },
+          {
+            question: "Which movie is about a computer hacker named Neo?",
+            options: ["Inception", "The Matrix", "Blade Runner", "Tron"],
+            correct: 1
+          },
+          {
+            question: "Which actor has won the most Oscars for acting?",
+            options: ["Daniel Day-Lewis", "Jack Nicholson", "Katharine Hepburn", "Meryl Streep"],
+            correct: 2
+          },
+          {
+            question: "Which film studio produced the Harry Potter movies?",
+            options: ["Disney", "Paramount", "Warner Bros.", "Universal"],
+            correct: 2
+          },
+          {
+            question: "Which comedy series was created by Ricky Gervais?",
+            options: ["Parks and Recreation", "The Office (UK)", "Brooklyn Nine-Nine", "Veep"],
+            correct: 1
+          },
+          {
+            question: "Which actress plays Eleven in 'Stranger Things'?",
+            options: ["Millie Bobby Brown", "Sadie Sink", "Natalia Dyer", "Winona Ryder"],
+            correct: 0
+          },
+          {
+            question: "In 'The Lion King', what is the name of Simba's father?",
+            options: ["Scar", "Mufasa", "Zazu", "Rafiki"],
+            correct: 1
+          },
+          {
+            question: "Which movie features a DeLorean time machine?",
+            options: ["Time Bandits", "The Time Traveler's Wife", "Back to the Future", "Looper"],
+            correct: 2
+          },
+          {
+            question: "Who wrote the 'James Bond' novels?",
+            options: ["John le Carré", "Ian Fleming", "Tom Clancy", "Robert Ludlum"],
+            correct: 1
+          },
+          {
+            question: "Which actress starred in 'La La Land' and 'Cruella'?",
+            options: ["Emma Watson", "Emma Stone", "Jennifer Lawrence", "Scarlett Johansson"],
+            correct: 1
+          },
+          {
+            question: "In which movie would you find the character Gollum?",
+            options: ["Harry Potter", "The Hobbit", "The Chronicles of Narnia", "Percy Jackson"],
+            correct: 1
+          },
+          {
+            question: "Which famous detective lives at 221B Baker Street?",
+            options: ["Hercule Poirot", "Sherlock Holmes", "Miss Marple", "Columbo"],
+            correct: 1
+          },
+          {
+            question: "Who directed 'Jurassic Park'?",
+            options: ["James Cameron", "Steven Spielberg", "Peter Jackson", "Ridley Scott"],
+            correct: 1
+          },
+          {
+            question: "What genre is the movie 'The Conjuring'?",
+            options: ["Comedy", "Romance", "Horror", "Sci-Fi"],
+            correct: 2
+          },
+          {
+            question: "Which animated film features the character Lightning McQueen?",
+            options: ["Cars", "Planes", "Ratatouille", "Bolt"],
+            correct: 0
+          }
         ],
         hard: [
-            {
-                question: "What is the term for a company's ability to meet its short-term obligations?",
-                options: ["Solvency", "Liquidity", "Profitability", "Efficiency"],
-                correct: 1
-            },
-            {
-                question: "Which company was the first to reach a $1 trillion market cap?",
-                options: ["Apple", "Microsoft", "Amazon", "Google"],
-                correct: 0
-            },
-            {
-                question: "What is the term for a company's total assets minus its total liabilities?",
-                options: ["Revenue", "Profit", "Equity", "Capital"],
-                correct: 2
-            },
-            {
-                question: "Which company has the highest revenue in the world?",
-                options: ["Apple", "Walmart", "Amazon", "Saudi Aramco"],
-                correct: 1
-            },
-            {
-                question: "What is the term for a company's ability to generate profits from its assets?",
-                options: ["Liquidity", "Solvency", "Profitability", "ROA (Return on Assets)"],
-                correct: 3
-            },
-            {
-                question: "Which company has the highest profit margin in the tech industry?",
-                options: ["Apple", "Microsoft", "Google", "Facebook"],
-                correct: 0
-            },
-            {
-                question: "What is the term for a company's ability to generate cash from its operations?",
-                options: ["Profitability", "Liquidity", "Cash Flow", "Solvency"],
-                correct: 2
-            },
-            {
-                question: "Which company has the highest research and development spending?",
-                options: ["Apple", "Microsoft", "Amazon", "Alphabet (Google)"],
-                correct: 3
-            },
-            {
-                question: "What is the term for a company's ability to meet its long-term obligations?",
-                options: ["Liquidity", "Solvency", "Profitability", "Efficiency"],
-                correct: 1
-            },
-            {
-                question: "Which company has the highest market share in cloud computing?",
-                options: ["Microsoft Azure", "Amazon AWS", "Google Cloud", "IBM Cloud"],
-                correct: 1
-            }
+          {
+            question: "Which film won the first Academy Award for Best Picture?",
+            options: ["Wings", "Gone with the Wind", "Sunrise", "All Quiet on the Western Front"],
+            correct: 0
+          },
+          {
+            question: "Who played the Joker in 'The Dark Knight'?",
+            options: ["Joaquin Phoenix", "Heath Ledger", "Jared Leto", "Jack Nicholson"],
+            correct: 1
+          },
+          {
+            question: "Which director is known for the 'Three Colors' trilogy?",
+            options: ["Francois Truffaut", "Krzysztof Kieślowski", "Federico Fellini", "Jean-Luc Godard"],
+            correct: 1
+          },
+          {
+            question: "What is the highest-grossing R-rated film of all time (as of 2024)?",
+            options: ["Deadpool", "Joker", "Logan", "It"],
+            correct: 1
+          },
+          {
+            question: "Which 1927 film is considered the first 'talkie'?",
+            options: ["The Jazz Singer", "Metropolis", "Wings", "The General"],
+            correct: 0
+          },
+          {
+            question: "Which actor has received the most Oscar nominations?",
+            options: ["Robert De Niro", "Al Pacino", "Meryl Streep", "Jack Nicholson"],
+            correct: 2
+          },
+          {
+            question: "In which year were the Oscars first held?",
+            options: ["1927", "1929", "1931", "1933"],
+            correct: 1
+          },
+          {
+            question: "Which animated movie won the first Academy Award for Best Animated Feature?",
+            options: ["Toy Story", "Shrek", "Finding Nemo", "The Incredibles"],
+            correct: 1
+          },
+          {
+            question: "Which Indian film was nominated for Best International Feature at the Oscars in 2002?",
+            options: ["Mother India", "Lagaan", "Salaam Bombay!", "Peepli Live"],
+            correct: 1
+          },
+          {
+            question: "Which actress has won the most Oscars for acting?",
+            options: ["Audrey Hepburn", "Meryl Streep", "Katharine Hepburn", "Ingrid Bergman"],
+            correct: 2
+          },
+          {
+            question: "Which actor voiced the character of Genie in Disney’s 'Aladdin' (1992)?",
+            options: ["Eddie Murphy", "Robin Williams", "Will Smith", "Mike Myers"],
+            correct: 1
+          },
+          {
+            question: "What’s the name of the AI in the movie 'Her'?",
+            options: ["Samantha", "Alexa", "Eva", "Aurora"],
+            correct: 0
+          },
+          {
+            question: "Which movie won Best Picture at the 2020 Academy Awards?",
+            options: ["1917", "Parasite", "Joker", "Once Upon a Time in Hollywood"],
+            correct: 1
+          },
+          {
+            question: "Which film is considered the first full-length feature animation?",
+            options: ["Snow White and the Seven Dwarfs", "Fantasia", "Bambi", "Cinderella"],
+            correct: 0
+          },
+          {
+            question: "Who was the first woman to win an Oscar for Best Director?",
+            options: ["Kathryn Bigelow", "Sofia Coppola", "Greta Gerwig", "Chloé Zhao"],
+            correct: 0
+          },
+          {
+            question: "Which composer scored the music for 'Star Wars'?",
+            options: ["Hans Zimmer", "James Horner", "John Williams", "Danny Elfman"],
+            correct: 2
+          },
+          {
+            question: "In which film did Audrey Hepburn play Holly Golightly?",
+            options: ["Sabrina", "Funny Face", "Breakfast at Tiffany's", "Roman Holiday"],
+            correct: 2
+          },
+          {
+            question: "What’s the longest-running Broadway show?",
+            options: ["Chicago", "The Lion King", "Les Misérables", "The Phantom of the Opera"],
+            correct: 3
+          },
+          {
+            question: "Which movie features the character Tyler Durden?",
+            options: ["Se7en", "American Psycho", "Fight Club", "The Machinist"],
+            correct: 2
+          },
+          {
+            question: "Which 1972 film is based on a novel by Mario Puzo?",
+            options: ["Scarface", "The Godfather", "Goodfellas", "The Irishman"],
+            correct: 1
+          }
         ]
-    },
+      },
     technology: {
             easy: [
               {
@@ -2318,7 +2736,315 @@ const quizQuestions = {
               }
             ]
           },
-          
+            "math": {
+              "easy": [
+                {
+                  "question": "What is 12 × 3?",
+                  "options": ["36", "30", "42", "48"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is 100 divided by 10?",
+                  "options": ["5", "10", "20", "25"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the value of π (pi) to 2 decimal places?",
+                  "options": ["3.12", "3.14", "3.15", "3.13"],
+                  "correct": 1
+                },
+                {
+                  "question": "How many sides does a hexagon have?",
+                  "options": ["5", "6", "7", "8"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is 15% of 200?",
+                  "options": ["25", "30", "35", "40"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the square of 9?",
+                  "options": ["81", "72", "91", "99"],
+                  "correct": 0
+                },
+                {
+                  "question": "What comes next in the pattern: 2, 4, 6, 8, ...?",
+                  "options": ["9", "10", "11", "12"],
+                  "correct": 1
+                },
+                {
+                  "question": "Which number is an even number?",
+                  "options": ["3", "7", "12", "19"],
+                  "correct": 2
+                },
+                {
+                  "question": "What is 5 + (6 × 2)?",
+                  "options": ["17", "22", "16", "21"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is the place value of 7 in 574?",
+                  "options": ["7", "70", "700", "0.7"],
+                  "correct": 1
+                },
+                {
+                  "question": "How many degrees are in a right angle?",
+                  "options": ["45", "90", "180", "360"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the result of 3³?",
+                  "options": ["6", "9", "27", "81"],
+                  "correct": 2
+                },
+                {
+                  "question": "Which shape has only three sides?",
+                  "options": ["Circle", "Triangle", "Square", "Pentagon"],
+                  "correct": 1
+                },
+                {
+                  "question": "Which of these numbers is a multiple of 8?",
+                  "options": ["14", "18", "24", "36"],
+                  "correct": 2
+                },
+                {
+                  "question": "What is 50% of 300?",
+                  "options": ["100", "150", "200", "250"],
+                  "correct": 1
+                },
+                {
+                  "question": "How many centimeters are in a meter?",
+                  "options": ["10", "100", "1000", "10000"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the next prime number after 7?",
+                  "options": ["9", "10", "11", "13"],
+                  "correct": 2
+                },
+                {
+                  "question": "What is the difference between 250 and 190?",
+                  "options": ["60", "70", "90", "100"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is the smallest two-digit prime number?",
+                  "options": ["11", "13", "17", "10"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is half of 1,000?",
+                  "options": ["250", "400", "500", "600"],
+                  "correct": 2
+                }
+              ],
+              "medium": [
+                {
+                  "question": "What is the value of 5² + 3²?",
+                  "options": ["25", "34", "35", "50"],
+                  "correct": 2
+                },
+                {
+                  "question": "Solve for x: 2x + 3 = 11",
+                  "options": ["4", "3", "5", "6"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is the square root of 144?",
+                  "options": ["12", "14", "10", "16"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is the area of a triangle with base 10 cm and height 5 cm?",
+                  "options": ["25", "30", "40", "50"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is 2⁵?",
+                  "options": ["16", "32", "64", "128"],
+                  "correct": 1
+                },
+                {
+                  "question": "Solve: (3 × 4) + (6 ÷ 2)",
+                  "options": ["12", "15", "18", "21"],
+                  "correct": 1
+                },
+                {
+                  "question": "If a = 2 and b = 3, what is the value of ab + b²?",
+                  "options": ["12", "15", "13", "18"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the perimeter of a rectangle with length 8 cm and width 5 cm?",
+                  "options": ["26", "30", "40", "16"],
+                  "correct": 0
+                },
+                {
+                  "question": "How many faces does a cube have?",
+                  "options": ["4", "6", "8", "10"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the mean of 5, 10, 15, 20, 25?",
+                  "options": ["10", "15", "20", "25"],
+                  "correct": 1
+                },
+                {
+                  "question": "If 3 pencils cost ₹18, what is the cost of 10 pencils?",
+                  "options": ["₹60", "₹54", "₹50", "₹30"],
+                  "correct": 1
+                },
+                {
+                  "question": "Simplify: 9x - 3x + 4",
+                  "options": ["6x + 4", "3x + 4", "12x + 4", "6x - 4"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is the sum of angles in a pentagon?",
+                  "options": ["540°", "360°", "720°", "180°"],
+                  "correct": 0
+                },
+                {
+                  "question": "Solve: x² = 49",
+                  "options": ["6", "7", "-7", "7 or -7"],
+                  "correct": 3
+                },
+                {
+                  "question": "What is the least common multiple (LCM) of 4 and 6?",
+                  "options": ["8", "12", "16", "24"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the volume of a cube with side 3 cm?",
+                  "options": ["9 cm³", "18 cm³", "27 cm³", "36 cm³"],
+                  "correct": 2
+                },
+                {
+                  "question": "Which is the coefficient in the expression 7x + 3?",
+                  "options": ["7", "x", "3", "10"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is the probability of getting a 4 when a fair die is rolled?",
+                  "options": ["1/3", "1/4", "1/5", "1/6"],
+                  "correct": 3
+                },
+                {
+                  "question": "Convert 0.75 into a fraction.",
+                  "options": ["1/2", "3/4", "2/3", "4/5"],
+                  "correct": 1
+                },
+                {
+                  "question": "If a car travels 60 km in 1.5 hours, what is its speed?",
+                  "options": ["30 km/h", "40 km/h", "45 km/h", "50 km/h"],
+                  "correct": 2
+                }
+              ],
+              "hard": [
+                {
+                  "question": "What is the derivative of x³ + 2x?",
+                  "options": ["3x² + 2", "2x + 3", "x² + 2x", "x³ + 2"],
+                  "correct": 0
+                },
+                {
+                  "question": "Solve: log₂(32)",
+                  "options": ["4", "5", "6", "3"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the integral of 2x dx?",
+                  "options": ["x² + C", "2x² + C", "x + C", "2x + C"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is the determinant of a 2x2 matrix [[1,2],[3,4]]?",
+                  "options": ["-2", "-1", "1", "2"],
+                  "correct": 0
+                },
+                {
+                  "question": "Solve: x² - 5x + 6 = 0",
+                  "options": ["x = 2 or 3", "x = -2 or -3", "x = 1 or 6", "x = 3 or 4"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is the sum of the first 50 natural numbers?",
+                  "options": ["1275", "1125", "1225", "1325"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is the binomial coefficient C(5,2)?",
+                  "options": ["10", "15", "20", "25"],
+                  "correct": 0
+                },
+                {
+                  "question": "Which function is not continuous at x = 0?",
+                  "options": ["1/x", "x", "x²", "sin(x)"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is the 10th term of the arithmetic sequence: 2, 5, 8,...?",
+                  "options": ["27", "29", "30", "31"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the slope of the line 3x + 2y = 6?",
+                  "options": ["-3/2", "2/3", "-2/3", "3/2"],
+                  "correct": 0
+                },
+                {
+                  "question": "Find the roots of x² + x - 6 = 0",
+                  "options": ["2 and -3", "-2 and 3", "1 and -6", "-1 and 6"],
+                  "correct": 0
+                },
+                {
+                  "question": "Evaluate: sin(π/6)",
+                  "options": ["1", "0", "1/2", "√3/2"],
+                  "correct": 2
+                },
+                {
+                  "question": "If f(x) = x² + 1, find f'(x)",
+                  "options": ["2x", "x", "x²", "1"],
+                  "correct": 0
+                },
+                {
+                  "question": "Find the inverse of the matrix [[1,0],[0,1]]",
+                  "options": ["[[0,1],[1,0]]", "[[1,0],[0,1]]", "[[2,0],[0,2]]", "[[1,1],[1,1]]"],
+                  "correct": 1
+                },
+                {
+                  "question": "What is the result of i² where i is the imaginary unit?",
+                  "options": ["-1", "1", "0", "i"],
+                  "correct": 0
+                },
+                {
+                  "question": "What is the range of the function f(x) = x²?",
+                  "options": ["All real numbers", "x ≥ 0", "x ≤ 0", "x ≠ 0"],
+                  "correct": 1
+                },
+                {
+                  "question": "Find the volume of a sphere with radius 3 cm.",
+                  "options": ["113.1 cm³", "108 cm³", "110 cm³", "100 cm³"],
+                  "correct": 0
+                },
+                {
+                  "question": "Evaluate the limit: lim x→0 (sin x / x)",
+                  "options": ["1", "0", "∞", "x"],
+                  "correct": 0
+                },
+                {
+                  "question": "How many permutations of the word 'MATH' are possible?",
+                  "options": ["12", "16", "24", "32"],
+                  "correct": 2
+                },
+                {
+                  "question": "If A and B are mutually exclusive, then P(A ∩ B) = ?",
+                  "options": ["0", "1", "P(A) + P(B)", "P(A) × P(B)"],
+                  "correct": 0
+                }
+              ]
+            
+          },          
         "music": {
           "easy": [
             {
