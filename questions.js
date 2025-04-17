@@ -1,113 +1,313 @@
 const quizQuestions = {
     general: {
         easy: [
-            {
-                question: "What is the capital of France?",
-                options: ["London", "Berlin", "Paris", "Madrid"],
-                correct: 2
-            },
-            {
-                question: "Which planet is known as the Red Planet?",
-                options: ["Venus", "Mars", "Jupiter", "Saturn"],
-                correct: 1
-            },
-            {
-                question: "What is the largest mammal in the world?",
-                options: ["Elephant", "Blue Whale", "Giraffe", "Polar Bear"],
-                correct: 1
-            },
-            {
-                question: "Which country is home to the kangaroo?",
-                options: ["New Zealand", "Australia", "South Africa", "Brazil"],
-                correct: 1
-            },
-            {
-                question: "What is the currency of Japan?",
-                options: ["Yuan", "Won", "Yen", "Ringgit"],
-                correct: 2
-            },
-            {
-                question: "Which famous scientist developed the theory of relativity?",
-                options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
-                correct: 1
-            },
-            {
-                question: "What is the largest ocean on Earth?",
-                options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-                correct: 3
-            },
-            {
-                question: "Which famous painting was created by Leonardo da Vinci?",
-                options: ["The Starry Night", "The Scream", "Mona Lisa", "The Persistence of Memory"],
-                correct: 2
-            },
-            {
-                question: "What is the main ingredient in guacamole?",
-                options: ["Tomato", "Avocado", "Onion", "Lime"],
-                correct: 1
-            },
-            {
-                question: "Which country is known as the Land of the Rising Sun?",
-                options: ["China", "South Korea", "Japan", "Thailand"],
-                correct: 2
-            }
+          {
+            question: "What is the capital of India?",
+            options: ["Mumbai", "Delhi", "Kolkata", "Chennai"],
+            correct: 1
+          },
+          {
+            question: "Which planet is known as the Red Planet?",
+            options: ["Earth", "Mars", "Jupiter", "Venus"],
+            correct: 1
+          },
+          {
+            question: "How many days are there in a week?",
+            options: ["5", "6", "7", "8"],
+            correct: 2
+          },
+          {
+            question: "Which animal is known as the 'King of the Jungle'?",
+            options: ["Tiger", "Lion", "Elephant", "Cheetah"],
+            correct: 1
+          },
+          {
+            question: "Which shape has four equal sides?",
+            options: ["Triangle", "Rectangle", "Circle", "Square"],
+            correct: 3
+          },
+          {
+            question: "Which month comes after March?",
+            options: ["May", "June", "April", "February"],
+            correct: 2
+          },
+          {
+            question: "What color are bananas?",
+            options: ["Green", "Yellow", "Red", "Blue"],
+            correct: 1
+          },
+          {
+            question: "Which sense do we use to see?",
+            options: ["Touch", "Smell", "Sight", "Taste"],
+            correct: 2
+          },
+          {
+            question: "How many continents are there?",
+            options: ["5", "6", "7", "8"],
+            correct: 2
+          },
+          {
+            question: "Which is the tallest animal in the world?",
+            options: ["Elephant", "Giraffe", "Kangaroo", "Lion"],
+            correct: 1
+          },
+          {
+            question: "What is H2O commonly known as?",
+            options: ["Salt", "Air", "Water", "Acid"],
+            correct: 2
+          },
+          {
+            question: "Which fruit is red and often used to make ketchup?",
+            options: ["Apple", "Tomato", "Strawberry", "Cherry"],
+            correct: 1
+          },
+          {
+            question: "What do bees produce?",
+            options: ["Sugar", "Wax", "Honey", "Milk"],
+            correct: 2
+          },
+          {
+            question: "How many legs does a spider have?",
+            options: ["6", "8", "4", "10"],
+            correct: 1
+          },
+          {
+            question: "Which sport is played with a bat and ball?",
+            options: ["Football", "Tennis", "Cricket", "Basketball"],
+            correct: 2
+          },
+          {
+            question: "What is the opposite of 'hot'?",
+            options: ["Warm", "Cold", "Cool", "Heat"],
+            correct: 1
+          },
+          {
+            question: "Which bird can mimic human speech?",
+            options: ["Crow", "Owl", "Parrot", "Eagle"],
+            correct: 2
+          },
+          {
+            question: "Which vehicle flies in the sky?",
+            options: ["Car", "Bus", "Train", "Airplane"],
+            correct: 3
+          },
+          {
+            question: "How many hours are there in a day?",
+            options: ["12", "18", "24", "36"],
+            correct: 2
+          },
+          {
+            question: "What is the first letter of the English alphabet?",
+            options: ["Z", "B", "A", "C"],
+            correct: 2
+          }
         ],
         medium: [
-            {
-                question: "Which element has the chemical symbol 'Au'?",
-                options: ["Silver", "Copper", "Gold", "Aluminum"],
-                correct: 2
-            },
-            {
-                question: "In which year did World War II end?",
-                options: ["1943", "1944", "1945", "1946"],
-                correct: 2
-            },
-            {
-                question: "Who wrote 'Romeo and Juliet'?",
-                options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
-                correct: 1
-            },
-            {
-                question: "What is the largest desert in the world?",
-                options: ["Sahara", "Gobi", "Arabian", "Antarctic"],
-                correct: 3
-            },
-            {
-                question: "What is the longest river in the world?",
-                options: ["Amazon", "Nile", "Yangtze", "Mississippi"],
-                correct: 1
-            }
+          {
+            question: "Which ocean is the largest in the world?",
+            options: ["Atlantic", "Indian", "Pacific", "Arctic"],
+            correct: 2
+          },
+          {
+            question: "Who wrote the play 'Romeo and Juliet'?",
+            options: ["Charles Dickens", "William Shakespeare", "Leo Tolstoy", "Jane Austen"],
+            correct: 1
+          },
+          {
+            question: "Which gas do plants absorb from the atmosphere?",
+            options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+            correct: 1
+          },
+          {
+            question: "What is the square root of 144?",
+            options: ["12", "11", "14", "10"],
+            correct: 0
+          },
+          {
+            question: "Who discovered gravity when an apple fell on his head?",
+            options: ["Albert Einstein", "Isaac Newton", "Galileo", "Stephen Hawking"],
+            correct: 1
+          },
+          {
+            question: "Which country is known as the Land of the Rising Sun?",
+            options: ["India", "China", "Japan", "Thailand"],
+            correct: 2
+          },
+          {
+            question: "In which year did India gain independence?",
+            options: ["1945", "1946", "1947", "1950"],
+            correct: 2
+          },
+          {
+            question: "What is the freezing point of water in Celsius?",
+            options: ["0°C", "100°C", "50°C", "10°C"],
+            correct: 0
+          },
+          {
+            question: "What is the main language spoken in Brazil?",
+            options: ["Spanish", "English", "Portuguese", "French"],
+            correct: 2
+          },
+          {
+            question: "How many bones are there in the adult human body?",
+            options: ["206", "205", "210", "198"],
+            correct: 0
+          },
+          {
+            question: "Who was the first President of the United States?",
+            options: ["Abraham Lincoln", "George Washington", "John Adams", "Thomas Jefferson"],
+            correct: 1
+          },
+          {
+            question: "What is the capital city of Australia?",
+            options: ["Sydney", "Melbourne", "Canberra", "Perth"],
+            correct: 2
+          },
+          {
+            question: "Which element has the chemical symbol 'O'?",
+            options: ["Osmium", "Oxygen", "Gold", "Ozone"],
+            correct: 1
+          },
+          {
+            question: "Which number comes next in the sequence: 2, 4, 8, 16, __?",
+            options: ["24", "32", "18", "20"],
+            correct: 1
+          },
+          {
+            question: "Which Indian festival is known as the Festival of Lights?",
+            options: ["Holi", "Diwali", "Eid", "Christmas"],
+            correct: 1
+          },
+          {
+            question: "Who was the first man to walk on the moon?",
+            options: ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Michael Collins"],
+            correct: 1
+          },
+          {
+            question: "What is the largest planet in our solar system?",
+            options: ["Earth", "Jupiter", "Saturn", "Neptune"],
+            correct: 1
+          },
+          {
+            question: "Which instrument is used to measure temperature?",
+            options: ["Barometer", "Thermometer", "Speedometer", "Altimeter"],
+            correct: 1
+          },
+          {
+            question: "Which is the national sport of Canada?",
+            options: ["Cricket", "Hockey", "Baseball", "Football"],
+            correct: 1
+          },
+          {
+            question: "How many colors are there in a rainbow?",
+            options: ["6", "8", "7", "5"],
+            correct: 2
+          }
         ],
         hard: [
-            {
-                question: "Who wrote 'The Canterbury Tales'?",
-                options: ["Geoffrey Chaucer", "William Shakespeare", "John Milton", "Charles Dickens"],
-                correct: 0
-            },
-            {
-                question: "What is the largest organ in the human body?",
-                options: ["Heart", "Liver", "Skin", "Brain"],
-                correct: 2
-            },
-            {
-                question: "Which ancient civilization built the pyramids?",
-                options: ["Greeks", "Romans", "Egyptians", "Mayans"],
-                correct: 2
-            },
-            {
-                question: "What is the chemical symbol for silver?",
-                options: ["Si", "S", "Ag", "Au"],
-                correct: 2
-            },
-            {
-                question: "Which country has the most UNESCO World Heritage Sites?",
-                options: ["China", "Italy", "Spain", "France"],
-                correct: 1
-            }
+          {
+            question: "What is the currency of South Korea?",
+            options: ["Yuan", "Won", "Yen", "Ringgit"],
+            correct: 1
+          },
+          {
+            question: "Who is the author of the book '1984'?",
+            options: ["George Orwell", "Aldous Huxley", "Ernest Hemingway", "F. Scott Fitzgerald"],
+            correct: 0
+          },
+          {
+            question: "Which chemical element has the atomic number 79?",
+            options: ["Silver", "Gold", "Copper", "Platinum"],
+            correct: 1
+          },
+          {
+            question: "What is the hardest natural substance on Earth?",
+            options: ["Iron", "Graphite", "Diamond", "Quartz"],
+            correct: 2
+          },
+          {
+            question: "Who painted the ceiling of the Sistine Chapel?",
+            options: ["Leonardo da Vinci", "Raphael", "Michelangelo", "Donatello"],
+            correct: 2
+          },
+          {
+            question: "Which is the longest river in the world?",
+            options: ["Amazon", "Nile", "Yangtze", "Mississippi"],
+            correct: 1
+          },
+          {
+            question: "What is the smallest prime number?",
+            options: ["0", "1", "2", "3"],
+            correct: 2
+          },
+          {
+            question: "Who developed the theory of relativity?",
+            options: ["Newton", "Einstein", "Tesla", "Bohr"],
+            correct: 1
+          },
+          {
+            question: "Which metal is liquid at room temperature?",
+            options: ["Mercury", "Lead", "Zinc", "Iron"],
+            correct: 0
+          },
+          {
+            question: "What is the name of the deepest part of the ocean?",
+            options: ["Mariana Trench", "Indian Basin", "Pacific Pit", "Atlantic Hollow"],
+            correct: 0
+          },
+          {
+            question: "Which African country has the highest population?",
+            options: ["South Africa", "Egypt", "Nigeria", "Kenya"],
+            correct: 2
+          },
+          {
+            question: "What is the national flower of Japan?",
+            options: ["Rose", "Tulip", "Lotus", "Cherry Blossom"],
+            correct: 3
+          },
+          {
+            question: "What is the chemical formula for table salt?",
+            options: ["NaCl", "HCl", "KCl", "CaCO3"],
+            correct: 0
+          },
+          {
+            question: "Which Indian city is also known as the 'Silicon Valley of India'?",
+            options: ["Mumbai", "Hyderabad", "Bangalore", "Chennai"],
+            correct: 2
+          },
+          {
+            question: "In which country did the Olympic Games originate?",
+            options: ["Italy", "Greece", "USA", "France"],
+            correct: 1
+          },
+          {
+            question: "Who invented the telephone?",
+            options: ["Edison", "Bell", "Tesla", "Newton"],
+            correct: 1
+          },
+          {
+            question: "What is the most abundant gas in Earth's atmosphere?",
+            options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+            correct: 1
+          },
+          {
+            question: "What is the capital of Argentina?",
+            options: ["Lima", "Bogotá", "Buenos Aires", "Santiago"],
+            correct: 2
+          },
+          {
+            question: "What is the official language of Egypt?",
+            options: ["Arabic", "Hebrew", "English", "French"],
+            correct: 0
+          },
+          {
+            question: "What is the powerhouse of the cell?",
+            options: ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
+            correct: 2
+          }
         ]
-    },
-    science: {
+      },
+      science: {
         easy: [
             {
                     "question": "What is the chemical symbol for water?",
@@ -1810,172 +2010,623 @@ const quizQuestions = {
               }
             ]
           },
-    art: {
-        easy: [
-            {
+          art: {
+            easy: [
+              {
                 question: "Who painted the Mona Lisa?",
-                options: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+                options: ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Claude Monet"],
+                correct: 0
+              },
+              {
+                question: "What do you use to paint with watercolors?",
+                options: ["Brush", "Pencil", "Chisel", "Crayon"],
+                correct: 0
+              },
+              {
+                question: "Which shape has three sides?",
+                options: ["Square", "Circle", "Triangle", "Rectangle"],
                 correct: 2
-            },
-            {
-                question: "Which art movement is known for its use of bright colors and bold brushstrokes?",
-                options: ["Cubism", "Impressionism", "Surrealism", "Abstract Expressionism"],
-                correct: 1
-            },
-            {
-                question: "What is the name of the most famous sculpture by Michelangelo?",
-                options: ["The Thinker", "David", "Venus de Milo", "The Kiss"],
-                correct: 1
-            },
-            {
-                question: "Which artist is known for cutting off his own ear?",
-                options: ["Pablo Picasso", "Vincent van Gogh", "Salvador Dali", "Claude Monet"],
-                correct: 1
-            },
-            {
-                question: "What is the name of the art movement that rejected traditional art forms?",
-                options: ["Dada", "Cubism", "Surrealism", "Impressionism"],
-                correct: 0
-            }
-        ],
-        medium: [
-            {
-                question: "Which artist created the painting 'The Starry Night'?",
-                options: ["Pablo Picasso", "Vincent van Gogh", "Claude Monet", "Salvador Dali"],
-                correct: 1
-            },
-            {
-                question: "What is the name of the art movement that focused on dreams and the unconscious?",
-                options: ["Cubism", "Surrealism", "Impressionism", "Abstract Expressionism"],
-                correct: 1
-            },
-            {
-                question: "Which artist is known for his 'Campbell's Soup Cans' painting?",
-                options: ["Andy Warhol", "Roy Lichtenstein", "Jackson Pollock", "Mark Rothko"],
-                correct: 0
-            },
-            {
-                question: "What is the name of the art movement that focused on geometric shapes?",
-                options: ["Cubism", "Surrealism", "Impressionism", "Abstract Expressionism"],
-                correct: 0
-            },
-            {
-                question: "Which artist is known for his 'Guernica' painting?",
-                options: ["Pablo Picasso", "Vincent van Gogh", "Salvador Dali", "Claude Monet"],
-                correct: 0
-            }
-        ],
-        hard: [
-            {
-                question: "What is the name of the art movement that focused on the subconscious mind?",
-                options: ["Surrealism", "Cubism", "Impressionism", "Abstract Expressionism"],
-                correct: 0
-            },
-            {
-                question: "Which artist is known for his 'The Persistence of Memory' painting?",
-                options: ["Salvador Dali", "Pablo Picasso", "Vincent van Gogh", "Claude Monet"],
-                correct: 0
-            },
-            {
-                question: "What is the name of the art movement that focused on the beauty of nature?",
-                options: ["Romanticism", "Realism", "Impressionism", "Abstract Expressionism"],
-                correct: 0
-            },
-            {
-                question: "Which artist is known for his 'The Scream' painting?",
-                options: ["Edvard Munch", "Vincent van Gogh", "Pablo Picasso", "Salvador Dali"],
-                correct: 0
-            },
-            {
-                question: "What is the name of the art movement that focused on the beauty of the human form?",
-                options: ["Renaissance", "Baroque", "Rococo", "Neoclassicism"],
-                correct: 0
-            }
-        ]
-    },
-    music: {
-        easy: [
-            {
-                question: "Who is known as the 'King of Pop'?",
-                options: ["Elvis Presley", "Michael Jackson", "Prince", "Madonna"],
-                correct: 1
-            },
-            {
-                question: "Which instrument has 88 keys?",
-                options: ["Guitar", "Piano", "Violin", "Drums"],
-                correct: 1
-            },
-            {
-                question: "Who wrote the song 'Bohemian Rhapsody'?",
-                options: ["The Beatles", "Queen", "Led Zeppelin", "Pink Floyd"],
-                correct: 1
-            },
-            {
-                question: "Which music genre originated in Jamaica?",
-                options: ["Rock", "Reggae", "Jazz", "Blues"],
-                correct: 1
-            },
-            {
-                question: "Who is known as the 'Queen of Soul'?",
-                options: ["Aretha Franklin", "Whitney Houston", "Diana Ross", "Tina Turner"],
-                correct: 0
-            }
-        ],
-        medium: [
-            {
-                question: "Which composer wrote 'Moonlight Sonata'?",
-                options: ["Mozart", "Beethoven", "Bach", "Chopin"],
-                correct: 1
-            },
-            {
-                question: "What is the name of the highest female singing voice?",
-                options: ["Alto", "Soprano", "Tenor", "Bass"],
-                correct: 1
-            },
-            {
-                question: "Which band is known for their album 'The Dark Side of the Moon'?",
-                options: ["The Beatles", "Led Zeppelin", "Pink Floyd", "The Rolling Stones"],
+              },
+              {
+                question: "Which primary color is missing: Red, Blue, and ___?",
+                options: ["Green", "Black", "Yellow", "Orange"],
                 correct: 2
-            },
-            {
-                question: "What is the name of the musical scale that has no sharps or flats?",
-                options: ["C Major", "G Major", "D Major", "A Major"],
-                correct: 0
-            },
-            {
-                question: "Which composer wrote 'The Four Seasons'?",
-                options: ["Vivaldi", "Mozart", "Beethoven", "Bach"],
-                correct: 0
-            }
-        ],
-        hard: [
-            {
-                question: "What is the name of the musical form that has three parts?",
-                options: ["Binary", "Ternary", "Rondo", "Sonata"],
+              },
+              {
+                question: "What do you call the art of folding paper into shapes?",
+                options: ["Calligraphy", "Origami", "Mosaic", "Graffiti"],
                 correct: 1
-            },
-            {
-                question: "Which composer wrote 'The Magic Flute'?",
-                options: ["Mozart", "Beethoven", "Bach", "Chopin"],
+              },
+              {
+                question: "What is the color of the sky on a clear day?",
+                options: ["Red", "Blue", "Green", "Orange"],
+                correct: 1
+              },
+              {
+                question: "Which artist is known for cutting off his ear?",
+                options: ["Van Gogh", "Picasso", "Michelangelo", "Rembrandt"],
                 correct: 0
-            },
-            {
-                question: "What is the name of the musical interval that spans eight notes?",
-                options: ["Fifth", "Sixth", "Seventh", "Octave"],
+              },
+              {
+                question: "What kind of paint is used in finger painting?",
+                options: ["Acrylic", "Oil", "Water-based", "Ink"],
+                correct: 2
+              },
+              {
+                question: "Which tool is used for sketching?",
+                options: ["Pencil", "Knife", "Ruler", "Fork"],
+                correct: 0
+              },
+              {
+                question: "Which color is made by mixing red and white?",
+                options: ["Pink", "Purple", "Brown", "Orange"],
+                correct: 0
+              },
+              {
+                question: "What do you call a person who paints?",
+                options: ["Sculptor", "Painter", "Architect", "Writer"],
+                correct: 1
+              },
+              {
+                question: "What is a mural?",
+                options: ["Tiny drawing", "Wall painting", "Sketch", "Sculpture"],
+                correct: 1
+              },
+              {
+                question: "Which artist is known for melting clocks in his art?",
+                options: ["Dali", "Monet", "Warhol", "Cézanne"],
+                correct: 0
+              },
+              {
+                question: "Which of these is a warm color?",
+                options: ["Blue", "Green", "Yellow", "Purple"],
+                correct: 2
+              },
+              {
+                question: "What do you use to erase pencil marks?",
+                options: ["Sharpener", "Crayon", "Eraser", "Brush"],
+                correct: 2
+              },
+              {
+                question: "What is clay commonly used for in art?",
+                options: ["Painting", "Sculpting", "Photography", "Knitting"],
+                correct: 1
+              },
+              {
+                question: "Which artist is famous for the painting 'Starry Night'?",
+                options: ["Van Gogh", "Picasso", "Da Vinci", "Matisse"],
+                correct: 0
+              },
+              {
+                question: "Which color is opposite to green on the color wheel?",
+                options: ["Blue", "Red", "Yellow", "Orange"],
+                correct: 1
+              },
+              {
+                question: "Which tool spreads paint evenly on a canvas?",
+                options: ["Brush", "Roller", "Pencil", "Palette"],
+                correct: 1
+              },
+              {
+                question: "What is a 'self-portrait'?",
+                options: ["Portrait of another person", "Drawing of a pet", "Painting of oneself", "Landscape drawing"],
+                correct: 2
+              }
+            ],
+            medium: [
+              {
+                question: "Which movement is associated with Claude Monet?",
+                options: ["Cubism", "Surrealism", "Impressionism", "Expressionism"],
+                correct: 2
+              },
+              {
+                question: "In which country did the Renaissance begin?",
+                options: ["France", "Italy", "Spain", "Germany"],
+                correct: 1
+              },
+              {
+                question: "What is the main ingredient in tempera paint?",
+                options: ["Oil", "Egg yolk", "Acrylic", "Water"],
+                correct: 1
+              },
+              {
+                question: "Which artist painted 'Guernica'?",
+                options: ["Picasso", "Kandinsky", "Pollock", "Van Gogh"],
+                correct: 0
+              },
+              {
+                question: "Who sculpted 'David'?",
+                options: ["Donatello", "Bernini", "Michelangelo", "Rodin"],
+                correct: 2
+              },
+              {
+                question: "What is a 'fresco'?",
+                options: ["Drawing", "Sculpture", "Painting on wet plaster", "Digital art"],
+                correct: 2
+              },
+              {
+                question: "Which of the following is a secondary color?",
+                options: ["Red", "Blue", "Green", "Yellow"],
+                correct: 2
+              },
+              {
+                question: "Which museum houses the 'Mona Lisa'?",
+                options: ["The Met", "Uffizi", "Louvre", "Tate Modern"],
+                correct: 2
+              },
+              {
+                question: "Which technique creates depth using light and shadow?",
+                options: ["Foreshortening", "Chiaroscuro", "Fresco", "Impasto"],
+                correct: 1
+              },
+              {
+                question: "Which century was the Baroque art movement?",
+                options: ["14th", "15th", "16th", "17th"],
                 correct: 3
-            },
-            {
-                question: "Which composer wrote 'The Nutcracker'?",
-                options: ["Tchaikovsky", "Mozart", "Beethoven", "Bach"],
+              },
+              {
+                question: "Which artist is famous for 'The Persistence of Memory'?",
+                options: ["Matisse", "Dalí", "Klimt", "Degas"],
+                correct: 1
+              },
+              {
+                question: "Which term describes sculpture in high relief?",
+                options: ["Bas-relief", "3D print", "Intaglio", "Alto-relief"],
+                correct: 3
+              },
+              {
+                question: "What is pointillism?",
+                options: ["Ink drawing", "Using dots to form images", "Watercolor technique", "Carving"],
+                correct: 1
+              },
+              {
+                question: "Which artist is known for painting water lilies?",
+                options: ["Monet", "Renoir", "Cézanne", "Seurat"],
                 correct: 0
+              },
+              {
+                question: "What type of paint is used in oil painting?",
+                options: ["Oil-based", "Water-based", "Ink", "Chalk"],
+                correct: 0
+              },
+              {
+                question: "Which architectural style features pointed arches?",
+                options: ["Romanesque", "Gothic", "Baroque", "Renaissance"],
+                correct: 1
+              },
+              {
+                question: "Which term refers to a preliminary sketch?",
+                options: ["Gouache", "Study", "Mural", "Stencil"],
+                correct: 1
+              },
+              {
+                question: "Which artist is associated with Cubism?",
+                options: ["Van Gogh", "Picasso", "Rembrandt", "Michelangelo"],
+                correct: 1
+              },
+              {
+                question: "What does 'surrealism' emphasize?",
+                options: ["Reality", "Dreams and subconscious", "War", "Mathematics"],
+                correct: 1
+              },
+              {
+                question: "Who painted 'The Last Supper'?",
+                options: ["Raphael", "Da Vinci", "Titian", "Vermeer"],
+                correct: 1
+              }
+            ],
+            hard: [
+              {
+                question: "Who painted 'The School of Athens'?",
+                options: ["Leonardo", "Raphael", "Michelangelo", "Donatello"],
+                correct: 1
+              },
+              {
+                question: "Which art style is associated with Jackson Pollock?",
+                options: ["Surrealism", "Abstract Expressionism", "Realism", "Futurism"],
+                correct: 1
+              },
+              {
+                question: "What is 'sfumato'?",
+                options: ["Blurring edges to create soft transitions", "Sculpting technique", "Type of brushstroke", "Color blending"],
+                correct: 0
+              },
+              {
+                question: "Which material is used in encaustic painting?",
+                options: ["Acrylic", "Wax", "Water", "Oil"],
+                correct: 1
+              },
+              {
+                question: "Who designed the dome of the Florence Cathedral?",
+                options: ["Brunelleschi", "Ghiberti", "Michelangelo", "Bernini"],
+                correct: 0
+              },
+              {
+                question: "Which painter used a camera obscura technique?",
+                options: ["Vermeer", "Van Gogh", "Kandinsky", "Seurat"],
+                correct: 0
+              },
+              {
+                question: "What is the term for art created with found objects?",
+                options: ["Assemblage", "Collage", "Impressionism", "Chiaroscuro"],
+                correct: 0
+              },
+              {
+                question: "Which French artist is known for painting ballet dancers?",
+                options: ["Monet", "Degas", "Manet", "Delacroix"],
+                correct: 1
+              },
+              {
+                question: "Which technique involves carving into a surface to make prints?",
+                options: ["Relief", "Engraving", "Etching", "Lithography"],
+                correct: 2
+              },
+              {
+                question: "Which sculpture by Rodin is one of the most famous?",
+                options: ["David", "The Thinker", "Pieta", "Venus de Milo"],
+                correct: 1
+              },
+              {
+                question: "Which artist is associated with the Blue Period?",
+                options: ["Picasso", "Matisse", "Warhol", "Klee"],
+                correct: 0
+              },
+              {
+                question: "Who painted 'The Birth of Venus'?",
+                options: ["Raphael", "Botticelli", "Michelangelo", "Titian"],
+                correct: 1
+              },
+              {
+                question: "What is a diptych?",
+                options: ["Three-panel art", "Two-panel art", "Four-panel art", "One-panel art"],
+                correct: 1
+              },
+              {
+                question: "Which art movement did Marcel Duchamp belong to?",
+                options: ["Futurism", "Dadaism", "Impressionism", "Realism"],
+                correct: 1
+              },
+              {
+                question: "Who painted 'American Gothic'?",
+                options: ["Edward Hopper", "Grant Wood", "Georgia O'Keeffe", "Andrew Wyeth"],
+                correct: 1
+              },
+              {
+                question: "What is 'trompe-l'œil'?",
+                options: ["Color blending", "Sculpture method", "Optical illusion in painting", "Brushstroke style"],
+                correct: 2
+              },
+              {
+                question: "What is the Parthenon an example of?",
+                options: ["Roman architecture", "Gothic architecture", "Greek architecture", "Baroque architecture"],
+                correct: 2
+              },
+              {
+                question: "What is the term for an art exhibition curated by the artist themselves?",
+                options: ["Salon", "Biennale", "Retrospective", "Solo show"],
+                correct: 3
+              },
+              {
+                question: "What material is traditionally used for marble sculpture?",
+                options: ["Alabaster", "Granite", "Marble", "Soapstone"],
+                correct: 2
+              },
+              {
+                question: "Which artist pioneered Op Art?",
+                options: ["Bridget Riley", "Andy Warhol", "Piet Mondrian", "Keith Haring"],
+                correct: 0
+              }
+            ]
+          },
+          
+        "music": {
+          "easy": [
+            {
+              "question": "Which musical instrument has black and white keys?",
+              "options": ["Guitar", "Drums", "Piano", "Violin"],
+              "correct": 2
             },
             {
-                question: "What is the name of the musical form that has a recurring theme?",
-                options: ["Binary", "Ternary", "Rondo", "Sonata"],
-                correct: 2
+              "question": "Who is known as the 'King of Pop'?",
+              "options": ["Elvis Presley", "Michael Jackson", "Prince", "Justin Bieber"],
+              "correct": 1
+            },
+            {
+              "question": "Which genre is Taylor Swift most associated with?",
+              "options": ["Jazz", "Country", "Pop", "Rock"],
+              "correct": 2
+            },
+            {
+              "question": "Which instrument has six strings?",
+              "options": ["Guitar", "Flute", "Violin", "Drums"],
+              "correct": 0
+            },
+            {
+              "question": "Which singer is famous for the song 'Shape of You'?",
+              "options": ["Ed Sheeran", "Shawn Mendes", "Bruno Mars", "Adele"],
+              "correct": 0
+            },
+            {
+              "question": "Which female artist sang 'Rolling in the Deep'?",
+              "options": ["Adele", "Rihanna", "Lady Gaga", "Katy Perry"],
+              "correct": 0
+            },
+            {
+              "question": "Which instrument is played by blowing air into it?",
+              "options": ["Drums", "Flute", "Guitar", "Violin"],
+              "correct": 1
+            },
+            {
+              "question": "Which boy band sang 'What Makes You Beautiful'?",
+              "options": ["NSYNC", "Backstreet Boys", "One Direction", "BTS"],
+              "correct": 2
+            },
+            {
+              "question": "Which of these is a percussion instrument?",
+              "options": ["Piano", "Drums", "Flute", "Guitar"],
+              "correct": 1
+            },
+            {
+              "question": "What is the national anthem of the USA called?",
+              "options": ["America the Beautiful", "My Country", "The Star-Spangled Banner", "Yankee Doodle"],
+              "correct": 2
+            },
+            {
+              "question": "What is the name of the music app owned by Apple?",
+              "options": ["Spotify", "Apple Music", "YouTube Music", "Amazon Music"],
+              "correct": 1
+            },
+            {
+              "question": "Which pop star sang 'Baby' in 2010?",
+              "options": ["Justin Timberlake", "Justin Bieber", "Drake", "Zayn Malik"],
+              "correct": 1
+            },
+            {
+              "question": "Which artist is famous for 'Bad Guy'?",
+              "options": ["Billie Eilish", "Halsey", "Doja Cat", "Dua Lipa"],
+              "correct": 0
+            },
+            {
+              "question": "What genre is known for heavy guitar and loud drums?",
+              "options": ["Classical", "Rock", "Jazz", "Hip-Hop"],
+              "correct": 1
+            },
+            {
+              "question": "What is the name of BTS’s fanbase?",
+              "options": ["BTSers", "Army", "Legends", "Idols"],
+              "correct": 1
+            },
+            {
+              "question": "Which classical composer was deaf?",
+              "options": ["Mozart", "Beethoven", "Bach", "Chopin"],
+              "correct": 1
+            },
+            {
+              "question": "Which singer is known as the 'Material Girl'?",
+              "options": ["Madonna", "Cher", "Beyoncé", "Britney Spears"],
+              "correct": 0
+            },
+            {
+              "question": "Which music festival is held in California and is very famous?",
+              "options": ["Lollapalooza", "Woodstock", "Coachella", "Ultra"],
+              "correct": 2
+            },
+            {
+              "question": "Which instrument is associated with Scotland?",
+              "options": ["Bagpipes", "Harp", "Tambourine", "Accordion"],
+              "correct": 0
+            },
+            {
+              "question": "What do DJs use to mix songs?",
+              "options": ["Mixboards", "Turntables", "Instruments", "Synthesizers"],
+              "correct": 1
             }
-        ]
-    },
+          ],
+          "medium": [
+            {
+              "question": "What is the highest female singing voice called?",
+              "options": ["Alto", "Soprano", "Tenor", "Bass"],
+              "correct": 1
+            },
+            {
+              "question": "Which Beatles member was known as the 'quiet Beatle'?",
+              "options": ["John Lennon", "Paul McCartney", "George Harrison", "Ringo Starr"],
+              "correct": 2
+            },
+            {
+              "question": "What is the term for a group of notes played together?",
+              "options": ["Scale", "Chord", "Tune", "Pitch"],
+              "correct": 1
+            },
+            {
+              "question": "What musical notation indicates a note should be held longer?",
+              "options": ["Staccato", "Fermata", "Accent", "Legato"],
+              "correct": 1
+            },
+            {
+              "question": "Which composer wrote the 'Four Seasons'?",
+              "options": ["Beethoven", "Mozart", "Vivaldi", "Bach"],
+              "correct": 2
+            },
+            {
+              "question": "Which rock band released the album 'Dark Side of the Moon'?",
+              "options": ["Queen", "Pink Floyd", "The Rolling Stones", "Led Zeppelin"],
+              "correct": 1
+            },
+            {
+              "question": "Which rapper is known for the album 'To Pimp a Butterfly'?",
+              "options": ["Kanye West", "Drake", "J. Cole", "Kendrick Lamar"],
+              "correct": 3
+            },
+            {
+              "question": "Which instrument is not string-based?",
+              "options": ["Cello", "Clarinet", "Viola", "Guitar"],
+              "correct": 1
+            },
+            {
+              "question": "Which artist is famous for the 'Lemonade' album?",
+              "options": ["Rihanna", "Nicki Minaj", "Beyoncé", "Alicia Keys"],
+              "correct": 2
+            },
+            {
+              "question": "What do you call a piece of music for one instrument?",
+              "options": ["Duet", "Concerto", "Solo", "Chorus"],
+              "correct": 2
+            },
+            {
+              "question": "Which country is the origin of reggae music?",
+              "options": ["USA", "Jamaica", "Brazil", "Cuba"],
+              "correct": 1
+            },
+            {
+              "question": "Who composed the opera 'The Magic Flute'?",
+              "options": ["Mozart", "Verdi", "Puccini", "Beethoven"],
+              "correct": 0
+            },
+            {
+              "question": "Which artist sang 'Blinding Lights'?",
+              "options": ["The Weeknd", "Post Malone", "Bruno Mars", "Travis Scott"],
+              "correct": 0
+            },
+            {
+              "question": "In which key is Beethoven’s Symphony No. 5 written?",
+              "options": ["C Minor", "G Major", "A Minor", "D Major"],
+              "correct": 0
+            },
+            {
+              "question": "Which is the traditional Indian string instrument?",
+              "options": ["Tabla", "Sitar", "Sarangi", "Mridangam"],
+              "correct": 1
+            },
+            {
+              "question": "Which pop artist’s real name is Stefani Germanotta?",
+              "options": ["Lady Gaga", "Katy Perry", "Dua Lipa", "Pink"],
+              "correct": 0
+            },
+            {
+              "question": "What is tempo in music?",
+              "options": ["Pitch", "Speed", "Volume", "Melody"],
+              "correct": 1
+            },
+            {
+              "question": "Which 90s band released 'Smells Like Teen Spirit'?",
+              "options": ["Nirvana", "Green Day", "Pearl Jam", "Radiohead"],
+              "correct": 0
+            },
+            {
+              "question": "Which composer is known for the 'Moonlight Sonata'?",
+              "options": ["Mozart", "Beethoven", "Bach", "Schubert"],
+              "correct": 1
+            },
+            {
+              "question": "Which group is known for the song 'Bohemian Rhapsody'?",
+              "options": ["Queen", "The Beatles", "Led Zeppelin", "The Who"],
+              "correct": 0
+            }
+          ],
+          "hard": [
+            {
+              "question": "What is the name for a piece of music for a full orchestra, typically in four movements?",
+              "options": ["Concerto", "Symphony", "Sonata", "Fugue"],
+              "correct": 1
+            },
+            {
+              "question": "Which composer was known for using the twelve-tone technique?",
+              "options": ["Schoenberg", "Brahms", "Chopin", "Tchaikovsky"],
+              "correct": 0
+            },
+            {
+              "question": "What does 'Da Capo' mean in music?",
+              "options": ["Repeat from the beginning", "Slow down", "Play louder", "Change key"],
+              "correct": 0
+            },
+            {
+              "question": "Which Indian musician won the Bharat Ratna and an Oscar?",
+              "options": ["Ravi Shankar", "Lata Mangeshkar", "A.R. Rahman", "Zakir Hussain"],
+              "correct": 2
+            },
+            {
+              "question": "What is the lowest male singing voice?",
+              "options": ["Baritone", "Tenor", "Alto", "Bass"],
+              "correct": 3
+            },
+            {
+              "question": "Which artist created the concept album 'The Wall'?",
+              "options": ["Queen", "Pink Floyd", "The Beatles", "Genesis"],
+              "correct": 1
+            },
+            {
+              "question": "What is a leitmotif in music?",
+              "options": ["Recurring musical theme", "Fast passage", "Solo performance", "Rhythmic pattern"],
+              "correct": 0
+            },
+            {
+              "question": "Which early composer is credited with developing musical notation?",
+              "options": ["Guido d'Arezzo", "Bach", "Mozart", "Handel"],
+              "correct": 0
+            },
+            {
+              "question": "What does 'mezzo forte' mean?",
+              "options": ["Very loud", "Moderately loud", "Very soft", "Fast tempo"],
+              "correct": 1
+            },
+            {
+              "question": "Which 20th-century composer wrote 'The Rite of Spring'?",
+              "options": ["Igor Stravinsky", "Claude Debussy", "Arnold Schoenberg", "Sergei Rachmaninoff"],
+              "correct": 0
+            },
+            {
+              "question": "What is a counterpoint in music?",
+              "options": ["A rhythmic change", "Harmony of two or more melodies", "A tempo shift", "A change in pitch"],
+              "correct": 1
+            },
+            {
+              "question": "Who developed the serialism technique?",
+              "options": ["Beethoven", "Schoenberg", "Bach", "Stravinsky"],
+              "correct": 1
+            },
+            {
+              "question": "What is the name of the Indian classical raga performed at night?",
+              "options": ["Bhairavi", "Darbari Kanada", "Yaman", "Malkauns"],
+              "correct": 1
+            },
+            {
+              "question": "Which opera includes the 'Queen of the Night' aria?",
+              "options": ["The Marriage of Figaro", "The Magic Flute", "Don Giovanni", "Carmen"],
+              "correct": 1
+            },
+            {
+              "question": "What does 'tremolo' mean?",
+              "options": ["Rapid repetition of a note", "Slow tempo", "Loud volume", "Echo effect"],
+              "correct": 0
+            },
+            {
+              "question": "What is the frequency of the standard musical pitch A4?",
+              "options": ["440 Hz", "400 Hz", "420 Hz", "480 Hz"],
+              "correct": 0
+            },
+            {
+              "question": "Which famous jazz musician played the trumpet and was known as 'Satchmo'?",
+              "options": ["Miles Davis", "Louis Armstrong", "Dizzy Gillespie", "Chet Baker"],
+              "correct": 1
+            },
+            {
+              "question": "Which 20th-century composer was known for 'prepared piano' technique?",
+              "options": ["John Cage", "Philip Glass", "Steve Reich", "Erik Satie"],
+              "correct": 0
+            },
+            {
+              "question": "Who composed 'Carmina Burana'?",
+              "options": ["Carl Orff", "Mahler", "Wagner", "Verdi"],
+              "correct": 0
+            },
+            {
+              "question": "What is an oratorio?",
+              "options": ["Sacred musical work for orchestra and voices", "Opera", "Instrumental solo", "Symphony"],
+              "correct": 0
+            }
+          ]
+      },
     literature: {
         easy: [
             {
