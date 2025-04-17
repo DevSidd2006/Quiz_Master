@@ -254,21 +254,21 @@ function showQuestion() {
             <h3 class="text-lg font-semibold mb-4 text-center text-gray-700 dark:text-gray-300">Power-ups & Hints</h3>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <button id="hint-button" class="power-up-button bg-blue-500 text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-colors flex items-center justify-center space-x-2 ${hintsAvailable === 0 ? 'opacity-50 cursor-not-allowed' : ''}">
-                    <span>💡</span>
-                    <span>Hint (${hintsAvailable})</span>
-                </button>
+            <span>💡</span>
+            <span>Hint (${hintsAvailable})</span>
+        </button>
                 <button id="skip-button" class="power-up-button bg-purple-500 text-white px-4 py-3 rounded-lg hover:bg-purple-600 transition-colors flex items-center justify-center space-x-2 ${powerUps.skip === 0 ? 'opacity-50 cursor-not-allowed' : ''}">
-                    <span>⏩</span>
-                    <span>Skip (${powerUps.skip})</span>
-                </button>
+            <span>⏩</span>
+            <span>Skip (${powerUps.skip})</span>
+        </button>
                 <button id="time-freeze-button" class="power-up-button bg-green-500 text-white px-4 py-3 rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center space-x-2 ${powerUps.timeFreeze === 0 ? 'opacity-50 cursor-not-allowed' : ''}">
-                    <span>⏸️</span>
-                    <span>Time Freeze (${powerUps.timeFreeze})</span>
-                </button>
+            <span>⏸️</span>
+            <span>Time Freeze (${powerUps.timeFreeze})</span>
+        </button>
                 <button id="double-points-button" class="power-up-button bg-yellow-500 text-white px-4 py-3 rounded-lg hover:bg-yellow-600 transition-colors flex items-center justify-center space-x-2 ${powerUps.doublePoints === 0 ? 'opacity-50 cursor-not-allowed' : ''}">
-                    <span>2️⃣</span>
-                    <span>Double Points (${powerUps.doublePoints})</span>
-                </button>
+            <span>2️⃣</span>
+            <span>Double Points (${powerUps.doublePoints})</span>
+        </button>
             </div>
         </div>
 
@@ -434,7 +434,7 @@ function selectAnswer(index) {
     
     // Show next button
     if (nextButton) {
-        nextButton.classList.remove('hidden');
+    nextButton.classList.remove('hidden');
     }
 }
 
@@ -496,7 +496,7 @@ function handleTimeUp() {
     correctButton.classList.add('correct');
     
     if (nextButton) {
-        nextButton.classList.remove('hidden');
+    nextButton.classList.remove('hidden');
     }
 }
 
@@ -504,10 +504,11 @@ function endQuiz() {
     // Add score to leaderboard
     addScoreToLeaderboard(score, themeSelect.value, levelSelect.value);
     
-    // Calculate user's rank
+    // Get the most recent entry for the current user
     const username = document.getElementById('username').value.trim();
-    const userEntry = leaderboardData.scores.find(entry => entry.username === username && entry.id === leaderboardData.scores[leaderboardData.scores.length - 1].id);
-    const userRank = leaderboardData.scores.findIndex(entry => entry.id === userEntry.id) + 1;
+    const userEntries = leaderboardData.scores.filter(entry => entry.username === username);
+    const latestUserEntry = userEntries[userEntries.length - 1];
+    const userRank = leaderboardData.scores.findIndex(entry => entry.id === latestUserEntry.id) + 1;
     
     // Create results container with detailed stats
     const resultsContainer = document.createElement('div');
@@ -516,10 +517,6 @@ function endQuiz() {
         <div class="text-center mb-8">
             <h2 class="text-3xl font-bold text-green-500 mb-4">Congratulations! 🎉</h2>
             <p class="text-xl text-gray-600 dark:text-gray-300">You've completed the quiz!</p>
-            <div class="mt-4 p-4 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg inline-block">
-                <p class="text-2xl font-bold text-white">Your Rank: #${userRank}</p>
-                <p class="text-sm text-white opacity-80">Out of ${leaderboardData.scores.length} players</p>
-            </div>
         </div>
         
         <div class="score-summary bg-gray-100 dark:bg-gray-700 p-6 rounded-lg mb-8">
