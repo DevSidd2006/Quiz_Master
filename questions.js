@@ -458,86 +458,311 @@ const quizQuestions = {
     history: {
         easy: [
             {
-                question: "Who was the first President of the United States?",
-                options: ["Thomas Jefferson", "George Washington", "Abraham Lincoln", "John Adams"],
-                correct: 1
+                "question": "Who was the first President of the United States?",
+                "options": ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "John Adams"],
+                "correct": 1
             },
             {
-                question: "In which year did World War I begin?",
-                options: ["1912", "1914", "1916", "1918"],
-                correct: 1
+              "question": "Which country built the Great Wall?",
+              "options": ["India", "Japan", "China", "Mongolia"],
+              "correct": 2
             },
             {
-                question: "Which ancient civilization built the Great Wall of China?",
-                options: ["Mongols", "Japanese", "Chinese", "Koreans"],
-                correct: 2
+              "question": "In which year did World War II end?",
+              "options": ["1943", "1944", "1945", "1946"],
+              "correct": 2
             },
             {
-                question: "Who was the first man to walk on the moon?",
-                options: ["Buzz Aldrin", "Neil Armstrong", "Michael Collins", "Yuri Gagarin"],
-                correct: 1
+              "question": "Who discovered America in 1492?",
+              "options": ["Vasco da Gama", "Christopher Columbus", "Ferdinand Magellan", "James Cook"],
+              "correct": 1
             },
             {
-                question: "Which empire was ruled by Julius Caesar?",
-                options: ["Greek", "Roman", "Egyptian", "Persian"],
-                correct: 1
+              "question": "Who was the first Emperor of Rome?",
+              "options": ["Julius Caesar", "Augustus", "Nero", "Tiberius"],
+              "correct": 1
+            },
+            {
+              "question": "What was the name of the ship on which the Pilgrims traveled to America?",
+              "options": ["Mayflower", "Santa Maria", "Endeavour", "Victoria"],
+              "correct": 0
+            },
+            {
+              "question": "Which civilization built the pyramids?",
+              "options": ["Greek", "Mesopotamian", "Roman", "Egyptian"],
+              "correct": 3
+            },
+            {
+              "question": "Who was known as the Maid of Orléans?",
+              "options": ["Cleopatra", "Marie Curie", "Joan of Arc", "Queen Elizabeth I"],
+              "correct": 2
+            },
+            {
+              "question": "Which war was fought between the North and South regions in the U.S.?",
+              "options": ["Revolutionary War", "World War I", "Vietnam War", "Civil War"],
+              "correct": 3
+            },
+            {
+              "question": "Where was Napoleon Bonaparte from?",
+              "options": ["Italy", "Austria", "France", "Germany"],
+              "correct": 2
+            },
+            {
+              "question": "Who was the famous queen of ancient Egypt?",
+              "options": ["Joan of Arc", "Cleopatra", "Catherine the Great", "Elizabeth II"],
+              "correct": 1
+            },
+            {
+              "question": "Who invented the light bulb?",
+              "options": ["Nikola Tesla", "Albert Einstein", "Thomas Edison", "Benjamin Franklin"],
+              "correct": 2
+            },
+            {
+              "question": "Who wrote the Indian Constitution?",
+              "options": ["Jawaharlal Nehru", "Subhas Chandra Bose", "B. R. Ambedkar", "Mahatma Gandhi"],
+              "correct": 2
+            },
+            {
+              "question": "What is the capital of the Mughal Empire during Akbar's reign?",
+              "options": ["Delhi", "Agra", "Lahore", "Fatehpur Sikri"],
+              "correct": 3
+            },
+            {
+              "question": "Which famous Indian leader was assassinated in 1948?",
+              "options": ["Sardar Patel", "Nehru", "Subhas Chandra Bose", "Mahatma Gandhi"],
+              "correct": 3
+            },
+            {
+              "question": "What year did India gain independence from Britain?",
+              "options": ["1945", "1947", "1950", "1952"],
+              "correct": 1
+            },
+            {
+              "question": "What was the name of Hitler’s political party?",
+              "options": ["Communist Party", "Nazi Party", "Labour Party", "Fascist Party"],
+              "correct": 1
+            },
+            {
+              "question": "Who was the first woman Prime Minister of India?",
+              "options": ["Sonia Gandhi", "Sarojini Naidu", "Indira Gandhi", "Pratibha Patil"],
+              "correct": 2
+            },
+            {
+              "question": "Which ancient civilization is known for cuneiform writing?",
+              "options": ["Egyptians", "Sumerians", "Greeks", "Romans"],
+              "correct": 1
+            },
+            {
+              "question": "What was the Renaissance primarily a revival of?",
+              "options": ["Modern technology", "Classical art and learning", "Feudal systems", "Colonial rule"],
+              "correct": 1
             }
         ],
-        medium: [
+          "medium": [
             {
-                question: "Who was the first female pharaoh of Egypt?",
-                options: ["Nefertiti", "Cleopatra", "Hatshepsut", "Nefertari"],
-                correct: 2
+              "question": "What triggered the start of World War I?",
+              "options": ["Sinking of Lusitania", "Assassination of Archduke Franz Ferdinand", "Invasion of Poland", "Zimmermann Telegram"],
+              "correct": 1
             },
             {
-                question: "Which civilization built Machu Picchu?",
-                options: ["Aztecs", "Mayans", "Incas", "Olmecs"],
-                correct: 2
+              "question": "Who was the longest-reigning British monarch before Queen Elizabeth II?",
+              "options": ["Queen Victoria", "King George III", "Henry VIII", "Edward VII"],
+              "correct": 0
             },
             {
-                question: "Who was the first European to reach India by sea?",
-                options: ["Christopher Columbus", "Vasco da Gama", "Ferdinand Magellan", "Marco Polo"],
-                correct: 1
+              "question": "What was the name of the peace treaty that ended World War I?",
+              "options": ["Treaty of Versailles", "Treaty of Ghent", "Treaty of Paris", "Treaty of Tordesillas"],
+              "correct": 0
             },
             {
-                question: "In which year did the American Civil War end?",
-                options: ["1863", "1865", "1867", "1869"],
-                correct: 1
+              "question": "Which empire was ruled by Genghis Khan?",
+              "options": ["Ottoman Empire", "Roman Empire", "Mongol Empire", "Persian Empire"],
+              "correct": 2
             },
             {
-                question: "Who was the first emperor of China?",
-                options: ["Confucius", "Qin Shi Huang", "Sun Tzu", "Lao Tzu"],
-                correct: 1
+              "question": "Who was known as the Iron Chancellor of Germany?",
+              "options": ["Bismarck", "Hitler", "Ludendorff", "Goebbels"],
+              "correct": 0
+            },
+            {
+              "question": "Which revolution started in 1789?",
+              "options": ["American Revolution", "Russian Revolution", "French Revolution", "Industrial Revolution"],
+              "correct": 2
+            },
+            {
+              "question": "What was the Cold War mainly about?",
+              "options": ["Oil", "Religion", "Ideological conflict", "Territorial expansion"],
+              "correct": 2
+            },
+            {
+              "question": "Who led the Salt March in India?",
+              "options": ["Sardar Patel", "Jawaharlal Nehru", "B. R. Ambedkar", "Mahatma Gandhi"],
+              "correct": 3
+            },
+            {
+              "question": "Which empire ruled over most of Europe in 800 AD?",
+              "options": ["Byzantine Empire", "Frankish Empire", "Roman Empire", "Ottoman Empire"],
+              "correct": 1
+            },
+            {
+              "question": "Which explorer was the first to sail around the world?",
+              "options": ["Magellan", "Columbus", "Vasco da Gama", "Marco Polo"],
+              "correct": 0
+            },
+            {
+              "question": "Who was the first President of independent India?",
+              "options": ["Jawaharlal Nehru", "B. R. Ambedkar", "Rajendra Prasad", "S. Radhakrishnan"],
+              "correct": 2
+            },
+            {
+              "question": "Which battle marked the beginning of British colonial rule in India?",
+              "options": ["Battle of Plassey", "Battle of Panipat", "Battle of Buxar", "Battle of Haldighati"],
+              "correct": 0
+            },
+            {
+              "question": "What was the name of the first successful human space mission?",
+              "options": ["Apollo 11", "Sputnik 1", "Vostok 1", "Challenger"],
+              "correct": 2
+            },
+            {
+              "question": "What was the name of the Nazi plan to exterminate Jews?",
+              "options": ["The Holocaust", "The Final Solution", "Kristallnacht", "Operation Barbarossa"],
+              "correct": 1
+            },
+            {
+              "question": "Who painted the Mona Lisa?",
+              "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
+              "correct": 1
+            },
+            {
+              "question": "In which year was the Berlin Wall torn down?",
+              "options": ["1987", "1989", "1991", "1993"],
+              "correct": 1
+            },
+            {
+              "question": "Who was the first Mughal emperor?",
+              "options": ["Akbar", "Aurangzeb", "Babur", "Shah Jahan"],
+              "correct": 2
+            },
+            {
+              "question": "Where did the Industrial Revolution begin?",
+              "options": ["Germany", "USA", "France", "Britain"],
+              "correct": 3
+            },
+            {
+              "question": "What was the capital of the Byzantine Empire?",
+              "options": ["Rome", "Athens", "Constantinople", "Alexandria"],
+              "correct": 2
+            },
+            {
+              "question": "Who was known as the Father of the Nation in India?",
+              "options": ["Nehru", "Ambedkar", "Gandhi", "Subhas Chandra Bose"],
+              "correct": 2
             }
         ],
-        hard: [
+          "hard": [
             {
-                question: "Who was the last emperor of the Byzantine Empire?",
-                options: ["Constantine XI", "Justinian I", "Heraclius", "Basil II"],
-                correct: 0
+              "question": "Who was the ruler during the peak of the Maurya Empire?",
+              "options": ["Chandragupta Maurya", "Bindusara", "Ashoka", "Harsha"],
+              "correct": 2
             },
             {
-                question: "Which ancient civilization invented the concept of zero?",
-                options: ["Greeks", "Romans", "Egyptians", "Indians"],
-                correct: 3
+              "question": "What year did the Roman Empire fall?",
+              "options": ["395 AD", "410 AD", "476 AD", "500 AD"],
+              "correct": 2
             },
             {
-                question: "Who was the first European to reach Japan?",
-                options: ["Marco Polo", "Christopher Columbus", "Ferdinand Magellan", "Francis Xavier"],
-                correct: 3
+              "question": "Which Indian freedom fighter formed the Indian National Army?",
+              "options": ["Bhagat Singh", "Lala Lajpat Rai", "Subhas Chandra Bose", "Bal Gangadhar Tilak"],
+              "correct": 2
             },
             {
-                question: "In which year did the Black Death reach Europe?",
-                options: ["1346", "1350", "1360", "1370"],
-                correct: 0
+              "question": "What was the capital of the Inca Empire?",
+              "options": ["Machu Picchu", "Cuzco", "Quito", "Tenochtitlan"],
+              "correct": 1
             },
             {
-                question: "Who was the first female ruler of Russia?",
-                options: ["Catherine the Great", "Elizabeth I", "Anna Ivanovna", "Catherine I"],
-                correct: 3
+              "question": "Which war was also called 'The Great War'?",
+              "options": ["World War I", "World War II", "The Napoleonic Wars", "The Crimean War"],
+              "correct": 0
+            },
+            {
+              "question": "The Rosetta Stone helped decode which ancient script?",
+              "options": ["Cuneiform", "Hieroglyphics", "Latin", "Greek"],
+              "correct": 1
+            },
+            {
+              "question": "Which ruler built the Grand Trunk Road in India?",
+              "options": ["Akbar", "Sher Shah Suri", "Babur", "Ashoka"],
+              "correct": 1
+            },
+            {
+              "question": "The Boston Tea Party was a protest against which country?",
+              "options": ["France", "Spain", "Britain", "Portugal"],
+              "correct": 2
+            },
+            {
+              "question": "Who signed the Magna Carta?",
+              "options": ["Henry II", "Edward I", "Richard the Lionheart", "King John"],
+              "correct": 3
+            },
+            {
+              "question": "Which treaty ended the Thirty Years' War?",
+              "options": ["Treaty of Tordesillas", "Peace of Augsburg", "Treaty of Versailles", "Peace of Westphalia"],
+              "correct": 3
+            },
+            {
+              "question": "Where did the Black Death originate?",
+              "options": ["Europe", "China", "India", "Middle East"],
+              "correct": 1
+            },
+            {
+              "question": "Who led the Bolshevik Revolution?",
+              "options": ["Stalin", "Lenin", "Trotsky", "Marx"],
+              "correct": 1
+            },
+            {
+              "question": "What was the name of the trade route connecting China and Europe?",
+              "options": ["Spice Route", "Silk Road", "Amber Route", "Incense Route"],
+              "correct": 1
+            },
+            {
+              "question": "What Indian empire was known for its navy?",
+              "options": ["Chola", "Maurya", "Gupta", "Mughal"],
+              "correct": 0
+            },
+            {
+              "question": "Who was the last Tsar of Russia?",
+              "options": ["Nicholas I", "Alexander II", "Nicholas II", "Peter the Great"],
+              "correct": 2
+            },
+            {
+              "question": "What was the main religion of the Byzantine Empire?",
+              "options": ["Islam", "Catholicism", "Eastern Orthodox Christianity", "Judaism"],
+              "correct": 2
+            },
+            {
+              "question": "Who founded the Ottoman Empire?",
+              "options": ["Mehmed II", "Suleiman", "Osman I", "Selim I"],
+              "correct": 2
+            },
+            {
+              "question": "In which year did the American Civil War begin?",
+              "options": ["1859", "1861", "1863", "1865"],
+              "correct": 1
+            },
+            {
+              "question": "Who led the first successful slave revolt in Haiti?",
+              "options": ["Toussaint Louverture", "Jean-Jacques Dessalines", "Boukman", "Henry Christophe"],
+              "correct": 0
+            },
+            {
+              "question": "What was the longest reigning dynasty in Chinese history?",
+              "options": ["Ming", "Qing", "Zhou", "Tang"],
+              "correct": 2
             }
         ]
-    },
+      },
         geography: {
           easy: [
             {
