@@ -153,7 +153,6 @@ body {
     border-radius: 20px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: cardAppear 0.5s ease-out;
 }
 
 @keyframes cardAppear {
@@ -194,23 +193,59 @@ body {
 @media (max-width: 768px) {
     #app {
         padding: 1rem;
+        max-width: 100%;
     }
 
     .card {
         padding: 1.5rem;
+        margin: 1rem;
+        width: calc(100% - 2rem);
     }
 
     #question {
         font-size: 1.2rem;
+        margin: 1rem 0;
+        padding: 0 0.5rem;
     }
 
     .option-button {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
+        width: 100%;
+        margin: 0.5rem 0;
     }
 
     #timer, #score {
         font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    #options {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0 1rem;
+    }
+
+    #next-button {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .leaderboard-item {
+        padding: 0.8rem;
+        margin: 0.5rem 0;
+    }
+
+    .stat-card {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .power-up-button {
+        padding: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -221,10 +256,13 @@ body {
 
     .card {
         padding: 1rem;
+        margin: 0.5rem;
+        width: calc(100% - 1rem);
     }
 
     #question {
         font-size: 1rem;
+        margin: 0.8rem 0;
     }
 
     .option-button {
@@ -234,6 +272,55 @@ body {
 
     #timer, #score {
         font-size: 1rem;
+    }
+
+    #options {
+        padding: 0 0.5rem;
+    }
+
+    .leaderboard-item {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .stat-card {
+        padding: 0.8rem;
+    }
+
+    .power-up-button {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .welcome-text {
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .category-badge {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Landscape mode adjustments */
+@media (max-height: 480px) and (orientation: landscape) {
+    .card {
+        padding: 0.8rem;
+    }
+
+    #question {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+
+    .option-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    #timer, #score {
+        font-size: 0.9rem;
     }
 }
 
@@ -711,51 +798,6 @@ input:focus, select:focus {
     100% { transform: translateX(0); }
 }
 
-/* Enhanced responsive design */
-@media (max-width: 768px) {
-    .card {
-        padding: 1.5rem;
-        margin: 1rem;
-    }
-    
-    .option-button {
-        padding: 0.8rem 1.2rem;
-        font-size: 0.9rem;
-    }
-    
-    .timer, .score {
-        font-size: 1.2rem;
-        padding: 0.4rem 0.8rem;
-    }
-    
-    .power-up-button {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        padding: 1rem;
-        margin: 0.5rem;
-    }
-    
-    .option-button {
-        padding: 0.6rem 1rem;
-        font-size: 0.8rem;
-    }
-    
-    .timer, .score {
-        font-size: 1rem;
-        padding: 0.3rem 0.6rem;
-    }
-    
-    .power-up-button {
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-    }
-}
-
 /* Welcome message gradient effect */
 .welcome-text {
     background: linear-gradient(135deg, #667eea, #764ba2, #ff6b6b, #ffa502);
@@ -769,10 +811,176 @@ input:focus, select:focus {
     text-align: center;
     margin: 2rem 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    padding: 0 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 @keyframes gradientText {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+/* Responsive styles for welcome text */
+@media (max-width: 768px) {
+    .welcome-text {
+        font-size: 2.5rem;
+        margin: 1.5rem 0;
+        padding: 0 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-text {
+        font-size: 2rem;
+        margin: 1rem 0;
+        padding: 0 0.5rem;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 360px) {
+    .welcome-text {
+        font-size: 1.8rem;
+        margin: 0.8rem 0;
+        padding: 0 0.3rem;
+    }
+}
+
+/* Landscape mode adjustments for welcome text */
+@media (max-height: 480px) and (orientation: landscape) {
+    .welcome-text {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Navigation bar mobile styles */
+@media (max-width: 768px) {
+    .nav-bar {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-logo img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .nav-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-button svg {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        padding: 0.5rem;
+    }
+
+    .nav-logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav-logo img {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+
+    .nav-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .nav-button span {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-button svg {
+        margin-right: 0.3rem;
+    }
+}
+
+/* Congratulations text mobile styles */
+.congratulations-text {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #667eea, #764ba2, #9f7aea);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 4s ease infinite;
+    text-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    word-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .congratulations-text {
+        font-size: 2rem;
+        margin: 0.8rem 0;
+        padding: 0 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .congratulations-text {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+        padding: 0 0.5rem;
+        line-height: 1.2;
+    }
+}
+
+/* Results page mobile styles */
+@media (max-width: 768px) {
+    .score-summary {
+        padding: 1rem;
+    }
+
+    .score-summary h3 {
+        font-size: 1.5rem;
+    }
+
+    .score-summary .grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .score-summary .bg-white {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .score-summary {
+        padding: 0.8rem;
+    }
+
+    .score-summary h3 {
+        font-size: 1.2rem;
+    }
+
+    .score-summary .bg-white {
+        padding: 0.8rem;
+    }
+
+    .score-summary .flex {
+        font-size: 0.9rem;
+    }
 }
