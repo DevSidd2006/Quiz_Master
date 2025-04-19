@@ -2,8 +2,6 @@
 
 A modern, interactive quiz application with beautiful UI, built for learning and fun.
 
-![Quiz Master](https://quiz-master-lac.vercel.app/screenshot.png)
-
 ## Features
 
 - **Beautiful UI** with modern gradient backgrounds and animations
