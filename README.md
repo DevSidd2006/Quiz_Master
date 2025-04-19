@@ -2,7 +2,22 @@
 
 A modern, interactive quiz application with beautiful UI, built for learning and fun.
 
-![Quiz Master](https://quiz-master-lac.vercel.app/screenshot.png)
+## Application Screenshots
+
+### Home Page
+![Home Page](./home_page.png)
+
+### Quiz Rules
+![Quiz Rules](./Rules.png)
+
+### Quiz Interface
+![Quiz Interface](./quiz.png)
+
+### Results Page
+![Results Page](./result.png)
+
+### Leaderboard
+![Leaderboard](./leaderboard.png)
 
 ## Features
 
