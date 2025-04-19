@@ -82,7 +82,7 @@ const quizQuestions = {
           "correct": 2
         },
         {
-          "question": "Which animal is known as 'man’s best friend'?",
+          "question": "Which animal is known as 'man's best friend'?",
           "options": ["Cat", "Dog", "Horse", "Parrot"],
           "correct": 1
         },
@@ -207,7 +207,7 @@ const quizQuestions = {
           "correct": 2
         },
         {
-          "question": "Which animal is known as 'man’s best friend'?",
+          "question": "Which animal is known as 'man's best friend'?",
           "options": ["Cat", "Dog", "Horse", "Parrot"],
           "correct": 1
         },
@@ -651,7 +651,8 @@ const quizQuestions = {
                   "correct": 1
                 },
                 {
-                  "question": "Which battle marked the end of Napoleon’s rule in 1815?",
+                  "question": "Which battle marked the end of Napoleon's rule in 1815?",
+                  "question": "Which battle marked the end of Napoleon's rule in 1815?",
                   "options": ["Battle of Leipzig", "Battle of Austerlitz", "Battle of Trafalgar", "Battle of Waterloo"],
                   "correct": 3
                 },
@@ -1163,7 +1164,7 @@ const quizQuestions = {
               "correct": 1
             },
             {
-              "question": "What was the name of Hitler’s political party?",
+              "question": "What was the name of Hitler's political party?",
               "options": ["Communist Party", "Nazi Party", "Labour Party", "Fascist Party"],
               "correct": 1
             },
@@ -2114,7 +2115,7 @@ const quizQuestions = {
               "correct": 2
             },
             {
-              "question": "Which financial statement shows a company’s revenues and expenses?",
+              "question": "Which financial statement shows a company's revenues and expenses?",
               "options": ["Balance Sheet", "Cash Flow Statement", "Income Statement", "Equity Statement"],
               "correct": 2
             },
@@ -2144,7 +2145,7 @@ const quizQuestions = {
               "correct": 3
             },
             {
-              "question": "Which role is responsible for a company’s financial planning?",
+              "question": "Which role is responsible for a company's financial planning?",
               "options": ["CTO", "CMO", "CFO", "COO"],
               "correct": 2
             },
@@ -2261,7 +2262,7 @@ const quizQuestions = {
               "correct": 2
             },
             {
-              "question": "Which company owns the brand 'Ben & Jerry’s'?",
+              "question": "Which company owns the brand 'Ben & Jerry's'?",
               "options": ["Nestlé", "PepsiCo", "Unilever", "P&G"],
               "correct": 2
             },
@@ -2271,7 +2272,7 @@ const quizQuestions = {
               "correct": 1
             },
             {
-              "question": "Which financial statement shows a company’s assets, liabilities, and equity?",
+              "question": "Which financial statement shows a company's assets, liabilities, and equity?",
               "options": ["Cash Flow Statement", "Income Statement", "Balance Sheet", "Profit & Loss Statement"],
               "correct": 2
             },
@@ -2569,12 +2570,12 @@ const quizQuestions = {
             correct: 2
           },
           {
-            question: "Which actor voiced the character of Genie in Disney’s 'Aladdin' (1992)?",
+            question: "Which actor voiced the character of Genie in Disney's 'Aladdin' (1992)?",
             options: ["Eddie Murphy", "Robin Williams", "Will Smith", "Mike Myers"],
             correct: 1
           },
           {
-            question: "What’s the name of the AI in the movie 'Her'?",
+            question: "What's the name of the AI in the movie 'Her'?",
             options: ["Samantha", "Alexa", "Eva", "Aurora"],
                 correct: 0
             },
@@ -2604,7 +2605,7 @@ const quizQuestions = {
             correct: 2
           },
           {
-            question: "What’s the longest-running Broadway show?",
+            question: "What's the longest-running Broadway show?",
             options: ["Chicago", "The Lion King", "Les Misérables", "The Phantom of the Opera"],
                 correct: 3
             },
@@ -2648,7 +2649,7 @@ const quizQuestions = {
                 "correct": 0
               },
               {
-                "question": "How many characters were originally allowed in a ‘Tweet’ when Twitter first launched in 2006?",
+                "question": "How many characters were originally allowed in a 'Tweet' when Twitter first launched in 2006?",
                 "options": ["140 characters", "280 characters", "500 characters", "1000 characters"],
                 "correct": 0
               },
@@ -2658,7 +2659,7 @@ const quizQuestions = {
                 "correct": 1
               },
               {
-                "question": "Which key on a PC, when pressed along with the 'Ctrl' key, is a shortcut for the ‘Undo’ command?",
+                "question": "Which key on a PC, when pressed along with the 'Ctrl' key, is a shortcut for the 'Undo' command?",
                 "options": ["Z", "Y", "U", "X"],
                 "correct": 0
               },
@@ -3543,7 +3544,7 @@ const quizQuestions = {
               "correct": 1
             },
             {
-              "question": "What is the name of BTS’s fanbase?",
+              "question": "What is the name of BTS's fanbase?",
               "options": ["BTSers", "Army", "Legends", "Idols"],
               "correct": 1
             },
@@ -3640,7 +3641,7 @@ const quizQuestions = {
               "correct": 0
             },
             {
-              "question": "In which key is Beethoven’s Symphony No. 5 written?",
+              "question": "In which key is Beethoven's Symphony No. 5 written?",
               "options": ["C Minor", "G Major", "A Minor", "D Major"],
               "correct": 0
             },
@@ -3650,7 +3651,7 @@ const quizQuestions = {
               "correct": 1
             },
             {
-              "question": "Which pop artist’s real name is Stefani Germanotta?",
+              "question": "Which pop artist's real name is Stefani Germanotta?",
               "options": ["Lady Gaga", "Katy Perry", "Dua Lipa", "Pink"],
               "correct": 0
             },
@@ -4411,8 +4412,8 @@ const usedQuestions = new Set();
 function getRandomQuestions(category, difficulty, count = 10) {
     // Check if the category and difficulty exist
     if (!quizQuestions[category] || !quizQuestions[category][difficulty]) {
-        console.error(`Invalid category (${category}) or difficulty (${difficulty})`);
-        return [];
+        // Return default questions instead of logging an error
+        return getRandomQuestions('general', 'easy', count);
     }
 
     // Get all questions for the selected category and difficulty
@@ -4429,7 +4430,7 @@ function getRandomQuestions(category, difficulty, count = 10) {
     
     // Check if we have enough questions
     if (unusedQuestions.length < count) {
-        console.warn(`Not enough unused questions available. Requested ${count}, but only ${unusedQuestions.length} available.`);
+        // Adjust count silently instead of logging a warning
         count = unusedQuestions.length;
     }
 

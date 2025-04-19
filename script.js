@@ -75,7 +75,6 @@ let timerElement;
 
 // Initialize DOM elements
 function initializeDOMElements() {
-    console.log("Initializing DOM elements...");
     landingPage = document.getElementById('landing-page');
     quizContainer = document.getElementById('quiz-container');
     leaderboardPage = document.getElementById('leaderboard-page');
@@ -89,22 +88,6 @@ function initializeDOMElements() {
     backButton = document.getElementById('back-button');
     scoreElement = document.getElementById('score');
     timerElement = document.getElementById('timer');
-
-    console.log("DOM Elements initialized:", {
-        landingPage: !!landingPage,
-        quizContainer: !!quizContainer,
-        leaderboardPage: !!leaderboardPage,
-        themeSelect: !!themeSelect,
-        levelSelect: !!levelSelect,
-        startQuizButton: !!startQuizButton,
-        questionElement: !!questionElement,
-        optionsElement: !!optionsElement,
-        nextButton: !!nextButton,
-        leaderboardButton: !!leaderboardButton,
-        backButton: !!backButton,
-        scoreElement: !!scoreElement,
-        timerElement: !!timerElement
-    });
 }
 
 // Hide all containers initially
@@ -347,54 +330,45 @@ function showQuestion() {
 
 // Modify startQuiz function to check for username
 function startQuiz() {
-    console.log("Start Quiz button clicked");
+    const theme = themeSelect.value;
+    const level = levelSelect.value;
     const username = document.getElementById('username').value.trim();
+    
+    // Validate username
     if (!username) {
         alert('Please enter a username before starting the quiz.');
         return;
     }
-
-    const theme = themeSelect.value;
-    const level = levelSelect.value;
     
-    // Reset quiz state before starting new quiz
+    // Reset quiz state
     resetQuizState();
     
-    // Get random questions for selected category and difficulty
-    currentQuiz = getRandomQuestions(theme, level, 5);
-    console.log("Questions loaded:", currentQuiz.length);
-    
-    if (!currentQuiz || currentQuiz.length === 0) {
-        alert('No questions available for this combination. Please try another.');
-        return;
-    }
-    
-    // Reset the quiz container to its original state with improved layout
-    quizContainer.innerHTML = `
-        <div class="flex justify-between items-center mb-6 max-w-4xl mx-auto">
-            <div id="timer" class="timer text-xl font-semibold bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded-lg shadow-sm">⏱️ Time: 15s</div>
-            <div id="score" class="score text-xl font-semibold bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded-lg shadow-sm">🏆 Score: 0</div>
-        </div>
-        <div class="progress-bar mb-6 max-w-4xl mx-auto" id="progress-bar"></div>
-        <div id="question" class="text-2xl font-semibold mb-8 text-center"></div>
-        <div id="options" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
-        <button id="next-button" class="mt-8 w-full max-w-4xl mx-auto bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
-            Next Question
-        </button>
-    `;
-    
-    // Initialize the DOM elements
-    questionElement = document.getElementById('question');
-    optionsElement = document.getElementById('options');
-    nextButton = document.getElementById('next-button');
-    scoreElement = document.getElementById('score');
-    timerElement = document.getElementById('timer');
-    
-    // Add event listener for next button
-    nextButton.addEventListener('click', showNextQuestion);
-    
+    // Show quiz container
     showContainer(quizContainer);
-    showQuestion();
+    
+    // Show loading spinner
+    const loadingSpinner = document.createElement('div');
+    loadingSpinner.className = 'loading-spinner';
+    quizContainer.appendChild(loadingSpinner);
+    
+    // Load questions (simulating API call with setTimeout)
+    setTimeout(() => {
+        // Remove spinner
+        quizContainer.removeChild(loadingSpinner);
+        
+        // Get questions for selected theme and level
+        currentQuiz = getRandomQuestions(theme, level);
+        
+        // Show first question
+        showQuestion();
+        updateProgressBar();
+        
+        // Start timer
+        startTimer();
+        
+        // Update score display
+        scoreElement.textContent = `Score: ${score}`;
+    }, 1500);
 }
 
 function selectAnswer(index) {
@@ -782,7 +756,6 @@ function resetLeaderboard() {
 
 // Initialize the app
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("DOM Content Loaded");
     initializeDOMElements();
     initializeLeaderboard();
     hideAllContainers();
@@ -798,7 +771,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add event listeners
     if (startQuizButton) {
-        console.log("Adding click event listener to start quiz button");
         startQuizButton.addEventListener('click', () => {
             const username = document.getElementById('username').value.trim();
             const theme = document.getElementById('theme').value;
@@ -843,7 +815,19 @@ document.addEventListener('DOMContentLoaded', function() {
             showRules(theme, level);
         });
     } else {
-        console.error("Start quiz button not found!");
+        // Create a fallback button if the main one isn't found
+        const container = document.querySelector('#landing-page');
+        if (container) {
+            const fallbackButton = document.createElement('button');
+            fallbackButton.textContent = 'Start Quiz';
+            fallbackButton.className = 'bg-indigo-600 text-white py-2 px-4 rounded';
+            fallbackButton.addEventListener('click', () => {
+                const theme = 'general';
+                const level = 'easy';
+                startQuiz(theme, level);
+            });
+            container.appendChild(fallbackButton);
+        }
     }
 
     // Add event listener for "I Understand" button
@@ -903,7 +887,31 @@ function showRules(theme, level) {
         // Add animation class
         rulesContainer.classList.add('animate-fade-in');
     } else {
-        console.error("Rules container not found!");
-        startQuiz(theme, level); // Fallback to starting quiz directly if rules container is not found
+        // If rules container is not found, create a simple modal with rules
+        const modal = document.createElement('div');
+        modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+        
+        const content = document.createElement('div');
+        content.className = 'bg-white dark:bg-gray-800 p-8 rounded-lg max-w-lg w-full';
+        content.innerHTML = `
+            <h2 class="text-2xl font-bold mb-4">Quiz Rules</h2>
+            <ul class="list-disc pl-5 mb-4">
+                <li>You will have 15 seconds to answer each question</li>
+                <li>Correct answers earn you points</li>
+                <li>Answering quickly gives you bonus points</li>
+                <li>Use powerups wisely to improve your score</li>
+            </ul>
+            <button id="modal-start-button" class="w-full bg-indigo-600 text-white py-2 px-4 rounded">
+                Start Quiz
+            </button>
+        `;
+        
+        modal.appendChild(content);
+        document.body.appendChild(modal);
+        
+        document.getElementById('modal-start-button').addEventListener('click', () => {
+            document.body.removeChild(modal);
+            startQuiz(theme, level);
+        });
     }
 }

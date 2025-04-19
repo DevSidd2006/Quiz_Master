@@ -2,7 +2,7 @@
 
 A modern, interactive quiz application with beautiful UI, built for learning and fun.
 
-![Quiz Master](https://quiz-master-lac.vercel.app/screenshot.png)
+![Quiz Master Screenshot](./home_page.png)
 
 ## Features
 
