@@ -5,19 +5,19 @@ A modern, interactive quiz application with beautiful UI, built for learning and
 ## Application Screenshots
 
 ### Home Page
-![Home Page](./home_page.png)
+![Home Page](./images/home_page.png)
 
 ### Quiz Rules
-![Quiz Rules](./Rules.png)
+![Quiz Rules](./images/Rules.png)
 
 ### Quiz Interface
-![Quiz Interface](./quiz.png)
+![Quiz Interface](./images/quiz.png)
 
 ### Results Page
-![Results Page](./result.png)
+![Results Page](./images/result.png)
 
 ### Leaderboard
-![Leaderboard](./leaderboard.png)
+![Leaderboard](./images/leaderboard.png)
 
 ## Features
 

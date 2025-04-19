@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Critical inline styles for initial rendering */
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -616,11 +617,12 @@
 </head>
 <body>
     <div id="app">
+        <!-- Navigation Bar -->
         <nav class="nav-bar fixed top-0 left-0 right-0 z-50 px-6 py-4">
             <div class="max-w-7xl mx-auto flex justify-between items-center">
                 <div class="nav-logo">
                     <div class="flex items-center space-x-2">
-                        <img src="logo.png" alt="QuizMaster Logo" class="h-12 w-12">
+                        <img src="./images/logo.png" alt="QuizMaster Logo" class="h-12 w-12">
                         <h1 class="text-4xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400 text-transparent bg-clip-text animate-pulse-subtle">QuizMaster</h1>
                     </div>
                 </div>
@@ -641,9 +643,12 @@
                 </div>
             </div>
         </nav>
+
         <div class="container mx-auto px-4 py-8 mt-20">
+            <!-- Loading Spinner -->
             <div id="loading-spinner" class="loading-spinner hidden"></div>
 
+            <!-- Landing Page -->
             <div id="landing-page" class="max-w-2xl mx-auto card p-8">
                 <div class="welcome-container">
                     <h1 class="welcome-text">Are you a Quiz Master?</h1>
@@ -698,7 +703,7 @@
                     <h2 class="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Quiz Rules & Guidelines</h2>
                     
                     <div class="space-y-6">
-                        <!-- General Rules -->
+                        <!-- Rules content -->
                         <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm">
                             <h3 class="text-xl font-semibold mb-4 text-indigo-600 dark:text-indigo-400">📋 General Rules</h3>
                             <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
@@ -709,7 +714,6 @@
                             </ul>
                         </div>
 
-                        <!-- Scoring System -->
                         <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm">
                             <h3 class="text-xl font-semibold mb-4 text-indigo-600 dark:text-indigo-400">🎯 Scoring System</h3>
                             <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
@@ -720,7 +724,6 @@
                             </ul>
                         </div>
 
-                        <!-- Power-ups -->
                         <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm">
                             <h3 class="text-xl font-semibold mb-4 text-indigo-600 dark:text-indigo-400">⚡ Power-ups & Hints</h3>
                             <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
@@ -728,26 +731,6 @@
                                 <li><span class="font-semibold">⏩ Skip:</span> Skip the current question (1 available per quiz)</li>
                                 <li><span class="font-semibold">⏸️ Time Freeze:</span> Adds 10 seconds to the timer (1 available per quiz)</li>
                                 <li><span class="font-semibold">2️⃣ Double Points:</span> Doubles points for next correct answer (1 available per quiz)</li>
-                            </ul>
-                        </div>
-
-                        <!-- Penalties -->
-                        <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm">
-                            <h3 class="text-xl font-semibold mb-4 text-indigo-600 dark:text-indigo-400">⚠️ Power-up Penalties</h3>
-                            <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-                                <li>Using Hint: -5 points</li>
-                                <li>Using Skip: -10 points</li>
-                                <li>Using Time Freeze: -10 points</li>
-                                <li>Using Double Points: -10 points</li>
-                            </ul>
-                        </div>
-
-                        <!-- Streak System -->
-                        <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm">
-                            <h3 class="text-xl font-semibold mb-4 text-indigo-600 dark:text-indigo-400">🔥 Streak System</h3>
-                            <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
-                                <li>3 correct answers: "Good!" (+5 points bonus)</li>
-                                <li>5 correct answers: "Great!" (+10 points bonus)</li>
                             </ul>
                         </div>
                     </div>
@@ -763,55 +746,12 @@
                 </div>
             </div>
 
+            <!-- Quiz Container -->
             <div id="quiz-container" class="hidden max-w-2xl mx-auto card p-8 quiz-container">
-                <div class="flex justify-between items-center mb-8">
-                    <div id="timer" class="timer">
-                        Time: 10s
-                    </div>
-                    <div id="score" class="score">
-                        Score: 0
-                    </div>
-                </div>
-                <div class="progress-bar mb-6" id="progress-bar"></div>
-                <div class="progress-indicator" id="progress-indicator"></div>
-                <div id="category-badge" class="category-badge text-center"></div>
-                <div id="question" class="text-2xl font-semibold text-center"></div>
-                <div id="feedback-message" class="feedback-message"></div>
-                <div id="options" class="grid grid-cols-1 md:grid-cols-2"></div>
-                <button id="next-button"
-                    class="mt-8 w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
-                    Next Question
-                </button>
+                <!-- Quiz content will be dynamically inserted by JavaScript -->
             </div>
 
-            <div id="results-page" class="hidden max-w-2xl mx-auto">
-                <div class="results-summary">
-                    <h2 class="text-3xl font-bold mb-6">Quiz Results</h2>
-                    <div class="results-stats">
-                        <div class="stat-card">
-                            <h3 class="text-lg font-semibold mb-2">Final Score</h3>
-                            <p id="final-score" class="text-2xl font-bold text-indigo-600">0</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3 class="text-lg font-semibold mb-2">Correct Answers</h3>
-                            <p id="correct-answers" class="text-2xl font-bold text-green-500">0</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3 class="text-lg font-semibold mb-2">Time Taken</h3>
-                            <p id="time-taken" class="text-2xl font-bold text-purple-600">0s</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3 class="text-lg font-semibold mb-2">Accuracy</h3>
-                            <p id="accuracy" class="text-2xl font-bold text-blue-500">0%</p>
-                        </div>
-                    </div>
-                    <button id="restart-quiz"
-                        class="mt-6 w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
-                        Try Another Quiz
-                    </button>
-                </div>
-            </div>
-
+            <!-- Leaderboard Page -->
             <div id="leaderboard-page" class="leaderboard-page max-w-4xl mx-auto">
                 <div class="card p-8">
                     <button id="back-button" class="back-button bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-2 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 mb-6">
@@ -825,16 +765,8 @@
                     </div>
                     <div class="overflow-x-auto">
                         <table class="w-full">
-                            <thead>
-                                <tr class="text-left border-b-2 border-gray-200 dark:border-gray-700">
-                                    <!-- <th class="py-4 text-center">Rank</th>
-                                    <th class="py-4 text-center">Username</th>
-                                    <th class="py-4 text-center">Score</th>
-                                    <th class="py-4 text-center">Theme & Level</th>
-                                    <th class="py-4 text-center">Date & Time</th> -->
-                                </tr>
-                            </thead>
                             <tbody id="leaderboard-table" class="divide-y divide-gray-200 dark:divide-gray-700">
+                                <!-- Leaderboard entries will be dynamically inserted by JavaScript -->
                             </tbody>
                         </table>
                     </div>
@@ -870,24 +802,15 @@
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Quick Links</h3>
-                            <ul class="space-y-2">
-                                <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Home</a></li>
-                                <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Leaderboard</a></li>
-                                <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Categories</a></li>
-                                <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">About Us</a></li>
-                            </ul>
-                        </div>
-                        <div>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Contact</h3>
                             <ul class="space-y-2">
                                 <li class="text-gray-600 dark:text-gray-300">Email: kushwahasiddhartha31@gmail.com</li>
-                                <li class="text-gray-600 dark:text-gray-300">Address: Pune , India</li>
+                                <li class="text-gray-600 dark:text-gray-300">Location: Pune, India</li>
                             </ul>
                         </div>
                     </div>
                     <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-                        <p class="text-center text-gray-600 dark:text-gray-300 mt-2">
+                        <p class="text-center text-gray-600 dark:text-gray-300">
                             © 2025 QuizMaster. All rights reserved.
                         </p>
                         <p class="text-center text-gray-600 dark:text-gray-300">
