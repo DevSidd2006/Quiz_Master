@@ -357,7 +357,7 @@ function startQuiz() {
         quizContainer.removeChild(loadingSpinner);
         
         // Get questions for selected theme and level
-        currentQuiz = getRandomQuestions(theme, level);
+        currentQuiz = getRandomQuestions(theme, level, 5);
         
         // Show first question
         showQuestion();

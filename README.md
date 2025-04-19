@@ -2,13 +2,29 @@
 
 A modern, interactive quiz application with beautiful UI, built for learning and fun.
 
-![Quiz Master](https://quiz-master-lac.vercel.app/screenshot.png)
+## Application Screenshots
+
+### Home Page
+![Quiz Master Home](https://quiz-master-lac.vercel.app/screenshot.png)
+
+### Quiz Interface
+![Quiz Interface](https://quiz-master-lac.vercel.app/quiz-interface.png)
+
+### Rules Screen
+![Quiz Rules](https://quiz-master-lac.vercel.app/rules-screen.png)
+
+### Results Page
+![Results Screen](https://quiz-master-lac.vercel.app/results-screen.png)
+
+### Leaderboard
+![Leaderboard](https://quiz-master-lac.vercel.app/leaderboard.png)
 
 ## Features
 
 - **Beautiful UI** with modern gradient backgrounds and animations
 - **Responsive design** that works on desktop, tablet, and mobile devices
 - **Interactive quizzes** with multiple-choice questions
+- **5 questions per quiz** for quick and engaging sessions
 - **Real-time feedback** on correct and incorrect answers
 - **Timer** for each question to add pressure and excitement
 - **Score tracking** with animated scoring system

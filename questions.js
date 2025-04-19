@@ -4409,7 +4409,7 @@ const quizQuestions = {
 const usedQuestions = new Set();
 
 // Function to get random questions
-function getRandomQuestions(category, difficulty, count = 10) {
+function getRandomQuestions(category, difficulty, count = 5) {
     // Check if the category and difficulty exist
     if (!quizQuestions[category] || !quizQuestions[category][difficulty]) {
         // Return default questions instead of logging an error
