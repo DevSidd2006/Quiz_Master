@@ -525,6 +525,8 @@ input:focus, select:focus {
     margin: 0.5rem 0;
     position: relative;
     overflow: hidden;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .option-button::before {
@@ -680,6 +682,8 @@ input:focus, select:focus {
     font-weight: 600;
     margin-bottom: 1.5rem;
     animation: float 3s ease-in-out infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 /* Enhanced results summary */
@@ -919,6 +923,7 @@ input:focus, select:focus {
     background: linear-gradient(45deg, #667eea, #764ba2, #9f7aea);
     background-size: 400% 400%;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientText 4s ease infinite;
     text-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
@@ -930,21 +935,10 @@ input:focus, select:focus {
     box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    .congratulations-text {
-        font-size: 2rem;
-        margin: 0.8rem 0;
-        padding: 0 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .congratulations-text {
-        font-size: 1.5rem;
-        margin: 0.5rem 0;
-        padding: 0 0.5rem;
-        line-height: 1.2;
-    }
+@keyframes gradientText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* Results page mobile styles */
