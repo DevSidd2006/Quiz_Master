@@ -803,7 +803,8 @@
                         </div>
                         <div class="stat-card">
                             <h3 class="text-lg font-semibold mb-2">Accuracy</h3>
-                            <p id="accuracy" class="text-2xl font-bold text-blue-500">0%</                        </div>
+                            <p id="accuracy" class="text-2xl font-bold text-blue-500">0%</p>
+                        </div>
                     </div>
                     <button id="restart-quiz"
                         class="mt-6 w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
@@ -827,6 +828,11 @@
                         <table class="w-full">
                             <thead>
                                 <tr class="text-left border-b-2 border-gray-200 dark:border-gray-700">
+                                    <th class="px-4 py-3 font-semibold text-gray-800 dark:text-gray-200">Rank</th>
+                                    <th class="px-4 py-3 font-semibold text-gray-800 dark:text-gray-200">Username</th>
+                                    <th class="px-4 py-3 font-semibold text-gray-800 dark:text-gray-200">Score</th>
+                                    <th class="px-4 py-3 font-semibold text-gray-800 dark:text-gray-200">Category</th>
+                                    <th class="px-4 py-3 font-semibold text-gray-800 dark:text-gray-200">Difficulty</th>
                                 </tr>
                             </thead>
                             <tbody id="leaderboard-table" class="divide-y divide-gray-200 dark:divide-gray-700">
@@ -867,10 +873,10 @@
                         <div>
                             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Quick Links</h3>
                             <ul class="space-y-2">
-                                <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Home</a></li>
-                                <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Leaderboard</a></li>
-                                <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Categories</a></li>
-                                <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">About Us</a></li>
+                                <li><a href="#" id="footer-home" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Home</a></li>
+                                <li><a href="#" id="footer-leaderboard" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Leaderboard</a></li>
+                                <li><a href="#" id="footer-categories" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Categories</a></li>
+                                <li><a href="#" id="footer-about" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">About Us</a></li>
                             </ul>
                         </div>
                         <div>
